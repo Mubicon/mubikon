@@ -1,6 +1,6 @@
 # Мубикон
 
-* [Ссылка на верстку:](https://verstaburo.github.io/mubikon/)
+* Ссылка на верстку: https://verstaburo.github.io/mubikon/
 
 # Шаблон для быстрого старта проектов в студии Versta
 

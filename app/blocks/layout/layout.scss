@@ -1,0 +1,38 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+
+  &__left-side {
+    width: 90px;
+    min-width: 90px;
+    display: flex;
+    background-color: #292d33;
+  }
+
+  &__center {
+    min-width: 670px;
+    max-width: 880px;
+    flex: 2;
+  }
+
+  &__header {
+    height: 90px;
+    background-color: #2d3039;
+  }
+
+  &__content {
+
+  }
+
+  &__right-side {
+    background-color: #ededed;
+    min-width: 280px;
+    flex: 1;
+
+    @include screen(small, max) {
+      flex: 0 auto;
+      min-width: 90px;
+      width: 90px;
+    }
+  }
+}

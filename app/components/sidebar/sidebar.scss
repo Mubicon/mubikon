@@ -1,0 +1,16 @@
+.sidebar {
+  display: block;
+  width: 100%;
+
+  &__logo {
+    display: block;
+    height: 90px;
+    position: relative;
+
+    &:hover { opacity: .5 }
+
+    img {
+      @include center-image;
+    }
+  }
+}

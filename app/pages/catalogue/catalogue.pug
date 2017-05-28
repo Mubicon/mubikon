@@ -1,0 +1,35 @@
+extends ../../layouts/default
+include ../../components/sidebar/sidebar
+include ../../components/header/header
+include ../../components/right-header/right-header
+include ../../blocks/icon-menu/icon-menu
+include ../../blocks/player/player
+
+block head
+  - var pageTitle = 'Каталог — Мубикон'
+
+block sidebar
+  +sidebar
+    +icon-menu.__menu
+      +icon-menu-icon("#", "Каталог", "assets/images/icon-sidebar-1.png")._darkblue
+      +icon-menu-icon("#", "Трэки", "assets/images/icon-sidebar-2.png")._darkblue
+      +icon-menu-icon("#", "Подборки", "assets/images/icon-sidebar-3.png")._darkblue.active
+      +icon-menu-icon("#", "Трансляция", "assets/images/icon-sidebar-4.png")
+      +icon-menu-icon("#", "Каналы", "assets/images/icon-sidebar-5.png")
+      +icon-menu-icon("#", "Помощь", "assets/images/icon-sidebar-6.png")
+
+block header
+  +header
+    +player()._pause
+      +player-image("assets/images/album-small-2.jpg")
+      +player-content
+        +player-info("Let’s dance - Jon Travolta")
+          +player-list-control()
+        +player-timer()
+        +player-equalizer()
+  
+block content
+  +b.channels
+  
+block right
+  +right-header

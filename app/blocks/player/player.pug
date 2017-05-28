@@ -1,0 +1,37 @@
+mixin player()
+  +b.player&attributes(attributes)
+    block
+      
+mixin player-image(src)
+  +e.A.image(href="#")&attributes(attributes)
+    img(src=src)
+
+mixin player-content()
+  +e.content&attributes(attributes)
+    block
+      
+mixin player-info(name, style)
+  +e.info&attributes(attributes)
+    +e.controls
+      +e.IMG.control-icon._pause(src="assets/images/icon-player-pause.png")
+      +e.IMG.control-icon._play(src="assets/images/icon-player-play.png")
+    +e.SPAN.name
+      if style
+        +e.B.style= style
+      =name
+    block
+
+mixin player-list-control()
+  +e.list-controls&attributes(attributes)
+    +e.IMG.list-add(src="assets/images/icon-player-list-add.png")
+
+mixin player-timer()
+  +e.timer&attributes(attributes) -4:31
+
+mixin player-equalizer()
+  +e.equalizer&attributes(attributes)
+    img(src="assets/images/player-equalizer.png")
+
+mixin player-waves()
+  +e.waves&attributes(attributes)
+    img(src="assets/images/player-waves.png")

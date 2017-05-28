@@ -1,0 +1,39 @@
+.icon-menu {
+  display: block;
+
+  &__item {
+    display: block;
+
+    &:hover, &.active {
+      .icon-menu__link { background-color: $color-main; }
+    }
+
+    &_darkblue { background-color: $color-darkmain; }
+  }
+
+  &__link {
+    display: block;
+    padding: 18px 10px 16px;
+    text-align: center;
+  }
+
+  &__icon {
+    display: block;
+    position: relative;
+    height: 25px;
+
+    img {
+      @include center-image;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: white;
+    display: block;
+
+    &:not(:first-child) { margin-top: 7px; }
+  }
+}

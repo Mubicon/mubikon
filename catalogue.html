@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Каталог — Мубикон</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <aside class="layout__left-side">
+            <div class="sidebar">
+                <a class="sidebar__logo" href="#">
+                    <img src="assets/images/logo.png" />
+                </a>
+                <ul class="icon-menu sidebar__menu">
+                    <li class="icon-menu__item icon-menu__item_darkblue">
+                        <a class="icon-menu__link" href="#">
+                            <span class="icon-menu__icon">
+                                <img src="assets/images/icon-sidebar-1.png" />
+                            </span>
+                            <span class="icon-menu__text">Каталог</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item icon-menu__item_darkblue">
+                        <a class="icon-menu__link" href="#">
+                            <span class="icon-menu__icon">
+                                <img src="assets/images/icon-sidebar-2.png" />
+                            </span>
+                            <span class="icon-menu__text">Трэки</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item icon-menu__item_darkblue active">
+                        <a class="icon-menu__link" href="#">
+                            <span class="icon-menu__icon">
+                                <img src="assets/images/icon-sidebar-3.png" />
+                            </span>
+                            <span class="icon-menu__text">Подборки</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <span class="icon-menu__icon">
+                                <img src="assets/images/icon-sidebar-4.png" />
+                            </span>
+                            <span class="icon-menu__text">Трансляция</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <span class="icon-menu__icon">
+                                <img src="assets/images/icon-sidebar-5.png" />
+                            </span>
+                            <span class="icon-menu__text">Каналы</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <span class="icon-menu__icon">
+                                <img src="assets/images/icon-sidebar-6.png" />
+                            </span>
+                            <span class="icon-menu__text">Помощь</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="layout__center">
+            <header class="layout__header">
+                <div class="header">
+                    <div class="player player_pause">
+                        <a class="player__image" href="#">
+                            <img src="assets/images/album-small-2.jpg" />
+                        </a>
+                        <div class="player__content">
+                            <div class="player__info">
+                                <div class="player__controls">
+                                    <img class="player__control-icon player__control-icon_pause" src="assets/images/icon-player-pause.png" alt="" role="presentation" />
+                                    <img class="player__control-icon player__control-icon_play" src="assets/images/icon-player-play.png" alt="" role="presentation" />
+                                </div>
+                                <span class="player__name">Let’s dance - Jon Travolta</span>
+                                <div class="player__list-controls">
+                                    <img class="player__list-add" src="assets/images/icon-player-list-add.png" alt="" role="presentation" />
+                                </div>
+                            </div>
+                            <div class="player__timer">-4:31</div>
+                            <div class="player__equalizer">
+                                <img src="assets/images/player-equalizer.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="layout__content" role="main">
+                <div class="channels"></div>
+            </main>
+        </div>
+        <aside class="layout__right-side">
+            <div class="right-header">
+                <ul class="icon-menu right-header__menu">
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <span class="icon-menu__icon">
+                                <img src="assets/images/icon-header-account.png" />
+                            </span>
+                            <span class="icon-menu__text">Аккаунт</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>

@@ -218,6 +218,7 @@ div {
 */
 @mixin fill-img {
   @include center-image;
+
   object-fit: cover;
   width: 0;
   min-width: 100%;

@@ -30,12 +30,13 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/ProximaNovaRegular.eot');
-  src: url('../fonts/ProximaNovaRegular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ProximaNovaRegular.woff2') format('woff2'),
-       url('../fonts/ProximaNovaRegular.woff') format('woff'),
-       url('../fonts/ProximaNovaRegular.otf')  format('opentype'),
-       url('../fonts/ProximaNovaRegular.ttf')  format('truetype'),
-       url('../fonts/ProximaNovaRegular.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/ProximaNovaRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNovaRegular.woff2') format('woff2'),
+    url('../fonts/ProximaNovaRegular.woff') format('woff'),
+    url('../fonts/ProximaNovaRegular.otf')  format('opentype'),
+    url('../fonts/ProximaNovaRegular.ttf')  format('truetype'),
+    url('../fonts/ProximaNovaRegular.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -43,12 +44,13 @@
   font-style: italic;
   font-weight: 400;
   src: url('../fonts/ProximaNovaRegularItalic.eot');
-  src: url('../fonts/ProximaNovaRegularItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ProximaNovaRegularItalic.woff2') format('woff2'),
-       url('../fonts/ProximaNovaRegularItalic.woff') format('woff'),
-       url('../fonts/ProximaNovaRegularItalic.otf')  format('opentype'),
-       url('../fonts/ProximaNovaRegularItalic.ttf')  format('truetype'),
-       url('../fonts/ProximaNovaRegularItalic.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/ProximaNovaRegularItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNovaRegularItalic.woff2') format('woff2'),
+    url('../fonts/ProximaNovaRegularItalic.woff') format('woff'),
+    url('../fonts/ProximaNovaRegularItalic.otf')  format('opentype'),
+    url('../fonts/ProximaNovaRegularItalic.ttf')  format('truetype'),
+    url('../fonts/ProximaNovaRegularItalic.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -56,12 +58,13 @@
   font-style: normal;
   font-weight: 600;
   src: url('../fonts/ProximaNovaSemibold.eot');
-  src: url('../fonts/ProximaNovaSemibold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ProximaNovaSemibold.woff2') format('woff2'),
-       url('../fonts/ProximaNovaSemibold.woff') format('woff'),
-       url('../fonts/ProximaNovaSemibold.otf')  format('opentype'),
-       url('../fonts/ProximaNovaSemibold.ttf')  format('truetype'),
-       url('../fonts/ProximaNovaSemibold.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/ProximaNovaSemibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNovaSemibold.woff2') format('woff2'),
+    url('../fonts/ProximaNovaSemibold.woff') format('woff'),
+    url('../fonts/ProximaNovaSemibold.otf')  format('opentype'),
+    url('../fonts/ProximaNovaSemibold.ttf')  format('truetype'),
+    url('../fonts/ProximaNovaSemibold.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -69,12 +72,13 @@
   font-style: italic;
   font-weight: 600;
   src: url('../fonts/ProximaNovaSemiboldItalic.eot');
-  src: url('../fonts/ProximaNovaSemiboldItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ProximaNovaSemiboldItalic.woff2') format('woff2'),
-       url('../fonts/ProximaNovaSemiboldItalic.woff') format('woff'),
-       url('../fonts/ProximaNovaSemiboldItalic.otf')  format('opentype'),
-       url('../fonts/ProximaNovaSemiboldItalic.ttf')  format('truetype'),
-       url('../fonts/ProximaNovaSemiboldItalic.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/ProximaNovaSemiboldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNovaSemiboldItalic.woff2') format('woff2'),
+    url('../fonts/ProximaNovaSemiboldItalic.woff') format('woff'),
+    url('../fonts/ProximaNovaSemiboldItalic.otf')  format('opentype'),
+    url('../fonts/ProximaNovaSemiboldItalic.ttf')  format('truetype'),
+    url('../fonts/ProximaNovaSemiboldItalic.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -82,12 +86,13 @@
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/ProximaNovaBoldt');
-  src: url('../fonts/ProximaNovaBold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ProximaNovaBold.woff2') format('woff2'),
-       url('../fonts/ProximaNovaBold.woff') format('woff'),
-       url('../fonts/ProximaNovaBold.otf')  format('opentype'),
-       url('../fonts/ProximaNovaBold.ttf')  format('truetype'),
-       url('../fonts/ProximaNovaBold.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/ProximaNovaBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNovaBold.woff2') format('woff2'),
+    url('../fonts/ProximaNovaBold.woff') format('woff'),
+    url('../fonts/ProximaNovaBold.otf')  format('opentype'),
+    url('../fonts/ProximaNovaBold.ttf')  format('truetype'),
+    url('../fonts/ProximaNovaBold.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -95,12 +100,13 @@
   font-style: italic;
   font-weight: 700;
   src: url('../fonts/ProximaNovaBoldItalic.eot');
-  src: url('../fonts/ProximaNovaBoldItalic.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/ProximaNovaBoldItalic.woff2') format('woff2'),
-       url('../fonts/ProximaNovaBoldItalic.woff') format('woff'),
-       url('../fonts/ProximaNovaBoldItalic.otf')  format('opentype'),
-       url('../fonts/ProximaNovaBoldItalic.ttf')  format('truetype'),
-       url('../fonts/ProximaNovaBoldItalic.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/ProximaNovaBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNovaBoldItalic.woff2') format('woff2'),
+    url('../fonts/ProximaNovaBoldItalic.woff') format('woff'),
+    url('../fonts/ProximaNovaBoldItalic.otf')  format('opentype'),
+    url('../fonts/ProximaNovaBoldItalic.ttf')  format('truetype'),
+    url('../fonts/ProximaNovaBoldItalic.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -108,11 +114,12 @@
   font-style: normal;
   font-weight: 300;
   src: url('../fonts/SFUIDisplayLight.eot');
-  src: url('../fonts/SFUIDisplayLight.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/SFUIDisplayLight.woff2') format('woff2'),
-       url('../fonts/SFUIDisplayLight.woff') format('woff'),
-       url('../fonts/SFUIDisplayLight.ttf')  format('truetype'),
-       url('../fonts/SFUIDisplayLight.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/SFUIDisplayLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFUIDisplayLight.woff2') format('woff2'),
+    url('../fonts/SFUIDisplayLight.woff') format('woff'),
+    url('../fonts/SFUIDisplayLight.ttf')  format('truetype'),
+    url('../fonts/SFUIDisplayLight.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -120,11 +127,12 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/SFUIDisplayRegular.eot');
-  src: url('../fonts/SFUIDisplayRegular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/SFUIDisplayRegular.woff2') format('woff2'),
-       url('../fonts/SFUIDisplayRegular.woff') format('woff'),
-       url('../fonts/SFUIDisplayRegular.ttf')  format('truetype'),
-       url('../fonts/SFUIDisplayRegular.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/SFUIDisplayRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFUIDisplayRegular.woff2') format('woff2'),
+    url('../fonts/SFUIDisplayRegular.woff') format('woff'),
+    url('../fonts/SFUIDisplayRegular.ttf')  format('truetype'),
+    url('../fonts/SFUIDisplayRegular.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -132,11 +140,12 @@
   font-style: normal;
   font-weight: 600;
   src: url('../fonts/SFUIDisplaySemibold.eot');
-  src: url('../fonts/SFUIDisplaySemibold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/SFUIDisplaySemibold.woff2') format('woff2'),
-       url('../fonts/SFUIDisplaySemibold.woff') format('woff'),
-       url('../fonts/SFUIDisplaySemibold.ttf')  format('truetype'),
-       url('../fonts/SFUIDisplaySemibold.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/SFUIDisplaySemibold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFUIDisplaySemibold.woff2') format('woff2'),
+    url('../fonts/SFUIDisplaySemibold.woff') format('woff'),
+    url('../fonts/SFUIDisplaySemibold.ttf')  format('truetype'),
+    url('../fonts/SFUIDisplaySemibold.svg#svgFontName') format('svg');
 }
 
 @font-face {
@@ -144,9 +153,10 @@
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/SFUIDisplayBold.eot');
-  src: url('../fonts/SFUIDisplayBold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/SFUIDisplayBold.woff2') format('woff2'),
-       url('../fonts/SFUIDisplayBold.woff') format('woff'),
-       url('../fonts/SFUIDisplayBold.ttf')  format('truetype'),
-       url('../fonts/SFUIDisplayBold.svg#svgFontName') format('svg');
+  src:
+    url('../fonts/SFUIDisplayBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/SFUIDisplayBold.woff2') format('woff2'),
+    url('../fonts/SFUIDisplayBold.woff') format('woff'),
+    url('../fonts/SFUIDisplayBold.ttf')  format('truetype'),
+    url('../fonts/SFUIDisplayBold.svg#svgFontName') format('svg');
 }

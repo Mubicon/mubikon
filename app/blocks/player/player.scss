@@ -10,10 +10,8 @@
   width: 100%;
 
   &_pause .player {
-
-      &__control-icon_play { opacity: 0; }
-
-      &__control-icon_pause { opacity: 1; }
+    &__control-icon_play { opacity: 0; }
+    &__control-icon_pause { opacity: 1; }
   }
 
   &__image {
@@ -24,8 +22,8 @@
 
     &:hover { opacity: .7; }
 
-    &:after {
-      content: "";
+    &::after {
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -125,5 +123,4 @@
     margin-right: 10px;
     font-weight: 700;
   }
-
 }

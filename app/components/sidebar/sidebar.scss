@@ -7,7 +7,7 @@
     height: 90px;
     position: relative;
 
-    &:hover { opacity: .5 }
+    &:hover { opacity: .5; }
 
     img {
       @include center-image;

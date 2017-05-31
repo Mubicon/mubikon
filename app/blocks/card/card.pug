@@ -1,0 +1,24 @@
+include ../reposts/reposts
+include ../rating/rating
+
+mixin card()
+  +b.card&attributes(attributes)
+    block
+
+mixin card-texts(heading, smalltext)
+  +e.texts&attributes(attributes)
+    +e.H3.heading= heading
+    if smalltext
+      +e.P.smalltext= smalltext
+    block
+                  
+mixin card-image(src)
+  +e.IMG.image(src=src)&attributes(attributes)
+                        
+mixin card-button()
+  +e.button.button&attributes(attributes)
+    block
+                              
+mixin card-gradient()
+  +e.gradient&attributes(attributes)
+    block

@@ -1,0 +1,18 @@
+.reposts {
+  display: block;
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    &:not(:last-child) { margin-right: 10px; }
+  }
+
+  &__count {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 700;
+  }
+}

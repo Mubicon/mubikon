@@ -1,0 +1,9 @@
+mixin slider()
+  +b.slider.swiper-container&attributes(attributes)
+    +e.wrapper.swiper-wrapper
+      block
+    +e.dots.swiper-pagination
+
+mixin slider-slide()
+  +e.slide.swiper-slide&attributes(attributes)
+    block

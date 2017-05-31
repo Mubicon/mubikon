@@ -68,7 +68,7 @@ img {
   box-sizing: content-box;
 }
 
-header, section, footer {
+header, section, footer, main {
   width: 100%;
   float: left; // float: left нужен, чтобы убрать пустое место под нижней секцией
 }

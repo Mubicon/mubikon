@@ -1,0 +1,33 @@
+.slider {
+  display: block;
+
+  &__wrapper {
+
+  }
+
+  .swiper-pagination {
+    display: flex;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: static;
+    width: auto;
+    margin-top: 15px;
+
+    &-bullet {
+      height: 12px;
+      background-color: #292d33;
+      transition: all .25s ease-in-out;
+      flex: 1;
+      cursor: pointer;
+      border-radius: 2px;
+      opacity: 1;
+      margin: 3px !important;
+
+      &-active, &:hover {
+        background-color: $color-main;
+      }
+    }
+  }
+}
+
+.slider + .slider-dots { margin-top: 20px; }

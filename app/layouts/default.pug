@@ -1,10 +1,12 @@
 include ../../node_modules/bemto.pug/bemto
 include ../blocks/grid/grid
 include ../blocks/layout/layout
+include ../blocks/preloader/preloader
 
 doctype html
 html(lang='ru')
   include head
   body
     +layout
+    +preloader
     script(src='assets/scripts/app.min.js')

@@ -1,0 +1,35 @@
+.button {
+  display: inline-block;
+  border-radius: 100px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &_size {
+    &_big {
+      padding: 10px 16px 8px;
+      line-height: 1.2em;
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+
+  &_color {
+    &_blue {
+      background-color: $color-main;
+      color: white;
+
+      &:hover {
+        background-color: #328ae3;
+      }
+    }
+
+    &_dark-grey {
+      background-color: #292d33;
+      color: white;
+
+      &:hover {
+        background-color: #383d44;
+      }
+    }
+  }
+}

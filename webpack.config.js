@@ -13,6 +13,7 @@ module.exports = (watch = false) => ({
   watch,
   devtool: isDebug ? 'cheap-module-inline-source-map' : false,
   module: {
+    /*
     rules: [
       {
         enforce: 'pre',
@@ -25,7 +26,7 @@ module.exports = (watch = false) => ({
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
-    ],
+    ],*/
   },
   plugins: [
     new webpack.DefinePlugin({

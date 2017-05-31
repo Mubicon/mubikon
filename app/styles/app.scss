@@ -6,6 +6,7 @@
 @import '../blocks/**/*';
 @import '../components/**/*';
 @import '../pages/**/*';
+@import '../../node_modules/swiper/dist/css/swiper.css';
 
 .container {
   width: $container-width;
@@ -15,4 +16,19 @@
 body {
   color: #464c4d;
   min-width: 850px;
+}
+
+.heading {
+  &-main {
+    font-size: 21px;
+    line-height: 1.2em;
+    font-weight: 300;
+  }
+}
+
+.text {
+  &-small {
+    font-size: 12px;
+    line-height: (16/12);
+  }
 }

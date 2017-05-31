@@ -20,9 +20,7 @@
     background-color: #2d3039;
   }
 
-  &__content {
-
-  }
+  &__content { padding: 20px 35px; }
 
   &__right-side {
     background-color: #ededed;
@@ -34,5 +32,10 @@
       min-width: 90px;
       width: 90px;
     }
+  }
+
+  &__heading {
+    text-align: right;
+    margin-bottom: 15px;
   }
 }

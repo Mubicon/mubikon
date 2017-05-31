@@ -1,5 +1,5 @@
 import $ from 'jquery';
 
 $(() => {
-  // your code goes here
+    // your code goes here
 });

@@ -1,6 +1,9 @@
 include ../../blocks/icon-menu/icon-menu
 
-mixin right-header()
+mixin right-header(active)
   +b.right-header&attributes(attributes)
     +icon-menu.__menu
-      +icon-menu-icon("#", "Аккаунт", "&#xE853;")
+      if !active
+        +icon-menu-icon("#", "Аккаунт", "&#xE853;")
+      if active
+        +icon-menu-icon("#", "Аккаунт", "&#xE853;").active

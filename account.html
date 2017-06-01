@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Каталог — Мубикон</title>
+    <title>Каналы — Мубикон</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
@@ -21,19 +21,19 @@
                     <img src="assets/images/logo.png" />
                 </a>
                 <ul class="icon-menu sidebar__menu">
-                    <li class="icon-menu__item icon-menu__item_darkblue active">
+                    <li class="icon-menu__item">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE03D;</i>
                             <span class="icon-menu__text">Каталог</span>
                         </a>
                     </li>
-                    <li class="icon-menu__item icon-menu__item_darkblue">
+                    <li class="icon-menu__item">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE05F;</i>
                             <span class="icon-menu__text">Трэки</span>
                         </a>
                     </li>
-                    <li class="icon-menu__item icon-menu__item_darkblue">
+                    <li class="icon-menu__item">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE065;</i>
                             <span class="icon-menu__text">Подборки</span>
@@ -63,37 +63,27 @@
         <div class="layout__center">
             <header class="layout__header">
                 <div class="header">
-                    <div class="player player_pause">
-                        <a class="player__image" href="#">
-                            <img src="assets/images/album-small-2.jpg" />
-                        </a>
-                        <div class="player__content">
-                            <div class="player__info">
-                                <div class="player__controls">
-                                    <i class="player__control-icon player__control-icon_pause material-icon">&#xE036;</i>
-                                    <i class="player__control-icon player__control-icon_play material-icon">&#xE039;</i>
-                                </div>
-                                <span class="player__name">Let’s dance - Jon Travolta</span>
-                                <div class="player__list-controls">
-                                    <i class="player__list-add material-icon">&#xE03B;</i>
-                                </div>
-                            </div>
-                            <div class="player__timer">-4:31</div>
-                            <div class="player__equalizer">
-                                <img src="assets/images/player-equalizer.png" />
-                            </div>
-                        </div>
+                    <div class="header__slogan">
+                        <p class="text-normal">Управляйте музыкой с удовольствием!</p>
                     </div>
                 </div>
             </header>
             <main class="layout__content" role="main">
-                <div class="channels"></div>
+                <div class="account">
+                    <h1 class="account__heading heading-main">Управление аккаунтом</h1>
+                    <ul class="tabs">
+                        <li class="tabs__tab">Тариф</li>
+                        <li class="tabs__tab">Финансы</li>
+                        <li class="tabs__tab">Настройки доступа</li>
+                        <li class="tabs__tab active">Сведенья о компании</li>
+                    </ul>
+                </div>
             </main>
         </div>
         <aside class="layout__right-side">
             <div class="right-header">
                 <ul class="icon-menu right-header__menu">
-                    <li class="icon-menu__item">
+                    <li class="icon-menu__item active">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE853;</i>
                             <span class="icon-menu__text">Аккаунт</span>

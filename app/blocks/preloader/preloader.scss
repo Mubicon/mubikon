@@ -7,7 +7,7 @@
   width: 100%;
   height: 100%;
   z-index: 999;
-  background-color: rgba(41, 45, 51, 0.92);
+  background-color: rgba(41, 45, 51, .92);
   transition: all .4s ease-in-out;
 
   &.active {
@@ -15,99 +15,22 @@
   }
 }
 
-@-webkit-keyframes uil-ripple {
-  0% {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0 0 0 0;
-  }
-  33% {
-    width: 44%;
-    height: 44%;
-    margin: -22% 0 0 -22%;
-    opacity: 1;
-  }
-  100% {
-    width: 88%;
-    height: 88%;
-    margin: -44% 0 0 -44%;
-    opacity: 0;
-  }
-}
-@-moz-keyframes uil-ripple {
-  0% {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0 0 0 0;
-  }
-  33% {
-    width: 44%;
-    height: 44%;
-    margin: -22% 0 0 -22%;
-    opacity: 1;
-  }
-  100% {
-    width: 88%;
-    height: 88%;
-    margin: -44% 0 0 -44%;
-    opacity: 0;
-  }
-}
-@-webkit-keyframes uil-ripple {
-  0% {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0 0 0 0;
-  }
-  33% {
-    width: 44%;
-    height: 44%;
-    margin: -22% 0 0 -22%;
-    opacity: 1;
-  }
-  100% {
-    width: 88%;
-    height: 88%;
-    margin: -44% 0 0 -44%;
-    opacity: 0;
-  }
-}
-@-o-keyframes uil-ripple {
-  0% {
-    width: 0;
-    height: 0;
-    opacity: 0;
-    margin: 0 0 0 0;
-  }
-  33% {
-    width: 44%;
-    height: 44%;
-    margin: -22% 0 0 -22%;
-    opacity: 1;
-  }
-  100% {
-    width: 88%;
-    height: 88%;
-    margin: -44% 0 0 -44%;
-    opacity: 0;
-  }
-}
 @keyframes uil-ripple {
+
   0% {
     width: 0;
     height: 0;
     opacity: 0;
-    margin: 0 0 0 0;
+    margin: 0;
   }
+
   33% {
     width: 44%;
     height: 44%;
     margin: -22% 0 0 -22%;
     opacity: 1;
   }
+
   100% {
     width: 88%;
     height: 88%;
@@ -115,13 +38,17 @@
     opacity: 0;
   }
 }
+
 .preloader__animation {
   background: none;
+
   @include center-image;
+
   width: 200px;
   height: 200px;
-  transform:scale(0.3);
+  transform: scale(.3);
 }
+
 .preloader__animation div {
   position: absolute;
   top: 50%;
@@ -133,14 +60,14 @@
   border-radius: 50%;
   border-width: 6px;
   border-style: solid;
-  -webkit-animation: uil-ripple 2s ease-out infinite;
   animation: uil-ripple 2s ease-out infinite;
 }
+
 .preloader__animation div:nth-of-type(1) {
-  border-color: #ffffff;
-  -webkit-animation-delay: -1s;
+  border-color: #fff;
   animation-delay: -1s;
 }
+
 .preloader__animation div:nth-of-type(2) {
-  border-color: #ffffff;
+  border-color: #fff;
 }

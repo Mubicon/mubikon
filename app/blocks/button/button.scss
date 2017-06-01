@@ -5,6 +5,7 @@
   white-space: nowrap;
 
   &_size {
+
     &_big {
       padding: 10px 16px 8px;
       line-height: 1.2em;
@@ -14,6 +15,7 @@
   }
 
   &_color {
+
     &_blue {
       background-color: $color-main;
       color: white;

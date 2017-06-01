@@ -1,0 +1,39 @@
+extends ../../layouts/default
+include ../../components/sidebar/sidebar
+include ../../components/header/header
+include ../../components/right-header/right-header
+include ../../blocks/icon-menu/icon-menu
+include ../../blocks/button/button
+include ../../blocks/tabs/tabs
+
+block head
+  - var pageTitle = 'Каналы — Мубикон'
+
+block sidebar
+  +sidebar
+    +icon-menu.__menu
+      +icon-menu-icon("#", "Каталог", "&#xE03D;")
+      +icon-menu-icon("#", "Трэки", "&#xE05F;")
+      +icon-menu-icon("#", "Подборки", "&#xE065;")
+      +icon-menu-icon("#", "Трансляция", "&#xE3A5;")
+      +icon-menu-icon("#", "Каналы", "&#xE8BF;")
+      +icon-menu-icon("#", "Помощь", "&#xE8FD;")
+
+block header
+  +header
+    +header-slogan Управляйте музыкой с удовольствием!
+  
+block content
+  +b.account
+    +e.H1.heading.heading-main Управление аккаунтом
+    +tabs
+      +tabs-tab Тариф
+      +tabs-tab Финансы
+      +tabs-tab Настройки доступа
+      +tabs-tab.active Сведенья о компании
+    
+    
+  
+  
+block right
+  +right-header('active')

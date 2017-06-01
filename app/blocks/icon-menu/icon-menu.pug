@@ -3,8 +3,8 @@ mixin icon-menu()
     block
  
 mixin icon-menu-icon(link, text, icon)
+  - var myicon = icon
   +e.LI.item&attributes(attributes)
     +e.A.link(href=link)
-      +e.icon
-        img(src=icon)
+      +e.I.icon.material-icon !{myicon}
       +e.SPAN.text= text

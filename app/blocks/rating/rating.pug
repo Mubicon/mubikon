@@ -1,5 +1,6 @@
 mixin rating()
+  - var star = "&#xE838;"
   +b.rating&attributes(attributes)
-    +e.IMG.icon(src="assets/images/icon-star.png")
+    +e.icon.material-icon !{star}
     +e.SPAN.count
       block

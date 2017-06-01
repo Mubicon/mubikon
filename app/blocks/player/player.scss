@@ -65,6 +65,8 @@
 
   &__control-icon {
     transition: all .25s ease-in-out;
+    font-size: 18px;
+    color: white;
 
     &_play { opacity: 1; }
 
@@ -105,9 +107,14 @@
   &__list-controls {
     margin-left: 22px;
     transition: all .25s ease-in-out;
+    color: white;
     cursor: pointer;
 
     &:hover { opacity: .5; }
+  }
+
+  &__list-add {
+    font-size: 18px;
   }
 
   &__timer {

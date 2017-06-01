@@ -39,7 +39,7 @@ export function preloader () {
   }
 
   // Preloader Work
-  $("a[href]").click(function(e){
+  $("a[href='#']").click(function(e){
     e.preventDefault();
     preloaderShow();
     setTimeout(function(){

@@ -13,8 +13,8 @@ mixin player-content()
 mixin player-info(name, style)
   +e.info&attributes(attributes)
     +e.controls
-      +e.IMG.control-icon._pause(src="assets/images/icon-player-pause.png")
-      +e.IMG.control-icon._play(src="assets/images/icon-player-play.png")
+      +e.I.control-icon._pause.material-icon !{"&#xE036;"}
+      +e.I.control-icon._play.material-icon !{"&#xE039;"}
     +e.SPAN.name
       if style
         +e.B.style= style
@@ -23,7 +23,7 @@ mixin player-info(name, style)
 
 mixin player-list-control()
   +e.list-controls&attributes(attributes)
-    +e.IMG.list-add(src="assets/images/icon-player-list-add.png")
+    +e.I.list-add.material-icon !{"&#xE03B;"}
 
 mixin player-timer()
   +e.timer&attributes(attributes) -4:31

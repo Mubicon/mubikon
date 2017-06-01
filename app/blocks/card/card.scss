@@ -6,6 +6,7 @@
   border-radius: 2px;
 
   &:hover {
+
     .card__button.button_color_blue {
       opacity: 1;
     }
@@ -15,6 +16,7 @@
 
   &::after {
     @include pseudo;
+
     left: 0;
     bottom: 0;
     width: 100%;
@@ -45,6 +47,7 @@
 
     &::after {
       @include pseudo;
+
       left: 0;
       top: 0;
       width: 100%;

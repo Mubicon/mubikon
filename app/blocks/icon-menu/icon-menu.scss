@@ -1,11 +1,32 @@
 .icon-menu {
   display: block;
+  color: #282d33;
+
+  &_light {
+    color: white;
+
+    .icon-menu {
+
+      &__item {
+        display: block;
+
+        &:hover, &.active {
+
+          .icon-menu__link {
+            background-color: $color-main;
+          }
+        }
+
+        &_darkblue { background-color: $color-darkmain; }
+      }
+    }
+  }
 
   &__item {
     display: block;
 
     &:hover, &.active {
-      .icon-menu__link { background-color: $color-main; }
+      .icon-menu__link { background-color: #f7f7f7; }
     }
 
     &_darkblue { background-color: $color-darkmain; }
@@ -21,7 +42,6 @@
     display: block;
     position: relative;
     height: 25px;
-    color: white;
     line-height: 25px;
 
     img {
@@ -33,7 +53,6 @@
     font-size: 12px;
     line-height: 1.2;
     font-weight: 400;
-    color: white;
     display: block;
 
     &:not(:first-child) { margin-top: 7px; }

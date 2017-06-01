@@ -2,7 +2,7 @@ include ../../blocks/icon-menu/icon-menu
 
 mixin right-header(active)
   +b.right-header&attributes(attributes)
-    +icon-menu.__menu
+    +icon-menu._light.__menu
       if !active
         +icon-menu-icon("#", "Аккаунт", "&#xE853;")
       if active

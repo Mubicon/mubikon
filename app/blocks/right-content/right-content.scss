@@ -10,6 +10,28 @@
 
 .right-widget {
   padding: 10px 25px;
+
+  &__title {
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 300;
+  }
+
+  &__info {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+    max-width: 210px;
+  }
+
+  &__hint {
+    font-size: 14px;
+    margin-top: 65px;
+    margin-left: 10px;
+    font-weight: 600;
+    max-width: 210px;
+    text-align: center;
+  }
 }
 
 .right-heading {
@@ -71,6 +93,20 @@
       opacity: .7;
     }
   }
+}
 
+.right-actions {
 
+  &__item {
+    margin-right: 10px;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:first-child {
+      margin-right: 40px;
+    }
+  }
 }

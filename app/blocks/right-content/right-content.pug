@@ -3,7 +3,7 @@ mixin right-content()
     block
 
 mixin right-widget()
-  .right-widget&attributes(attributes)
+  +b.right-widget&attributes(attributes)
     block
 
 mixin right-heading(type)
@@ -18,3 +18,20 @@ mixin right-heading(type)
       +e.SPAN.count 121
       +e.SPAN.text Плейлисты
       +e.IMG(src='assets/images/arrow-right.png').arrow
+
+mixin right-actions()
+  +b.right-actions&attributes(attributes)
+    +e.BUTTON.item
+    +e.BUTTON.item
+    +e.BUTTON.item
+    +e.BUTTON.item
+    +e.BUTTON.item
+
+mixin right-tracks()
+  +b.right-tracks&attributes(attributes)
+    +e.SPAN.count Треков:
+      b 12
+    +e.time 40 минут 45 секунд
+    +e.tracks
+      - for (var i=0;i<8;i++)
+        +e.track

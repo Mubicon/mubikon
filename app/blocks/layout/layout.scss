@@ -1,18 +1,22 @@
 .layout {
   display: flex;
+  margin: 0 auto;
+  max-width: 1260px;
+  width: 100%;
   min-height: 100vh;
+  position: relative;
+  z-index: 2;
 
   &__left-side {
-    width: 90px;
-    min-width: 90px;
+    width: 100px;
     display: flex;
-    background-color: #292d33;
+    background-color: #ededed;
   }
 
   &__center {
-    min-width: 670px;
-    max-width: 880px;
-    flex: 2;
+    flex: 1;
+    background-color: #f7f7f7;
+    overflow: hidden;
   }
 
   &__header {
@@ -24,14 +28,7 @@
 
   &__right-side {
     background-color: #ededed;
-    min-width: 280px;
-    flex: 1;
-
-    @include screen(small, max) {
-      flex: 0 auto;
-      min-width: 90px;
-      width: 90px;
-    }
+    width: 280px;
   }
 
   &__heading {

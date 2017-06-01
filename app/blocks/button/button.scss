@@ -33,5 +33,14 @@
         background-color: #383d44;
       }
     }
+
+    &_grey {
+      background-color: #666970;
+      color: #fff;
+
+      &:hover {
+        background-color: darken(#666970, 10%);
+      }
+    }
   }
 }

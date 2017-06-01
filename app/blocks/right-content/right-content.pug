@@ -1,9 +1,11 @@
+include ../button/button
+
 mixin right-content()
   +b.right-content&attributes(attributes)
     block
 
-mixin right-widget()
-  +b.right-widget&attributes(attributes)
+mixin playlist-info()
+  +b.playlist-info&attributes(attributes)
     block
 
 mixin right-heading(type)
@@ -22,16 +24,113 @@ mixin right-heading(type)
 mixin right-actions()
   +b.right-actions&attributes(attributes)
     +e.BUTTON.item
+      +e.I.icon.material-icon !{"&#xE314;"}
     +e.BUTTON.item
+      +e.I.icon.material-icon !{"&#xE2C4;"}
     +e.BUTTON.item
+      +e.I.icon.material-icon !{"&#xE043;"}
     +e.BUTTON.item
+      +e.I.icon.material-icon !{"&#xE88F;"}
     +e.BUTTON.item
+      +e.I.icon.material-icon !{"&#xE872;"}
 
 mixin right-tracks()
   +b.right-tracks&attributes(attributes)
     +e.SPAN.count Треков:
       b 12
-    +e.time 40 минут 45 секунд
+    +e.SPAN.time 40 минут 45 секунд
     +e.tracks
       - for (var i=0;i<8;i++)
         +e.track
+          img(src='assets/images/track.jpg').card__image
+          +e.I.icon.material-icon !{'&#xE037;'}
+          +e.I.icon.material-icon !{'&#xE5CD;'}
+
+mixin playlist-about()
+  +b.playlist-about&attributes(attributes)
+    +e.item
+      span Создан:
+      +e.SPAN.value 12 июля 2016 года
+    +e.item
+      span Последнее изменение:
+      +e.SPAN.value 29.10.2016 года
+    +e.item
+      span Количество треков:
+      +e.SPAN.value._bolder 7
+    +e.item
+      span Продолжительность:
+      +e.SPAN.value 32 минуты
+    +e.item
+      span Проигровался:
+      +e.SPAN.value 23 часа  18 минуты назад
+    +e.item
+      span Скачан:
+      +e.SPAN.value 1 раз
+    +e.item
+      span Автор:
+      span ООО "Рога и копыта"
+
+mixin playlist-fullinfo()
+  +playlist-info()
+    +e.H3.heading Информация о плейлисте
+    +e.tag-container
+      +e.SPAN.name Плейлист на утро
+    +e.tag-container
+      +e.SPAN.time-tag._active Утро
+      +e.SPAN.time-tag День
+      +e.SPAN.time-tag Вечер
+      +e.SPAN.time-tag Ночь
+    +playlist-about().__about
+    +button()._color_blue.__button Сохранить изменения
+    +button()._color_grey.__button Вернуться в плейлист
+
+mixin playlist-create()
+  +playlist-info()
+    +e.H3.heading Создание нового плейлиста
+    +e.P.hint Создайте новый плейлист и выбрать время суток для него. Добавляйте после создания треки.
+    +e.tag-container
+      +e.INPUT(placeholder='Название вашего плейлиста').name
+    +e.tag-container
+      +e.SPAN.time-tag._active Утро
+      +e.SPAN.time-tag День
+      +e.SPAN.time-tag Вечер
+      +e.SPAN.time-tag Ночь
+    +button()._color_blue.__button Создать плейлист
+    +button()._color_grey.__button Отмена
+
+mixin playlist-scroll()
+  +b.playlist-scroll&attributes(attributes)
+    - for (var i=0;i<9;i++)
+      +e.item
+        +e.icon-wrap
+          +e.I.icon.material-icon !{"&#xE030;"}
+        +e.text-wrap
+          +e.text-item
+            +e.SPAN.text._name Название плейлиста
+          +e.text-item
+            +e.SPAN.text Количество треков:
+            +e.SPAN.text._value 34
+          +e.text-item
+            +e.SPAN.text Длительность:
+            +e.SPAN.text._value 02:34:21
+
+mixin playlist-inside()
+  +b.playlist-inside&attributes(attributes)
+    +right-actions()
+    +e.H3.title Плейлист на утро
+    +e.P.info Перетаскиваете треки и выставляйте порядок воспроизведения треков в плейлисте.
+    //- +e.P.hint Перетащите треки из каталога или нажмите у трека в каталоге добавить в плейлист
+    +right-tracks().__tracks
+
+mixin no-playlist()
+  +b.no-playlist&attributes(attributes)
+    p Вы не создали еще ни одного плейлиста
+    +e.I.icon.material-icon !{'&#xE03B;'}
+    +e.P.bot-text Нажмите на иконку, чтобы создать
+
+mixin playlist-first()
+  +playlist-info()
+    +e.H3.heading Плейлисты
+    +e.P.hint Выберите плейлист, в который собираетесь добавлять музыкальные композиции. Для добавления выберите трек и нажмите на иконку добавления в плейлист или перетащите композицию в правую область.
+    //- +no-playlist().__no-playlist
+    +playlist-scroll().__playlist-scroll

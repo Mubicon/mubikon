@@ -5,6 +5,7 @@ include ../../components/right-header/right-header
 include ../../blocks/icon-menu/icon-menu
 include ../../blocks/player/player
 include ../../blocks/right-content/right-content
+include ../../blocks/button/button
 
 block head
   - var pageTitle = 'Каталог — Мубикон'
@@ -35,9 +36,4 @@ block content
 block right
   +right-header
   +right-heading()
-  +right-widget()
-    +right-actions()
-    +e.H3.title Плейлист на утро
-    +e.P.info Перетаскиваете треки и выставляйте порядок воспроизведения треков в плейлисте.
-    //- +e.P.hint Перетащите треки из каталога или нажмите у трека в каталоге добавить в плейлист
-    +right-tracks()
+  +playlist-inside()

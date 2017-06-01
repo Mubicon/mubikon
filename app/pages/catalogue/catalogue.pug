@@ -4,6 +4,7 @@ include ../../components/header/header
 include ../../components/right-header/right-header
 include ../../blocks/icon-menu/icon-menu
 include ../../blocks/player/player
+include ../../blocks/right-content/right-content
 
 block head
   - var pageTitle = 'Каталог — Мубикон'
@@ -27,9 +28,11 @@ block header
           +player-list-control()
         +player-timer()
         +player-equalizer()
-  
+
 block content
   +b.channels
-  
+
 block right
   +right-header
+  +right-heading()
+  +right-widget

@@ -11,15 +11,15 @@ mixin playlist-info()
 mixin right-heading(type)
   if (type==='feed')
     +b.right-heading&attributes(attributes)
-     +e.IMG(src='assets/images/calendar-icon.png').icon
-     +e.SPAN.text Календарь
-     +e.IMG(src='assets/images/arrow-right.png').arrow
+      +e.I.icon.material-icon !{"&#xE916;"}
+      +e.SPAN.text Календарь
+      +e.I.arrow.material-icon !{"&#xE315;"}
   else
     +b.right-heading&attributes(attributes)._border-dark._playlist
-      +e.IMG(src='assets/images/playlist-count.png').icon
+      +e.I.icon.material-icon !{"&#xE03D;"}
       +e.SPAN.count 121
       +e.SPAN.text Плейлисты
-      +e.IMG(src='assets/images/arrow-right.png').arrow
+      +e.I.arrow.material-icon !{"&#xE315;"}
 
 mixin right-actions()
   +b.right-actions&attributes(attributes)
@@ -40,7 +40,7 @@ mixin right-tracks()
       b 12
     +e.SPAN.time 40 минут 45 секунд
     +e.tracks
-      - for (var i=0;i<8;i++)
+      - for (var i=0;i<32;i++)
         +e.track
           img(src='assets/images/track.jpg').card__image
           +e.I.icon.material-icon !{'&#xE037;'}

@@ -169,7 +169,7 @@
 
   &__arrow {
     position: absolute;
-    right: 30px;
+    right: 22px;
     transform: translateY(-50%);
     top: 50%;
     transition: opacity .25s ease-in-out;
@@ -225,6 +225,21 @@
 
   &__tracks {
     margin-top: 20px;
+    max-height: 120px;
+    overflow-y: scroll;
+    width: 106%;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #fff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-main;
+    }
   }
 
   &__icon {
@@ -249,8 +264,8 @@
     height: 50px;
     border-radius: 5px;
     display: inline-block;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     position: relative;
     cursor: pointer;
 
@@ -277,8 +292,8 @@
       }
     }
 
-    &:first-child, &:nth-child(5) {
-      margin-left: 0;
+    &:nth-child(4n) {
+      margin-right: 0;
     }
   }
 

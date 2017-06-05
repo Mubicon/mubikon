@@ -1,0 +1,105 @@
+include ../../blocks/card/card
+include ../../blocks/slider/slider
+include ../../blocks/card/card
+include ../../blocks/grid/grid
+include ../../blocks/button/button
+
+mixin catalogue-slider()
+  +slider
+    - for (var i=0;i<5;i++)
+      +slider-slide
+        +grid.__grid
+          +col(4)
+            +card._size_four
+              +card-texts("Релакс", "Жанр: Lounge")
+              +card-texts("","Длительность: 10:45:12")._duration
+              +card-count("45", "треков")
+              +card-views("345")
+              +rating._rounded.__rating 4,5
+              +button._color_blue._size_big.__button(href="#") В подборку
+              +card-image("assets/images/album-1.jpg")
+            +card._size_four
+              +card-texts("Легкая музыка", "Жанр: Soul")
+              +card-texts("","Длительность: 10:45:12")._duration
+              +card-count("45", "треков")
+              +card-views("345")
+              +rating._rounded.__rating 4,5
+              +button._color_blue._size_big.__button(href="#") В подборку
+              +card-image("assets/images/album-small-1.jpg")
+          +col(8)
+            +card._size_eight
+              +card-texts("Джаз для ресторана", "Жанр: Jazz")
+              +card-texts("","Длительность: 10:45:12")._duration
+              +card-count("45", "треков")
+              +card-views("345")
+              +rating._rounded.__rating 4,5
+              +button._color_blue._size_big.__button(href="#") В подборку
+              +card-image("assets/images/album-3.jpg")
+          +col(4)
+            +card._size_four
+              +card-texts("Релакс", "Жанр: Instrumental")
+              +card-texts("","Длительность: 10:45:12")._duration
+              +card-count("45", "треков")
+              +card-views("345")
+              +rating._rounded.__rating 4,5
+              +button._color_blue._size_big.__button(href="#") В подборку
+              +card-image("assets/images/album-2.jpg")
+          +col(4)
+            +card._size_four
+              +card-texts("Релакс", "Жанр: Lounge")
+              +card-texts("","Длительность: 10:45:12")._duration
+              +card-count("45", "треков")
+              +card-views("345")
+              +rating._rounded.__rating 4,5
+              +button._color_blue._size_big.__button(href="#") В подборку
+              +card-image("assets/images/album-4.jpg")
+          +col(4)
+            +card._size_four
+              +card-texts("Релакс", "Жанр: Lounge")
+              +card-texts("","Длительность: 10:45:12")._duration
+              +card-count("45", "треков")
+              +card-views("345")
+              +rating._rounded.__rating 4,5
+              +button._color_blue._size_big.__button(href="#") В подборку
+              +card-image("assets/images/album-5.jpg")
+
+mixin channels-slider()
+  +slider
+    - for (var i=0;i<5;i++)
+      +slider-slide
+        +grid.__grid
+          +col(4)
+            +card._size_four
+              +card-texts("Релакс", "Жанр: Lounge")
+              +rating._position_top.__rating 4,5
+              +reposts.__reposts 345
+              +button._color_blue._size_big.__button(href="#") ТРАНСЛИРОВАТЬ
+              +card-image("assets/images/album-1.jpg")
+            +card._size_four
+              +button._color_dark-grey._size_big.__button(href="#") ИДЕТ ТРАНСЛЯЦИЯ
+              +card-gradient
+          +col(8)
+            +card._size_eight
+              +card-texts("Джаз для ресторана", "Жанр: Jazz")
+              +rating._position_top.__rating 4,5
+              +button._color_blue._size_big.__button(href="#") ТРАНСЛИРОВАТЬ
+              +card-image("assets/images/album-3.jpg")
+          +col(4)
+            +card._size_four
+              +card-texts("Релакс", "Жанр: Instrumental")
+              +rating._position_top.__rating 4,5
+              +button._color_blue._size_big.__button(href="#") ТРАНСЛИРОВАТЬ
+              +card-image("assets/images/album-2.jpg")
+          +col(4)
+            +card._size_four
+              +card-texts("Релакс", "Жанр: Lounge")
+              +rating._position_top.__rating 4,5
+              +button._color_blue._size_big.__button(href="#") ТРАНСЛИРОВАТЬ
+              +card-image("assets/images/album-4.jpg")
+          +col(4)
+            +card._size_four
+              +card-texts("Релакс", "Жанр: Lounge")
+              +rating._position_top.__rating 4,5
+              +reposts.__reposts 345
+              +button._color_blue._size_big.__button(href="#") ТРАНСЛИРОВАТЬ
+              +card-image("assets/images/album-5.jpg")

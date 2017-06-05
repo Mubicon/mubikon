@@ -15,10 +15,16 @@
     font-size: 14px;
     font-weight: 700;
 
-    &:not(:first-child) { margin-top: 5px; }
+    &:not(:nth-of-type(1)) { margin-top: 5px; }
   }
 
   &_position_top {
     border-radius: 0 0 9px 9px;
+  }
+
+  &_rounded {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
   }
 }

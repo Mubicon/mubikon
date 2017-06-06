@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Каталог — Мубикон</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico?v=2" rel="shortcut icon">
+    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <aside class="layout__left-side">
+            <div class="sidebar">
+                <a class="sidebar__logo" href="#">
+                    <img src="assets/images/logo.png" />
+                </a>
+                <ul class="icon-menu sidebar__menu">
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE05F;</i>
+                            <span class="icon-menu__text">Трэки</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item active">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE065;</i>
+                            <span class="icon-menu__text">Подборки</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE16D;</i>
+                            <span class="icon-menu__text">Трансляция</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE8BF;</i>
+                            <span class="icon-menu__text">Каналы</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE8FD;</i>
+                            <span class="icon-menu__text">Помощь</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="layout__center">
+            <header class="layout__header">
+                <div class="header">
+                    <div class="player player_pause">
+                        <a class="player__image" href="#">
+                            <img src="assets/images/album-small-2.jpg" />
+                        </a>
+                        <div class="player__content">
+                            <div class="player__info">
+                                <div class="player__controls">
+                                    <i class="player__control-icon player__control-icon_pause material-icon">&#xE036;</i>
+                                    <i class="player__control-icon player__control-icon_play material-icon">&#xE039;</i>
+                                </div>
+                                <span class="player__name">Let’s dance - Jon Travolta</span>
+                                <div class="player__list-controls">
+                                    <i class="player__list-add material-icon">&#xE03B;</i>
+                                </div>
+                            </div>
+                            <div class="player__timer">-4:31</div>
+                            <div class="player__equalizer">
+                                <img src="assets/images/player-equalizer.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="layout__content" role="main">
+                <div class="catalogue">
+                    <h1 class="layout__heading heading-main">Подборки</h1>
+                    <div class="slider swiper-container">
+                        <div class="slider__wrapper swiper-wrapper">
+                            <div class="slider__slide swiper-slide">
+                                <div class="grid slider__grid">
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Легкая музыка</h3>
+                                                <p class="card__smalltext">Жанр: Soul</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_eight">
+                                        <div class="card card_size_eight">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Джаз для ресторана</h3>
+                                                <p class="card__smalltext">Жанр: Jazz</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-3.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Instrumental</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-2.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-4.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-5.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__slide swiper-slide">
+                                <div class="grid slider__grid">
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Легкая музыка</h3>
+                                                <p class="card__smalltext">Жанр: Soul</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_eight">
+                                        <div class="card card_size_eight">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Джаз для ресторана</h3>
+                                                <p class="card__smalltext">Жанр: Jazz</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-3.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Instrumental</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-2.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-4.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-5.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__slide swiper-slide">
+                                <div class="grid slider__grid">
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Легкая музыка</h3>
+                                                <p class="card__smalltext">Жанр: Soul</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_eight">
+                                        <div class="card card_size_eight">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Джаз для ресторана</h3>
+                                                <p class="card__smalltext">Жанр: Jazz</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-3.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Instrumental</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-2.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-4.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-5.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__slide swiper-slide">
+                                <div class="grid slider__grid">
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Легкая музыка</h3>
+                                                <p class="card__smalltext">Жанр: Soul</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_eight">
+                                        <div class="card card_size_eight">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Джаз для ресторана</h3>
+                                                <p class="card__smalltext">Жанр: Jazz</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-3.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Instrumental</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-2.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-4.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-5.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__slide swiper-slide">
+                                <div class="grid slider__grid">
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Легкая музыка</h3>
+                                                <p class="card__smalltext">Жанр: Soul</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_eight">
+                                        <div class="card card_size_eight">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Джаз для ресторана</h3>
+                                                <p class="card__smalltext">Жанр: Jazz</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-3.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Instrumental</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-2.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-4.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col_four">
+                                        <div class="card card_size_four">
+                                            <div class="card__texts">
+                                                <h3 class="card__heading">Релакс</h3>
+                                                <p class="card__smalltext">Жанр: Lounge</p>
+                                            </div>
+                                            <div class="card__texts card__texts_duration">
+                                                <p class="card__smalltext">Длительность: 10:45:12</p>
+                                            </div>
+                                            <div class="card__count">
+                                                <span class="card__count-text card__count-text_value">45</span>
+                                                <span class="card__count-text">треков</span>
+                                            </div>
+                                            <div class="card__count card__count_views">
+                                                <div class="card__view-icon material-icon">&#xE417;</div>
+                                                <span class="card__count-text card__count-text_value">345</span>
+                                            </div>
+                                            <div class="rating rating_rounded card__rating">
+                                                <div class="rating__icon material-icon">&#xE838;</div>
+                                                <span class="rating__count">4,5</span>
+                                            </div>
+                                            <a class="button button_color_blue button_size_big card__button" href="#">В подборку</a>
+                                            <img class="card__image" src="assets/images/album-5.jpg" alt="" role="presentation" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__dots swiper-pagination"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <aside class="layout__right-side">
+            <div class="right-header">
+                <ul class="icon-menu icon-menu_light right-header__menu">
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE853;</i>
+                            <span class="icon-menu__text">Аккаунт</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-heading right-heading_border-dark right-heading_playlist">
+                <i class="right-heading__icon material-icon">&#xE03D;</i>
+                <span class="right-heading__count">121</span>
+                <span class="right-heading__text">Плейлисты</span>
+                <i class="right-heading__arrow material-icon">&#xE315;</i>
+            </div>
+            <div class="playlist-inside">
+                <div class="right-actions">
+                    <button class="right-actions__item">
+                        <i class="right-actions__icon material-icon">&#xE314;</i>
+                    </button>
+                    <button class="right-actions__item">
+                        <i class="right-actions__icon material-icon">&#xE2C4;</i>
+                    </button>
+                    <button class="right-actions__item">
+                        <i class="right-actions__icon material-icon">&#xE043;</i>
+                    </button>
+                    <button class="right-actions__item">
+                        <i class="right-actions__icon material-icon">&#xE88F;</i>
+                    </button>
+                    <button class="right-actions__item">
+                        <i class="right-actions__icon material-icon">&#xE872;</i>
+                    </button>
+                </div>
+                <h3 class="playlist-inside__title">Плейлист на утро</h3>
+                <p class="playlist-inside__info">Перетаскиваете треки и выставляйте порядок воспроизведения треков в плейлисте.</p>
+                <div class="right-tracks playlist-inside__tracks">
+                    <span class="right-tracks__count">Треков:
+                        <b>12</b>
+                    </span>
+                    <span class="right-tracks__time">40 минут 45 секунд</span>
+                    <div class="right-tracks__tracks">
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                        <div class="right-tracks__track">
+                            <img class="card__image" src="assets/images/track.jpg" />
+                            <i class="right-tracks__icon material-icon">&#xE037;</i>
+                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="preloader">
+        <div class="preloader__animation">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>

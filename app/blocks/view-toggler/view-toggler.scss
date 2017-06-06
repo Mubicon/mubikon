@@ -1,0 +1,12 @@
+.view-toggler {
+
+  &__tab {
+
+    &_active {
+
+      .view-toggler__icon {
+        color: $color-main;
+      }
+    }
+  }
+}

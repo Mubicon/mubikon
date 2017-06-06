@@ -1,3 +1,4 @@
+/* eslint-disable */
 export function preloader () {
   var preloaderEl = $(".preloader");
 

@@ -1,0 +1,13 @@
+.filter-container {
+  background-color: #fff;
+  padding: 12px;
+  position: relative;
+  margin-bottom: 10px;
+  height: 80px;
+
+  &__toggler {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+}

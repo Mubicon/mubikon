@@ -1,0 +1,25 @@
+mixin track-list()
+  +b.track-list&attributes(attributes)
+    +e.heading
+      +e.add
+        +e.I.add-icon.material-icon !{"&#xE03B;"}
+        +e.SPAN.add-text Добавить
+      +e.rating
+        +e.I.star-icon._active.material-icon !{"&#xE838;"}
+        +e.I.star-icon._active.material-icon !{"&#xE838;"}
+        +e.I.star-icon._active.material-icon !{"&#xE838;"}
+        +e.I.star-icon._active.material-icon !{"&#xE838;"}
+        +e.I.star-icon.material-icon !{"&#xE838;"}
+    +e.content
+      +e.image-wrap
+        +e.IMG(src='assets/images/album-small-1.jpg').image
+      +e.player
+        +e.SPAN.time 3:44
+        +e.SPAN.tag Jazz
+        +e.equalizer
+          img(src="assets/images/player-equalizer.png")
+        +e.player-info
+          +e.controls
+            +e.I.control-icon._pause.material-icon !{"&#xE036;"}
+            +e.I.control-icon._play.material-icon !{"&#xE039;"}
+          +e.SPAN.title Let’s dance - Jhon Travolta

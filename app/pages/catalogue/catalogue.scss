@@ -1,3 +1,10 @@
 .catalogue {
   display: block;
+
+  .card {
+
+    &__rating {
+      margin-top: 10px;
+    }
+  }
 }

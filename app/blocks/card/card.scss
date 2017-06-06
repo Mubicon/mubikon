@@ -7,7 +7,7 @@
 
   &:hover {
 
-    .card__button.button_color_blue {
+    .card__button.button_color_blue, .card__count {
       opacity: 1;
     }
   }
@@ -64,6 +64,11 @@
   &__texts {
     left: 10px;
     bottom: 12px;
+
+    &_duration {
+      left: auto;
+      right: 10px;
+    }
   }
 
   &__rating {
@@ -85,13 +90,50 @@
   &__smalltext {
     font-size: 11px;
     line-height: 1.2em;
+    font-family: 'SFUI Display';
+    font-weight: 300;
   }
 
   &__button {
+    width: 160px;
+    text-align: center;
+    text-transform: uppercase;
+
     @include center-block;
 
     &.button_color_blue {
       opacity: 0;
     }
+  }
+
+  &__count {
+    font-family: 'SFUI Display';
+    font-size: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: calc(50% - 30px);
+    z-index: 3;
+    transition: opacity .25s ease-in-out;
+    opacity: 0;
+
+    &_views {
+      top: calc(50% + 30px);
+    }
+  }
+
+  &__count-text {
+    vertical-align: middle;
+
+    &_value {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  &__view-icon {
+    font-size: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
   }
 }

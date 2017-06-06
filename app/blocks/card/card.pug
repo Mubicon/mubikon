@@ -7,18 +7,29 @@ mixin card()
 
 mixin card-texts(heading, smalltext)
   +e.texts&attributes(attributes)
-    +e.H3.heading= heading
+    if heading
+      +e.H3.heading= heading
     if smalltext
       +e.P.smalltext= smalltext
     block
-                  
+
 mixin card-image(src)
   +e.IMG.image(src=src)&attributes(attributes)
-                        
+
 mixin card-button()
   +e.button.button&attributes(attributes)
     block
-                              
+
 mixin card-gradient()
   +e.gradient&attributes(attributes)
     block
+
+mixin card-count(value, text)
+  +e.count&attributes(attributes)
+    +e.SPAN.count-text._value= value
+    +e.SPAN.count-text= text
+
+mixin card-views(value)
+  +e.count&attributes(attributes)._views
+    +e.view-icon.material-icon !{"&#xE417;"}
+    +e.SPAN.count-text._value= value

@@ -5,7 +5,8 @@ include ../../components/right-header/right-header
 include ../../blocks/icon-menu/icon-menu
 include ../../blocks/player/player
 include ../../blocks/right-content/right-content
-include ../../blocks/button/button
+include ../../components/sliders/sliders
+include ../../blocks/tracks/tracks
 
 block head
   - var pageTitle = 'Каталог — Мубикон'
@@ -30,7 +31,15 @@ block header
         +player-equalizer()
 
 block content
-  +b.channels
+  +b.catalogue
+    //- h1.layout__heading.heading-main Подборки
+    //- +catalogue-slider()
+    h1.layout__heading.heading-main Треки
+    +b.tracks
+      - for(var i=0;i<15;i++)
+        +track()
+
+
 
 block right
   +right-header

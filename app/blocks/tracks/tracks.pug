@@ -1,3 +1,5 @@
+include ../rating/rating
+
 mixin track()
   +b.track&attributes(attributes)
     +e.image-wrap
@@ -7,12 +9,7 @@ mixin track()
       +e.SPAN.text Let’s Rock or Fuck mind of Designers
       +e.SPAN.text._semibold._color_grey Jhon Travolta
     +e.details
-      +e.rating
-        +e.I.star-icon._active.material-icon !{"&#xE838;"}
-        +e.I.star-icon._active.material-icon !{"&#xE838;"}
-        +e.I.star-icon._active.material-icon !{"&#xE838;"}
-        +e.I.star-icon._active.material-icon !{"&#xE838;"}
-        +e.I.star-icon.material-icon !{"&#xE838;"}
+      +rating-stars().__rating
       +e.playlist-controls
         +e.I.control-icon._add.material-icon !{"&#xE03B;"}
         +e.I.control-icon._delete.material-icon !{"&#xE16C;"}

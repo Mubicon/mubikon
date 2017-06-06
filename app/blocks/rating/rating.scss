@@ -28,3 +28,15 @@
     height: 50px;
   }
 }
+
+.rating-stars {
+  display: block;
+
+  &__star-icon {
+    font-size: 15px;
+
+    &_active {
+      color: $color-main;
+    }
+  }
+}

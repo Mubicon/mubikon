@@ -1,0 +1,43 @@
+include ../rating/rating
+
+mixin track-table-item(play,add)
+  +b.track-table-item&attributes(attributes)
+    +e.SPAN.text._title Let’s Rock (original)
+    +e.SPAN.text._artist Jhon Travolta
+    +e.SPAN.text._genre Instrumental
+    +e.SPAN.text._time 4:32
+    +rating-stars().__rating
+    +e.controls
+      if (play === 'active')
+        +e.I.control-icon._play._active.material-icon !{"&#xE036;"}
+      else
+        +e.I.control-icon._play.material-icon !{"&#xE036;"}
+      +e.I.control-icon._pause._active.material-icon !{"&#xE039;"}
+    +e.add
+      if (add === 'active')
+        +e.I.add-icon._active.material-icon !{"&#xE03B;"}
+      else if (add === 'disabled')
+        +e.I.add-icon._disabled.material-icon !{"&#xE03B;"}
+      else
+        +e.I.add-icon.material-icon !{"&#xE03B;"}
+
+mixin track-table-head()
+  +b.track-table-item&attributes(attributes)
+    +e.SPAN.text._title
+      b Название трека
+    +e.SPAN.text._artist
+      b Артист
+    +e.SPAN.text._genre
+      b Жанр
+    +e.SPAN.text._time
+      b Время
+    +e.SPAN.text
+      b Популярность
+
+mixin track-table()
+  +b.track-table&attributes(attributes)
+    +track-table-head()._head
+    +track-table-item('active','')._active
+    +track-table-item('active', 'active')
+    +track-table-item('','disabled')
+    +track-table-item()

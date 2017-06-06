@@ -1,15 +1,12 @@
+include ../rating/rating
+
 mixin track-list()
   +b.track-list&attributes(attributes)
     +e.heading
       +e.add
         +e.I.add-icon.material-icon !{"&#xE03B;"}
         +e.SPAN.add-text Добавить
-      +e.rating
-        +e.I.star-icon._active.material-icon !{"&#xE838;"}
-        +e.I.star-icon._active.material-icon !{"&#xE838;"}
-        +e.I.star-icon._active.material-icon !{"&#xE838;"}
-        +e.I.star-icon._active.material-icon !{"&#xE838;"}
-        +e.I.star-icon.material-icon !{"&#xE838;"}
+      +rating-stars().__rating
     +e.content
       +e.image-wrap
         +e.IMG(src='assets/images/album-small-1.jpg').image

@@ -91,18 +91,9 @@
   }
 
   &__rating {
-    display: inline-block;
     position: absolute;
     right: 5px;
     top: 9px;
-  }
-
-  &__star-icon {
-    font-size: 15px;
-
-    &_active {
-      color: $color-main;
-    }
   }
 
   &__add-icon {

@@ -4,3 +4,11 @@ mixin rating()
     +e.icon.material-icon !{star}
     +e.SPAN.count
       block
+
+mixin rating-stars()
+  +b.rating-stars&attributes(attributes)
+    +e.I.star-icon._active.material-icon !{"&#xE838;"}
+    +e.I.star-icon._active.material-icon !{"&#xE838;"}
+    +e.I.star-icon._active.material-icon !{"&#xE838;"}
+    +e.I.star-icon._active.material-icon !{"&#xE838;"}
+    +e.I.star-icon.material-icon !{"&#xE838;"}

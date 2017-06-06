@@ -6,9 +6,10 @@ include ../../blocks/icon-menu/icon-menu
 include ../../blocks/player/player
 include ../../blocks/right-content/right-content
 include ../../components/sliders/sliders
-include ../../blocks/tracks/tracks
 include ../../blocks/filter-container/filter-container
 include ../../blocks/view-toggler/view-toggler
+include ../../blocks/tracks/track-table
+
 
 block head
   - var pageTitle = 'Каталог — Мубикон'
@@ -36,10 +37,14 @@ block content
   +b.catalogue
     h1.layout__heading.heading-main Треки
     +filter-container()
-      +view-toggler().__toggler
-    +b.tracks.__track
-      - for(var i=0;i<15;i++)
-        +track()
+      +b.view-toggler.__toggler
+        +e.A(href='#').tab._active
+          +e.I.icon.material-icon !{"&#xE8EE;"}
+        +e.A(href='#').tab
+          +e.I.icon.material-icon !{"&#xE8F0;"}
+        +e.A(href='#').tab
+          +e.I.icon.material-icon !{"&#xE8EF;"}
+    +track-table().__table
 
 block right
   +right-header

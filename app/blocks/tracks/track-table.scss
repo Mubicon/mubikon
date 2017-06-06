@@ -1,0 +1,125 @@
+.track-table-item {
+  background-color: #fff;
+  padding: 10px;
+  transition: background-color .25s ease-in-out;
+  cursor: pointer;
+  position: relative;
+
+  &:not(:first-of-type) {
+    border-top: 1px solid #ececec;
+  }
+
+  &:hover {
+    background-color: #ececec;
+  }
+
+  &_active {
+    background-color: #292d33;
+
+    .track-table-item__text, .track-table-item__rating, .track-table-item__control-icon, .track-table-item__add-icon {
+      color: #fff;
+    }
+
+    &:hover {
+      background-color: lighten(#292d33, 10%);
+    }
+  }
+
+  &_head {
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'SFUI Display';
+    font-size: 12px;
+    color: #515257;
+
+    &_title {
+      width: 27%;
+    }
+
+    &_artist {
+      width: 19%;
+    }
+
+    &_genre {
+      width: 12%;
+    }
+
+    &_time {
+      width: 14%;
+    }
+  }
+
+  &__rating {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  &__controls {
+    vertical-align: middle;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    width: 18px;
+    height: 18px;
+    transition: opacity .25s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &__control-icon {
+    color: #484a4f;
+    font-size: 18px;
+
+    @include center-image;
+
+    &_pause {
+      opacity: 0;
+    }
+
+    &_play {
+      opacity: 1;
+    }
+
+    &_active {
+      color: $color-main !important;
+    }
+  }
+
+  &__add {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    cursor: pointer;
+
+    &:hover {
+      transition: opacity .25s ease-in-out;
+    }
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+
+  &__add-icon {
+    color: #484a4f;
+    font-size: 20px;
+
+    &_active {
+      color: $color-main !important;
+    }
+
+    &_disabled {
+      color: #ededed !important;
+    }
+  }
+}

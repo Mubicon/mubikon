@@ -50,5 +50,12 @@ body {
   &-small {
     font-size: 12px;
     line-height: (16/12);
+
+    b { font-weight: 600; }
   }
+}
+
+.float {
+
+  &-right { float: right; }
 }

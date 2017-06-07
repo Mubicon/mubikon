@@ -5,6 +5,10 @@ include ../../components/right-header/right-header
 include ../../blocks/icon-menu/icon-menu
 include ../../blocks/button/button
 include ../../blocks/tabs/tabs
+include ../../blocks/input/input
+include ../../blocks/inputbox/inputbox
+include ../../blocks/checkbox/checkbox
+include ../../blocks/table/table
 
 block head
   - var pageTitle = 'Каналы — Мубикон'
@@ -26,13 +30,101 @@ block content
   +b.account
     +e.H1.heading.heading-main Управление аккаунтом
     +tabs
-      +tabs-tab Тариф
-      +tabs-tab Финансы
-      +tabs-tab Настройки доступа
-      +tabs-tab.active Сведенья о компании
+      +tabs-tab(data-tab-target='tarif') Тариф
+      +tabs-tab(data-tab-target='finance') Финансы
+      +tabs-tab(data-tab-target='dostup') Настройки доступа
+      +tabs-tab.active(data-tab-target='svedenia') Сведенья о компании
+      
+    +tabs-tab-content.__tab-content(data-tab-group='account-tabs' data-tab='tarif')
+    +tabs-tab-content.__tab-content(data-tab-group='account-tabs' data-tab='finance')
+      +table
+        +table-row
+          +table-col._width_140
+            p.text-small
+              b Дата
+          +table-col
+            p.text-small
+              b Наименование
+          +table-col._width_60._align_right
+            p.text-small
+              b Скачать
+        +table-row
+          +table-col._width_140
+            p.text-small 20.06.2016
+          +table-col
+            p.text-small Счет №123123 на оплату услуг за май
+          +table-col._width_60._align_right
+            +e.A.pdf.material-icon(href="#") !{"&#xE415;"}
+        +table-row
+          +table-col._width_140
+            p.text-small 20.06.2016
+          +table-col
+            p.text-small Счет №123123 на оплату услуг за май
+          +table-col._width_60._align_right
+            +e.A.pdf.material-icon(href="#") !{"&#xE415;"}
+        +table-row
+          +table-col._width_140
+            p.text-small 20.06.2016
+          +table-col
+            p.text-small Счет №123123 на оплату услуг за май
+          +table-col._width_60._align_right
+            +e.A.pdf.material-icon(href="#") !{"&#xE415;"}
+        +table-row
+          +table-col._width_140
+            p.text-small 20.06.2016
+          +table-col
+            p.text-small Счет №123123 на оплату услуг за май
+          +table-col._width_60._align_right
+            +e.A.pdf.material-icon(href="#") !{"&#xE415;"}
+        
+    
+    +tabs-tab-content.__tab-content(data-tab-group='account-tabs' data-tab='dostup')
+      form.account__form(method="post" action="#")
+        +inputbox('E-mail')._big
+          +input('skazochka@mail.ru')
+        +inputbox('Пароль')._big
+          +input('*********')(type='password' name='password')
+        +inputbox('Подтвердить пароль')._big
+          +input('*********')(type='password' name='password-repeat')
+        +inputbox-header
+          +button('button')(type="submit")._color_white._size_big._weight_normal._radius_small.account__button.float-right СОХРАНИТЬ
+          
+          
+    +tabs-tab-content.__tab-content(data-tab-group='account-tabs' data-tab='svedenia').active
+      form.account__form(method="post" action="#")
+        +inputbox('Полное наименование организации')
+          +input('Общество с ограниченной ответсвенностью “Сказочка”')
+        +inputbox('Кратка форма')
+          +input('ООО “Сказочка”')
+        +inputbox('ФИО ген. директоар в род. падеже')
+          +input('Петрова Александра Григорьевича')
+        +inputbox('ИНН')
+          +input('123456767')
+        +inputbox('ОГРН')
+          +input('61274671926479124')
+        +inputbox('Юридический адрес')
+          +input('61274671926479124')
+        +inputbox('Фактический адрес')
+          +input('61274671926479124')
+          +checkbox('check1', 'Совпадает с юридическим', 'true') Совпадает с юридическим
+        +inputbox('Почтовый адрес')
+          +input('61274671926479124')
+          +checkbox('check2', 'Совпадает с фактическим', 'true') Совпадает с фактическим
+        +inputbox-header('Платежные данные')
+        +inputbox('Рассчетный счет')
+          +input('400521203012301301203')
+        +inputbox('Корр. счет')
+          +input('34121412412412431231231')
+        +inputbox('Наименование банка')
+          +input('ПАО “Банк Открытие”')
+        +inputbox('БИК')
+          +input('041231231')
+        +inputbox-header
+          +button('button')(type="submit")._color_blue._size_big._weight_normal.account__button.float-right СОХРАНИТЬ
+          
     
     
   
   
 block right
-  +right-header('active')
+  +right-header

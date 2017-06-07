@@ -42,5 +42,25 @@
         background-color: darken(#666970, 10%);
       }
     }
+
+    &_white {
+      background-color: white;
+      color: #515257;
+      border: 1px solid #ececec;
+
+      &:hover {
+        color: $color-main;
+      }
+    }
+  }
+
+  &_weight {
+
+    &_normal { font-weight: 400; }
+  }
+
+  &_radius {
+
+    &_small { border-radius: 2px; }
   }
 }

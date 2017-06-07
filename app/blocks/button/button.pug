@@ -1,3 +1,5 @@
-mixin button()
-  +b.A.button&attributes(attributes)
+mixin button(type)
+  - var ttype = type || 'a';
+  
+  +b(ttype).button&attributes(attributes)
     block

@@ -1,0 +1,22 @@
+.inputbox {
+  display: table;
+  width: 100%;
+
+  &__left, &__right {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__left {
+    width: 270px;
+  }
+
+  &:not(:first-child) { margin-top: 10px; }
+
+  &_header:not(:first-child) { margin-top: 20px; }
+
+  &_big {
+
+    .text-small, .input { font-size: 14px; }
+  }
+}

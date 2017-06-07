@@ -1,0 +1,14 @@
+mixin inputbox(lefttext)
+  +b.inputbox&attributes(attributes)
+    +e.left
+      p.text-small= lefttext
+    +e.right
+      block
+        
+mixin inputbox-header(lefttext)
+  +b.inputbox._header&attributes(attributes)
+    +e.left
+      p.text-small
+        b= lefttext
+    +e.right
+      block

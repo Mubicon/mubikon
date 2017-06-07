@@ -5,3 +5,7 @@ mixin tabs()
 mixin tabs-tab()
   +e.LI.tab&attributes(attributes)
     block
+      
+mixin tabs-tab-content()
+  +b.tab-content&attributes(attributes)
+    block

@@ -1,12 +1,17 @@
 .view-toggler {
 
   &__tab {
+    transition: color .25s ease-in-out;
 
     &_active {
 
       .view-toggler__icon {
         color: $color-main;
       }
+    }
+
+    &:hover {
+      color: $color-main;
     }
   }
 }

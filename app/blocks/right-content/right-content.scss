@@ -11,6 +11,25 @@
 .playlist-info {
   padding: 25px;
 
+  &__control {
+    display: none;
+
+    &:checked {
+
+      & + .playlist-info__time-tag {
+        color: #fff;
+        background-color: $color-main;
+      }
+
+      &:hover {
+
+        & + .playlist-info__time-tag {
+          background-color: darken($color-main, 5%);
+        }
+      }
+    }
+  }
+
   &__no-playlist {
     margin-top: 70px;
   }
@@ -35,6 +54,7 @@
   }
 
   &__name {
+    font-family: $font-main;
     font-size: 14px;
     font-weight: 400;
     margin-left: 20px;
@@ -42,29 +62,36 @@
     width: 85%;
   }
 
+  &__radio-wrap {
+    text-align: center;
+    display: inline-block;
+    width: 25%;
+    cursor: pointer;
+  }
+
   &__time-tag {
     border-left: 1px solid #ededed;
     font-size: 12px;
     font-weight: 600;
     color: #5a607a;
-    display: inline-block;
     line-height: 2.5;
-    text-align: center;
-    width: 25%;
-    cursor: pointer;
+    display: block;
+    transition: background-color .25s ease-in-out, color .25s ease-in-out;
 
-    &:first-child {
-      border-left: none;
-      border-radius: 15px 0 0 15px;
+    &:hover {
+      background-color: darken(#fff, 5%);
     }
 
-    &:last-child {
-      border-radius: 0 15px 15px 0;
-    }
+    &_round {
 
-    &_active {
-      color: #fff;
-      background-color: #389bfe;
+      &_left {
+        border-left: none;
+        border-radius: 15px 0 0 15px;
+      }
+
+      &_right {
+        border-radius: 0 15px 15px 0;
+      }
     }
   }
 

@@ -90,7 +90,7 @@
   &__smalltext {
     font-size: 11px;
     line-height: 1.2em;
-    font-family: 'SFUI Display';
+    font-family: $font-second;
     font-weight: 300;
   }
 
@@ -107,7 +107,7 @@
   }
 
   &__count {
-    font-family: 'SFUI Display';
+    font-family: $font-second;
     font-size: 10px;
     position: absolute;
     transform: translate(-50%, -50%);

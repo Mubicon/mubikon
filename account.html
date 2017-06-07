@@ -66,18 +66,250 @@
                 <div class="account">
                     <h1 class="account__heading heading-main">Управление аккаунтом</h1>
                     <ul class="tabs">
-                        <li class="tabs__tab">Тариф</li>
-                        <li class="tabs__tab">Финансы</li>
-                        <li class="tabs__tab">Настройки доступа</li>
-                        <li class="tabs__tab active">Сведенья о компании</li>
+                        <li class="tabs__tab" data-tab-target="tarif">Тариф</li>
+                        <li class="tabs__tab" data-tab-target="finance">Финансы</li>
+                        <li class="tabs__tab" data-tab-target="dostup">Настройки доступа</li>
+                        <li class="tabs__tab active" data-tab-target="svedenia">Сведенья о компании</li>
                     </ul>
+                    <div class="tab-content account__tab-content" data-tab-group="account-tabs" data-tab="tarif"></div>
+                    <div class="tab-content account__tab-content" data-tab-group="account-tabs" data-tab="finance">
+                        <div class="table">
+                            <div class="table__row">
+                                <div class="table__col table__col_width_140">
+                                    <p class="text-small">
+                                        <b>Дата</b>
+                                    </p>
+                                </div>
+                                <div class="table__col">
+                                    <p class="text-small">
+                                        <b>Наименование</b>
+                                    </p>
+                                </div>
+                                <div class="table__col table__col_width_60 table__col_align_right">
+                                    <p class="text-small">
+                                        <b>Скачать</b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__col table__col_width_140">
+                                    <p class="text-small">20.06.2016</p>
+                                </div>
+                                <div class="table__col">
+                                    <p class="text-small">Счет №123123 на оплату услуг за май</p>
+                                </div>
+                                <div class="table__col table__col_width_60 table__col_align_right">
+                                    <a class="table__pdf material-icon" href="#">&#xE415;</a>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__col table__col_width_140">
+                                    <p class="text-small">20.06.2016</p>
+                                </div>
+                                <div class="table__col">
+                                    <p class="text-small">Счет №123123 на оплату услуг за май</p>
+                                </div>
+                                <div class="table__col table__col_width_60 table__col_align_right">
+                                    <a class="table__pdf material-icon" href="#">&#xE415;</a>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__col table__col_width_140">
+                                    <p class="text-small">20.06.2016</p>
+                                </div>
+                                <div class="table__col">
+                                    <p class="text-small">Счет №123123 на оплату услуг за май</p>
+                                </div>
+                                <div class="table__col table__col_width_60 table__col_align_right">
+                                    <a class="table__pdf material-icon" href="#">&#xE415;</a>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div class="table__col table__col_width_140">
+                                    <p class="text-small">20.06.2016</p>
+                                </div>
+                                <div class="table__col">
+                                    <p class="text-small">Счет №123123 на оплату услуг за май</p>
+                                </div>
+                                <div class="table__col table__col_width_60 table__col_align_right">
+                                    <a class="table__pdf material-icon" href="#">&#xE415;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content account__tab-content" data-tab-group="account-tabs" data-tab="dostup">
+                        <form class="account__form" method="post" action="#">
+                            <div class="inputbox inputbox_big">
+                                <div class="inputbox__left">
+                                    <p class="text-small">E-mail</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="skazochka@mail.ru" />
+                                </div>
+                            </div>
+                            <div class="inputbox inputbox_big">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Пароль</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="password" placeholder="*********" name="password" />
+                                </div>
+                            </div>
+                            <div class="inputbox inputbox_big">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Подтвердить пароль</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="password" placeholder="*********" name="password-repeat" />
+                                </div>
+                            </div>
+                            <div class="inputbox inputbox_header">
+                                <div class="inputbox__left">
+                                    <p class="text-small">
+                                        <b></b>
+                                    </p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <button class="button button_color_white button_size_big button_weight_normal button_radius_small account__button float-right" type="submit">СОХРАНИТЬ</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-content account__tab-content active" data-tab-group="account-tabs" data-tab="svedenia">
+                        <form class="account__form" method="post" action="#">
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Полное наименование организации</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="Общество с ограниченной ответсвенностью “Сказочка”" />
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Кратка форма</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="ООО “Сказочка”" />
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">ФИО ген. директоар в род. падеже</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="Петрова Александра Григорьевича" />
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">ИНН</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="123456767" />
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">ОГРН</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="61274671926479124" />
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Юридический адрес</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="61274671926479124" />
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Фактический адрес</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="61274671926479124" />
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="check1" value="Совпадает с юридическим" checked="true" />
+                                        <span class="checkbox__box material-icon">&#xE5CA;</span>
+                                        <p class="checkbox__text text-small">Совпадает с юридическим</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Почтовый адрес</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="61274671926479124" />
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" name="check2" value="Совпадает с фактическим" checked="true" />
+                                        <span class="checkbox__box material-icon">&#xE5CA;</span>
+                                        <p class="checkbox__text text-small">Совпадает с фактическим</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="inputbox inputbox_header">
+                                <div class="inputbox__left">
+                                    <p class="text-small">
+                                        <b>Платежные данные</b>
+                                    </p>
+                                </div>
+                                <div class="inputbox__right"></div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Рассчетный счет</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="400521203012301301203" />
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Корр. счет</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="34121412412412431231231" />
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">Наименование банка</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="ПАО “Банк Открытие”" />
+                                </div>
+                            </div>
+                            <div class="inputbox">
+                                <div class="inputbox__left">
+                                    <p class="text-small">БИК</p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <input class="input" type="text" placeholder="041231231" />
+                                </div>
+                            </div>
+                            <div class="inputbox inputbox_header">
+                                <div class="inputbox__left">
+                                    <p class="text-small">
+                                        <b></b>
+                                    </p>
+                                </div>
+                                <div class="inputbox__right">
+                                    <button class="button button_color_blue button_size_big button_weight_normal account__button float-right" type="submit">СОХРАНИТЬ</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </main>
         </div>
         <aside class="layout__right-side">
             <div class="right-header">
                 <ul class="icon-menu icon-menu_light right-header__menu">
-                    <li class="icon-menu__item active">
+                    <li class="icon-menu__item">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE853;</i>
                             <span class="icon-menu__text">Аккаунт</span>

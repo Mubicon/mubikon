@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Каталог — Мубикон</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico?v=2" rel="shortcut icon">
+    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <aside class="layout__left-side">
+            <div class="sidebar">
+                <a class="sidebar__logo" href="#">
+                    <img src="assets/images/logo.png" />
+                </a>
+                <ul class="icon-menu sidebar__menu">
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE05F;</i>
+                            <span class="icon-menu__text">Трэки</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE065;</i>
+                            <span class="icon-menu__text">Подборки</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item active">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE16D;</i>
+                            <span class="icon-menu__text">Трансляция</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE8BF;</i>
+                            <span class="icon-menu__text">Каналы</span>
+                        </a>
+                    </li>
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE8FD;</i>
+                            <span class="icon-menu__text">Помощь</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="layout__center">
+            <header class="layout__header">
+                <div class="header">
+                    <div class="player player_pause">
+                        <a class="player__image" href="#">
+                            <img src="assets/images/album-small-2.jpg" />
+                        </a>
+                        <div class="player__content">
+                            <div class="player__info">
+                                <div class="player__controls">
+                                    <i class="player__control-icon player__control-icon_pause material-icon">&#xE036;</i>
+                                    <i class="player__control-icon player__control-icon_play material-icon">&#xE039;</i>
+                                </div>
+                                <span class="player__name">Let’s dance - Jon Travolta</span>
+                                <div class="player__list-controls">
+                                    <i class="player__list-add material-icon">&#xE03B;</i>
+                                </div>
+                            </div>
+                            <div class="player__timer">-4:31</div>
+                            <div class="player__equalizer">
+                                <img src="assets/images/player-equalizer.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="layout__content" role="main">
+                <div class="feed">
+                    <h1 class="layout__heading heading-main">Лента</h1>
+                </div>
+                <div class="playlist">
+                    <div class="playlist__heading">
+                        <div class="playlist__playlist-off">
+                            <i class="playlist__icon-off material-icon">&#xE8AC;</i>
+                            <span class="playlist__head-text playlist__head-text_semibold">Выключить</span>
+                        </div>
+                        <div class="playlist__shuffle">
+                            <span class="playlist__head-text playlist__head-text_semibold">Воспроизводить случайно</span>
+                        </div>
+                        <div class="playlist__view">
+                            <span class="playlist__head-text">Свернуть</span>
+                            <i class="playlist__icon-feed material-icon">&#xE316;</i>
+                        </div>
+                    </div>
+                    <div class="track-list">
+                        <div class="track-list__content">
+                            <div class="track-list__image-wrap">
+                                <img class="track-list__image" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                            </div>
+                            <div class="track-list__player">
+                                <span class="track-list__tag">Ночь</span>
+                                <div class="track-list__equalizer">
+                                    <img src="assets/images/player-equalizer.png" />
+                                </div>
+                                <div class="track-list__player-info">
+                                    <div class="track-list__controls">
+                                        <i class="track-list__control-icon track-list__control-icon_pause material-icon">&#xE036;</i>
+                                        <i class="track-list__control-icon track-list__control-icon_play material-icon">&#xE039;</i>
+                                    </div>
+                                    <span class="track-list__title">Let’s dance - Jhon Travolta</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__timeline">
+                        <div class="playlist__timeline-wrap">
+                            <img class="playlist__timeline-img" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                            <img class="playlist__timeline-img playlist__timeline-img_left_10" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                            <img class="playlist__timeline-img playlist__timeline-img_left_20" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                            <img class="playlist__timeline-img playlist__timeline-img_left_30" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                            <img class="playlist__timeline-img playlist__timeline-img_left_40" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                        </div>
+                    </div>
+                    <div class="track-table playlist__table">
+                        <div class="track-table-item track-table-item_head">
+                            <span class="track-table-item__text track-table-item__text_title">
+                                <b>Название трека</b>
+                            </span>
+                            <span class="track-table-item__text track-table-item__text_artist">
+                                <b>Артист</b>
+                            </span>
+                            <span class="track-table-item__text track-table-item__text_genre">
+                                <b>Жанр</b>
+                            </span>
+                            <span class="track-table-item__text track-table-item__text_time">
+                                <b>Время</b>
+                            </span>
+                            <span class="track-table-item__text">
+                                <b>Популярность</b>
+                            </span>
+                        </div>
+                        <div class="track-table-item track-table-item_active">
+                            <span class="track-table-item__text track-table-item__text_title">Let’s Rock (original)</span>
+                            <span class="track-table-item__text track-table-item__text_artist">Jhon Travolta</span>
+                            <span class="track-table-item__text track-table-item__text_genre">Instrumental</span>
+                            <span class="track-table-item__text track-table-item__text_time">4:32</span>
+                            <div class="rating-stars track-table-item__rating">
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon material-icon">&#xE838;</i>
+                            </div>
+                            <div class="track-table-item__controls">
+                                <i class="track-table-item__control-icon track-table-item__control-icon_play track-table-item__control-icon_active material-icon">&#xE036;</i>
+                                <i class="track-table-item__control-icon track-table-item__control-icon_pause track-table-item__control-icon_active material-icon">&#xE039;</i>
+                            </div>
+                            <div class="track-table-item__add">
+                                <i class="track-table-item__add-icon material-icon">&#xE03B;</i>
+                            </div>
+                        </div>
+                        <div class="track-table-item">
+                            <span class="track-table-item__text track-table-item__text_title">Let’s Rock (original)</span>
+                            <span class="track-table-item__text track-table-item__text_artist">Jhon Travolta</span>
+                            <span class="track-table-item__text track-table-item__text_genre">Instrumental</span>
+                            <span class="track-table-item__text track-table-item__text_time">4:32</span>
+                            <div class="rating-stars track-table-item__rating">
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon material-icon">&#xE838;</i>
+                            </div>
+                            <div class="track-table-item__controls">
+                                <i class="track-table-item__control-icon track-table-item__control-icon_play track-table-item__control-icon_active material-icon">&#xE036;</i>
+                                <i class="track-table-item__control-icon track-table-item__control-icon_pause track-table-item__control-icon_active material-icon">&#xE039;</i>
+                            </div>
+                            <div class="track-table-item__add">
+                                <i class="track-table-item__add-icon track-table-item__add-icon_active material-icon">&#xE03B;</i>
+                            </div>
+                        </div>
+                        <div class="track-table-item">
+                            <span class="track-table-item__text track-table-item__text_title">Let’s Rock (original)</span>
+                            <span class="track-table-item__text track-table-item__text_artist">Jhon Travolta</span>
+                            <span class="track-table-item__text track-table-item__text_genre">Instrumental</span>
+                            <span class="track-table-item__text track-table-item__text_time">4:32</span>
+                            <div class="rating-stars track-table-item__rating">
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon material-icon">&#xE838;</i>
+                            </div>
+                            <div class="track-table-item__controls">
+                                <i class="track-table-item__control-icon track-table-item__control-icon_play material-icon">&#xE036;</i>
+                                <i class="track-table-item__control-icon track-table-item__control-icon_pause track-table-item__control-icon_active material-icon">&#xE039;</i>
+                            </div>
+                            <div class="track-table-item__add">
+                                <i class="track-table-item__add-icon track-table-item__add-icon_disabled material-icon">&#xE03B;</i>
+                            </div>
+                        </div>
+                        <div class="track-table-item">
+                            <span class="track-table-item__text track-table-item__text_title">Let’s Rock (original)</span>
+                            <span class="track-table-item__text track-table-item__text_artist">Jhon Travolta</span>
+                            <span class="track-table-item__text track-table-item__text_genre">Instrumental</span>
+                            <span class="track-table-item__text track-table-item__text_time">4:32</span>
+                            <div class="rating-stars track-table-item__rating">
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                <i class="rating-stars__star-icon material-icon">&#xE838;</i>
+                            </div>
+                            <div class="track-table-item__controls">
+                                <i class="track-table-item__control-icon track-table-item__control-icon_play material-icon">&#xE036;</i>
+                                <i class="track-table-item__control-icon track-table-item__control-icon_pause track-table-item__control-icon_active material-icon">&#xE039;</i>
+                            </div>
+                            <div class="track-table-item__add">
+                                <i class="track-table-item__add-icon material-icon">&#xE03B;</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist__footer">
+                        <div class="playlist__position">1</div>позиция</div>
+                </div>
+            </main>
+        </div>
+        <aside class="layout__right-side">
+            <div class="right-header">
+                <ul class="icon-menu icon-menu_light right-header__menu">
+                    <li class="icon-menu__item">
+                        <a class="icon-menu__link" href="#">
+                            <i class="icon-menu__icon material-icon">&#xE853;</i>
+                            <span class="icon-menu__text">Аккаунт</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-heading">
+                <i class="right-heading__icon material-icon">&#xE916;</i>
+                <span class="right-heading__text">Календарь</span>
+                <i class="right-heading__arrow material-icon">&#xE315;</i>
+            </div>
+        </aside>
+    </div>
+    <div class="preloader">
+        <div class="preloader__animation">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>

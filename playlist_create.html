@@ -872,13 +872,25 @@
                 <h3 class="playlist-info__heading">Создание нового плейлиста</h3>
                 <p class="playlist-info__hint">Создайте новый плейлист и выбрать время суток для него. Добавляйте после создания треки.</p>
                 <div class="playlist-info__tag-container">
-                    <input class="playlist-info__name" placeholder="Название вашего плейлиста" type="text" />
+                    <input class="playlist-info__name" value="Название вашего плейлиста" type="text" />
                 </div>
                 <div class="playlist-info__tag-container">
-                    <span class="playlist-info__time-tag playlist-info__time-tag_active">Утро</span>
-                    <span class="playlist-info__time-tag">День</span>
-                    <span class="playlist-info__time-tag">Вечер</span>
-                    <span class="playlist-info__time-tag">Ночь</span>
+                    <label class="playlist-info__radio-wrap">
+                        <input class="playlist-info__control" type="radio" name="time-tag" checked="true" />
+                        <span class="playlist-info__time-tag playlist-info__time-tag_round_left">Утро</span>
+                    </label>
+                    <label class="playlist-info__radio-wrap">
+                        <input class="playlist-info__control" type="radio" name="time-tag" />
+                        <span class="playlist-info__time-tag">День</span>
+                    </label>
+                    <label class="playlist-info__radio-wrap">
+                        <input class="playlist-info__control" type="radio" name="time-tag" />
+                        <span class="playlist-info__time-tag">Вечер</span>
+                    </label>
+                    <label class="playlist-info__radio-wrap">
+                        <input class="playlist-info__control" type="radio" name="time-tag" />
+                        <span class="playlist-info__time-tag playlist-info__time-tag_round_right">Ночь</span>
+                    </label>
                 </div>
                 <a class="button button_color_blue playlist-info__button">Создать плейлист</a>
                 <a class="button button_color_grey playlist-info__button">Отмена</a>

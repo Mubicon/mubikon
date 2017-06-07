@@ -871,13 +871,25 @@
             <div class="playlist-info">
                 <h3 class="playlist-info__heading">Информация о плейлисте</h3>
                 <div class="playlist-info__tag-container">
-                    <span class="playlist-info__name">Плейлист на утро</span>
+                    <input class="playlist-info__name" value="Плейлист на утро" type="text" />
                 </div>
                 <div class="playlist-info__tag-container">
-                    <span class="playlist-info__time-tag playlist-info__time-tag_active">Утро</span>
-                    <span class="playlist-info__time-tag">День</span>
-                    <span class="playlist-info__time-tag">Вечер</span>
-                    <span class="playlist-info__time-tag">Ночь</span>
+                    <label class="playlist-info__radio-wrap">
+                        <input class="playlist-info__control" type="radio" name="time-tag" checked="true" />
+                        <span class="playlist-info__time-tag playlist-info__time-tag_round_left">Утро</span>
+                    </label>
+                    <label class="playlist-info__radio-wrap">
+                        <input class="playlist-info__control" type="radio" name="time-tag" />
+                        <span class="playlist-info__time-tag">День</span>
+                    </label>
+                    <label class="playlist-info__radio-wrap">
+                        <input class="playlist-info__control" type="radio" name="time-tag" />
+                        <span class="playlist-info__time-tag">Вечер</span>
+                    </label>
+                    <label class="playlist-info__radio-wrap">
+                        <input class="playlist-info__control" type="radio" name="time-tag" />
+                        <span class="playlist-info__time-tag playlist-info__time-tag_round_right">Ночь</span>
+                    </label>
                 </div>
                 <div class="playlist-about playlist-info__about">
                     <div class="playlist-about__item">

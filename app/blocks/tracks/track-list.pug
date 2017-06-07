@@ -22,13 +22,23 @@ mixin track-list()
             +e.I.control-icon._play.material-icon !{"&#xE039;"}
           +e.SPAN.title Let’s dance - Jhon Travolta
 
-mixin playlist(tag, expanded, disabled)
+mixin playlist-wrap(disabled)
   if disabled
+    +b.playlist-wrap._disabled&attributes(attributes)
+      block
+  else
+    +b.playlist-wrap&attributes(attributes)
+      block
+
+mixin playlist(tag, expanded)
   +b.playlist&attributes(attributes)
     +e.heading
-      +e.playlist-off
-        +e.I.icon-off.material-icon !{"&#xE8AC;"}
+      +e.turn
+        +e.I.icon-turn.material-icon !{"&#xE8AC;"}
         +e.SPAN.head-text._semibold Выключить
+      +e.turn._on
+        +e.I.icon-turn.material-icon !{"&#xE8AC;"}
+        +e.SPAN.head-text._semibold Включить
       +e.shuffle
         +e.SPAN.head-text._semibold Воспроизводить случайно
       if expanded
@@ -51,7 +61,7 @@ mixin playlist(tag, expanded, disabled)
             +e.controls
               +e.I.control-icon._pause.material-icon !{"&#xE036;"}
               +e.I.control-icon._play.material-icon !{"&#xE039;"}
-            +e.SPAN.title Let’s dance - Jhon Travolta
+            +e.SPAN.title Танцевальный плейлист
     +e.timeline
       +e.timeline-wrap
         +e.IMG(src='assets/images/album-small-1.jpg').timeline-img
@@ -61,5 +71,5 @@ mixin playlist(tag, expanded, disabled)
         +e.IMG(src='assets/images/album-small-1.jpg').timeline-img._left_40
     +track-table().__table
     +e.footer
-      +e.position 1
+      +e.SPAN.position 01
       | позиция

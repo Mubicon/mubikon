@@ -1,7 +1,21 @@
 .feed {
   display: block;
+  position: relative;
+
+  &__playlists {
+    margin-top: 50px;
+  }
 
   &__playlist {
-    margin-top: 20px;
+
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  &__feed-control {
+    position: absolute;
+    left: 0;
+    top: -6px;
   }
 }

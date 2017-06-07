@@ -1,0 +1,93 @@
+.feed-control {
+
+  &__new {
+    margin-left: 10px;
+  }
+
+  &__checkbox-wrap {
+
+    .checkbox {
+      margin-top: 19px;
+      display: inline-block;
+
+      &:not(:first-of-type) {
+        margin-left: 35px;
+      }
+    }
+  }
+}
+
+.feed-name {
+  background-color: #fff;
+  border-radius: 16px;
+  width: 190px;
+  padding-left: 20px;
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  cursor: pointer;
+  color: #292d33;
+  transition: color .25s ease-in-out;
+  vertical-align: middle;
+
+  &:hover {
+    color: lighten(#292d33, 40%);
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 2.5;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 3px;
+    right: 13px;
+  }
+}
+
+.feed-new {
+  display: inline-block;
+  vertical-align: middle;
+
+  &__input {
+    padding-left: 25px;
+    width: 265px;
+    border-radius: 16px 0 0 16px;
+    font-size: 12px;
+    font-family: $font-main;
+    line-height: 2.5;
+  }
+
+  &__submit {
+    background-color: $color-main;
+    font-family: $font-main;
+    font-size: 12px;
+    color: #fff;
+    width: 45px;
+    height: 30px;
+    border-radius: 0 16px 16px 0;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out;
+
+    &:hover {
+      background-color: darken($color-main, 10%);
+    }
+  }
+
+  &__add {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color .25s ease-in-out, background-color .25s ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: $color-main;
+    }
+  }
+}

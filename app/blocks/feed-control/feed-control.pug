@@ -1,0 +1,22 @@
+include ../checkbox/checkbox
+
+mixin feed-name()
+  +b.feed-name&attributes(attributes)
+    +e.SPAN.text Первая лента
+    +e.I.icon.material-icon !{"&#xE313;"}
+
+
+
+mixin feed-control(create)
+  +b.feed-control&attributes(attributes)
+    +feed-name()
+    +b.feed-new.__new
+      if create
+        +e.INPUT(type='text', placeholder='Введите название новой ленты').input
+        +e.INPUT(type='submit', value='ОК').submit
+      else
+        +e.BUTTON.add.material-icon !{"&#xE145;"}
+    +e.checkbox-wrap
+      +checkbox('new-feed', 'Для выходных дней', true) Для выходных дней
+      +checkbox('new-feed', 'Для будней', false) Для будней
+      +checkbox('new-feed', 'Для определенного дня', false) Для определенного дня

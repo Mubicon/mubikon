@@ -1,0 +1,48 @@
+mixin calendar-controls()
+  +b.calendar-controls&attributes(attributes)
+    +e.BUTTON.arrow.material-icon !{"&#xE314;"}
+    +e.SPAN.text Октябрь, 2016 год
+    +e.BUTTON.arrow.material-icon !{"&#xE315;"}
+
+mixin calendar-container()
+  +b.calendar-container&attributes(attributes)
+    block
+
+mixin calendar()
+  +b.calendar&attributes(attributes)
+    +e.content._head
+      -
+        var heading = ['пон','вт','ср','чт','пт','суб','вс']
+      each item in heading
+        +e.SPAN.item= item
+    +e.content
+      - for (var i=26; i<31; i++)
+        +e.SPAN.item._color_grey= i
+      +e.SPAN.item._bg_blue 1
+      +e.SPAN.item._bg_blue 2
+      - for (var i=3; i<8; i++)
+        +e.SPAN.item= i
+      +e.SPAN.item._bg_blue 8
+      +e.SPAN.item._bg_blue 9
+      +e.SPAN.item._bg_blue._color_white 10
+      - for (var i=11; i<15; i++)
+        +e.SPAN.item= i
+      +e.SPAN.item._bg_blue 15
+      +e.SPAN.item._bg_blue 16
+      - for (var i=17; i<22; i++)
+        +e.SPAN.item= i
+      +e.SPAN.item._bg_blue 22
+      +e.SPAN.item._bg_blue 23
+      - for (var i=24; i<29; i++)
+        +e.SPAN.item= i
+      +e.SPAN.item._bg_blue 29
+      +e.SPAN.item._bg_blue 30
+      - for (var i=1; i<6; i++)
+        +e.SPAN.item._color_grey= i
+      +e.SPAN.item._bg_blue._color_grey 6
+      +e.SPAN.item._bg_blue._color_grey 7
+
+mixin calendar-full()
+  +calendar-container()
+    +calendar-controls().__controls
+    +calendar()

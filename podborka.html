@@ -21,13 +21,13 @@
                     <img src="assets/images/logo.png" />
                 </a>
                 <ul class="icon-menu sidebar__menu">
-                    <li class="icon-menu__item active">
+                    <li class="icon-menu__item">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE05F;</i>
                             <span class="icon-menu__text">Трэки</span>
                         </a>
                     </li>
-                    <li class="icon-menu__item">
+                    <li class="icon-menu__item active">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE065;</i>
                             <span class="icon-menu__text">Подборки</span>
@@ -82,47 +82,66 @@
             </header>
             <main class="layout__content" role="main">
                 <div class="catalogue">
-                    <h1 class="layout__heading heading-main">Треки</h1>
-                    <div class="filter-container">
-                        <b class="filter-container__name">ФИЛЬТРЫ:</b>
-                        <span class="filter-item filter-container__item">
-                            <span class="filter-item__text">Музыкальные жанры</span>
-                            <i class="filter-item__icon material-icon">&#xE5C5;</i>
-                        </span>
-                        <span class="filter-item filter-container__item">
-                            <span class="filter-item__text">Тип предприятия</span>
-                            <i class="filter-item__icon material-icon">&#xE5C5;</i>
-                        </span>
-                        <span class="filter-item filter-container__item">
-                            <span class="filter-item__text">Сортировать</span>
-                            <i class="filter-item__icon material-icon">&#xE5C5;</i>
-                        </span>
-                        <div class="view-toggler filter-container__toggler">
-                            <a class="view-toggler__tab" href="#">
+                    <div class="compilation-inside">
+                        <div class="compilation-inside__image">
+                            <img src="assets/images/album-3.jpg" />
+                        </div>
+                        <div class="compilation-inside__textblock">
+                            <p class="compilation-inside__text compilation-inside__text_big compilation-inside__text_title">На танцполе</p>
+                            <p class="compilation-inside__text compilation-inside__text_medium compilation-inside__text_genre">Жанр:
+                                <b>Lounge, Chillout</b>
+                            </p>
+                            <p class="compilation-inside__text">Дата публикации:
+                                <b>21.12.2016</b>
+                            </p>
+                            <p class="compilation-inside__text">Продолжительность:
+                                <b>2 часа 46 минут</b>
+                            </p>
+                            <p class="compilation-inside__text compilation-inside__text_inline">Просмотров:
+                                <b>3256</b>
+                            </p>
+                            <p class="compilation-inside__text compilation-inside__text_inline compilation-inside__text_left">Треков:
+                                <b>322</b>
+                            </p>
+                            <p class="compilation-inside__text">Последние изменение:
+                                <b>23 дня назад</b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="compilation-right catalogue__compilation-right">
+                        <div class="rate-card">
+                            <div class="rate-card__rate">
+                                <span class="rate-card__rate-text">Оцените эту подборку</span>
+                                <div class="rating-stars rating-stars_big rate-card__stars">
+                                    <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                    <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                    <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                    <i class="rating-stars__star-icon rating-stars__star-icon_active material-icon">&#xE838;</i>
+                                    <i class="rating-stars__star-icon material-icon">&#xE838;</i>
+                                </div>
+                            </div>
+                            <span class="rate-card__value">4,5</span>
+                            <p class="rate-card__text">Плейлист отличается энергетикой и экспресивностью, предает атмосферу лучших мероприятий клубной индустрии.</p>
+                        </div>
+                        <p class="compilation-right__text">Плейлист отличается энергетикой и экспресивностью, предает атмосферу лучших мероприятий клубной индустрии.</p>
+                    </div>
+                    <div class="tag-compilation catalogue__tags">
+                        <span class="tag-compilation__title">Подойдет для:</span>
+                        <span class="tag tag-compilation__tag">Кафе</span>
+                        <span class="tag tag-compilation__tag">Ресторан</span>
+                        <span class="tag tag-compilation__tag">Пиццерия</span>
+                    </div>
+                    <div class="compilation-control catalogue__compilation-controls">
+                        <button class="button button_color_blue compilation-control__button">СОЗДАТЬ ПЛЕЙЛИСТ ИЗ ПОДБОРКИ</button>
+                        <button class="button button_color_light-grey compilation-control__button">ПЕРЕНЕСТИ ВСЕ ТРЕКИ В ТЕКУЩИЙ ПЛЕЙЛИСТ</button>
+                        <button class="button button_color_light-grey compilation-control__button">ДОБАВИТЬ В ЛЕНТУ</button>
+                        <div class="view-toggler compilation-control__toggler">
+                            <a class="view-toggler__tab view-toggler__tab_active" href="#">
                                 <i class="view-toggler__icon material-icon">&#xE8EE;</i>
                             </a>
-                            <a class="view-toggler__tab view-toggler__tab_active" href="#">
+                            <a class="view-toggler__tab" href="#">
                                 <i class="view-toggler__icon material-icon">&#xE8F0;</i>
                             </a>
-                            <a class="view-toggler__tab" href="#">
-                                <i class="view-toggler__icon material-icon">&#xE8EF;</i>
-                            </a>
-                        </div>
-                        <div class="filter-container__labels">
-                            <span class="filter-label filter-container__label">
-                                <span class="filter-label__text">Джаз</span>
-                                <span class="filter-label__icon filter-label__icon_close material-icon">&#xE5CD;</span>
-                            </span>
-                            <span class="filter-label filter-container__label">
-                                <span class="filter-label__text">Кафе и ресторан</span>
-                                <span class="filter-label__icon filter-label__icon_close material-icon">&#xE5CD;</span>
-                            </span>
-                            <span class="filter-label filter-label_sort filter-label_down filter-container__label">
-                                <span class="filter-label__text">По дате добавления</span>
-                                <span class="filter-label__icon filter-label__icon_arrow_down material-icon">&#xE5DB;</span>
-                                <span class="filter-label__icon filter-label__icon_arrow_up material-icon">&#xE5D8;</span>
-                                <span class="filter-label__icon filter-label__icon_close material-icon">&#xE5CD;</span>
-                            </span>
                         </div>
                     </div>
                     <div class="track-table catalogue__table">
@@ -264,174 +283,7 @@
                 </div>
                 <h3 class="playlist-inside__title">Плейлист на утро</h3>
                 <p class="playlist-inside__info">Перетаскиваете треки и выставляйте порядок воспроизведения треков в плейлисте.</p>
-                <div class="right-tracks playlist-inside__tracks">
-                    <span class="right-tracks__count">Треков:
-                        <b>12</b>
-                    </span>
-                    <span class="right-tracks__time">40 минут 45 секунд</span>
-                    <div class="right-tracks__tracks">
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                        <div class="right-tracks__track">
-                            <img class="card__image" src="assets/images/track.jpg" />
-                            <i class="right-tracks__icon material-icon">&#xE037;</i>
-                            <i class="right-tracks__icon material-icon">&#xE5CD;</i>
-                        </div>
-                    </div>
-                </div>
+                <p class="playlist-inside__hint">Перетащите треки из каталога или нажмите у трека в каталоге добавить в плейлист</p>
             </div>
         </aside>
     </div>

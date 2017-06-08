@@ -1,42 +1,106 @@
 .filter-container {
   background-color: #fff;
-  padding: 5px 12px;
+  padding: 5px 10px 0px;
   position: relative;
+  border-radius: 5px;
+
+  &__top-table {
+    display: table;
+    padding-right: 95px;
+
+    &-col {
+      display: table-cell;
+      vertical-align: middle;
+
+      &:not(:first-child) { padding-left: 65px; }
+    }
+  }
+
+  &__accordions {
+    margin-top: 10px;
+  }
+
+  &__accordion {
+    position: relative;
+    padding-right: 40px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .25s ease-in-out;
+
+    @include performance;
+
+    &::before {
+      @include pseudo;
+      border-top: 1px solid #ececec;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    &::after {
+      @include pseudo;
+      position: static;
+      width: 100%;
+      padding-bottom: 13px;
+    }
+
+    &:target { max-height: 150px; }
+  }
+
+  &__accordion-close {
+    position: absolute;
+    text-align: right;
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    right: -5px;
+    cursor: pointer;
+    color: #2d3039;
+    transition: all .25s ease-in-out;
+
+    &:hover { color: $color-main; }
+  }
 
   &__toggler {
     position: absolute;
-    right: 7px;
-    top: 5px;
+    right: 10px;
+    top: 4px;
+    color: #2d3039;
   }
 
   &__name {
-    width: 95px;
     font-size: 12px;
     display: inline-block;
     vertical-align: middle;
   }
 
   &__item {
-    margin-left: 30px;
+
+    &:not(:last-child) { margin-right: 24px; }
   }
 
   &__labels {
-    margin-top: 16px;
+    margin-top: 6px;
   }
 
   &__label {
+    margin-top: 10px;
 
-    &:not(:first-of-type) {
-      margin-left: 20px;
+    &:not(:last-child) {
+      margin-right: 15px;
     }
   }
 }
 
 .filter-item {
+  font-size: 12px;
   color: #292d33;
   transition: color .25s ease-in-out;
   cursor: pointer;
   display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
 
   &:hover {
     color: lighten(#292d33, 40%);
@@ -62,6 +126,16 @@
   border-radius: 11px;
   position: relative;
   min-width: 85px;
+
+  &_nodelete {
+    padding-right: 15px;
+    min-width: 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten(#292d33, 20%);
+    }
+  }
 
   &_sort {
     background-color: $color-main;
@@ -92,7 +166,7 @@
   &__text {
     font-size: 11px;
     line-height: 2;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   &__icon {
@@ -105,7 +179,11 @@
     &_close {
       position: absolute;
       right: 7px;
-      top: 3px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 14px;
+      width: 14px;
     }
 
     &:hover {
@@ -115,7 +193,11 @@
     &_arrow_up, &_arrow_down {
       position: absolute;
       right: 22px;
-      top: 3px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 14px;
+      width: 14px;
       z-index: 1;
     }
   }

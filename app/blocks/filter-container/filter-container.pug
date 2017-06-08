@@ -1,23 +1,54 @@
 mixin filter-container()
-  +b.filter-container&attributes(attributes)
-    +e.B.__name ФИЛЬТРЫ:
-    +filter-item('Музыкальные жанры').__item
-    +filter-item('Тип предприятия').__item
-    +filter-item('Сортировать').__item
+  +b.filter-container#filters&attributes(attributes)
+    +e.top-table
+      +e.top-table-col
+        +e.B.__name ФИЛЬТРЫ:
+      +e.top-table-col
+        +filter-item('Музыкальные жанры')(href="#filter1").__item
+        +filter-item('Тип предприятия')(href="#filter2").__item
+        +filter-item('Сортировать')(href="#filter3").__item
     +view-toggler().__toggler
     +e.__labels
       +filter-label('Джаз').__label
       +filter-label('Кафе и ресторан').__label
       +filter-label('По дате добавления', true).__label
+    +e.__accordions
+      +e.__accordion#filter1
+        +e.A.accordion-close.material-icon(href="#page") !{"&#xE5CD;"}
+        +filter-label-nodelete('Джаз').__label
+        +filter-label-nodelete('Lounge').__label
+        +filter-label-nodelete('Поп').__label
+        +filter-label-nodelete('Джаз').__label
+        +filter-label-nodelete('Lounge').__label
+        +filter-label-nodelete('Поп').__label
+        +filter-label-nodelete('Джаз').__label
+        +filter-label-nodelete('Lounge').__label
+        +filter-label-nodelete('Поп').__label
+      +e.__accordion#filter2
+        +e.A.accordion-close.material-icon(href="#page") !{"&#xE5CD;"}
+        +filter-label-nodelete('Кафе').__label
+        +filter-label-nodelete('Ресторан').__label
+        +filter-label-nodelete('Бар').__label
+        +filter-label-nodelete('Кафе').__label
+        +filter-label-nodelete('Ресторан').__label
+        +filter-label-nodelete('Бар').__label
+        +filter-label-nodelete('Кафе').__label
+        +filter-label-nodelete('Ресторан').__label
+        +filter-label-nodelete('Бар').__label
+      +e.__accordion#filter3
+        +e.A.accordion-close.material-icon(href="#page") !{"&#xE5CD;"}
+        +filter-label-nodelete('По дате добавления').__label
+        +filter-label-nodelete('По жанру').__label
+        +filter-label-nodelete('По длительности').__label
 
 mixin filter-item(name)
-  +b.SPAN.filter-item&attributes(attributes)
+  +b.A.filter-item&attributes(attributes)
     +e.SPAN.text= name
     +e.I.icon.material-icon !{"&#xE5C5;"}
 
 mixin filter-label(name, sort)
   if sort
-    +b.SPAN.filter-label._sort._down&attributes(attributes)
+    +b.A.filter-label._sort._down&attributes(attributes)
       +e.SPAN.text= name
       +e.icon._arrow_down.material-icon !{"&#xE5DB;"}
       +e.icon._arrow_up.material-icon !{"&#xE5D8;"}
@@ -26,3 +57,7 @@ mixin filter-label(name, sort)
     +b.SPAN.filter-label&attributes(attributes)
       +e.SPAN.text= name
       +e.icon._close.material-icon !{"&#xE5CD;"}
+      
+mixin filter-label-nodelete(name, sort)
+  +b.A.filter-label._nodelete&attributes(attributes)
+    +e.SPAN.text= name

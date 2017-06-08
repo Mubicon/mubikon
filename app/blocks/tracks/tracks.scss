@@ -79,6 +79,8 @@
     font-weight: 400;
     display: block;
 
+    &_name { min-height: 30px; }
+
     &:not(:first-of-type) {
       margin-top: 5px;
     }

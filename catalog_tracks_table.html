@@ -13,7 +13,7 @@
     <script src="assets/scripts/libs/jquery-3.2.1.min.js"></script>
 </head>
 
-<body>
+<body id="page">
     <div class="layout">
         <aside class="layout__left-side">
             <div class="sidebar">
@@ -83,20 +83,26 @@
             <main class="layout__content" role="main">
                 <div class="catalogue">
                     <h1 class="layout__heading heading-main">Треки</h1>
-                    <div class="filter-container">
-                        <b class="filter-container__name">ФИЛЬТРЫ:</b>
-                        <span class="filter-item filter-container__item">
-                            <span class="filter-item__text">Музыкальные жанры</span>
-                            <i class="filter-item__icon material-icon">&#xE5C5;</i>
-                        </span>
-                        <span class="filter-item filter-container__item">
-                            <span class="filter-item__text">Тип предприятия</span>
-                            <i class="filter-item__icon material-icon">&#xE5C5;</i>
-                        </span>
-                        <span class="filter-item filter-container__item">
-                            <span class="filter-item__text">Сортировать</span>
-                            <i class="filter-item__icon material-icon">&#xE5C5;</i>
-                        </span>
+                    <div class="filter-container" id="filters">
+                        <div class="filter-container__top-table">
+                            <div class="filter-container__top-table-col">
+                                <b class="filter-container__name">ФИЛЬТРЫ:</b>
+                            </div>
+                            <div class="filter-container__top-table-col">
+                                <a class="filter-item filter-container__item" href="#filter1">
+                                    <span class="filter-item__text">Музыкальные жанры</span>
+                                    <i class="filter-item__icon material-icon">&#xE5C5;</i>
+                                </a>
+                                <a class="filter-item filter-container__item" href="#filter2">
+                                    <span class="filter-item__text">Тип предприятия</span>
+                                    <i class="filter-item__icon material-icon">&#xE5C5;</i>
+                                </a>
+                                <a class="filter-item filter-container__item" href="#filter3">
+                                    <span class="filter-item__text">Сортировать</span>
+                                    <i class="filter-item__icon material-icon">&#xE5C5;</i>
+                                </a>
+                            </div>
+                        </div>
                         <div class="view-toggler filter-container__toggler">
                             <a class="view-toggler__tab" href="#">
                                 <i class="view-toggler__icon material-icon">&#xE8EE;</i>
@@ -117,12 +123,86 @@
                                 <span class="filter-label__text">Кафе и ресторан</span>
                                 <span class="filter-label__icon filter-label__icon_close material-icon">&#xE5CD;</span>
                             </span>
-                            <span class="filter-label filter-label_sort filter-label_down filter-container__label">
+                            <a class="filter-label filter-label_sort filter-label_down filter-container__label">
                                 <span class="filter-label__text">По дате добавления</span>
                                 <span class="filter-label__icon filter-label__icon_arrow_down material-icon">&#xE5DB;</span>
                                 <span class="filter-label__icon filter-label__icon_arrow_up material-icon">&#xE5D8;</span>
                                 <span class="filter-label__icon filter-label__icon_close material-icon">&#xE5CD;</span>
-                            </span>
+                            </a>
+                        </div>
+                        <div class="filter-container__accordions">
+                            <div class="filter-container__accordion" id="filter1">
+                                <a class="filter-container__accordion-close material-icon" href="#page">&#xE5CD;</a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Джаз</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Lounge</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Поп</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Джаз</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Lounge</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Поп</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Джаз</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Lounge</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Поп</span>
+                                </a>
+                            </div>
+                            <div class="filter-container__accordion" id="filter2">
+                                <a class="filter-container__accordion-close material-icon" href="#page">&#xE5CD;</a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Кафе</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Ресторан</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Бар</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Кафе</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Ресторан</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Бар</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Кафе</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Ресторан</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">Бар</span>
+                                </a>
+                            </div>
+                            <div class="filter-container__accordion" id="filter3">
+                                <a class="filter-container__accordion-close material-icon" href="#page">&#xE5CD;</a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">По дате добавления</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">По жанру</span>
+                                </a>
+                                <a class="filter-label filter-label_nodelete filter-container__label">
+                                    <span class="filter-label__text">По длительности</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="track-table catalogue__table">

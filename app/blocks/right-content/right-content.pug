@@ -11,40 +11,47 @@ mixin playlist-info()
 mixin right-heading(type)
   if (type==='feed')
     +b.right-heading&attributes(attributes)
-      +e.I.icon.material-icon !{"&#xE916;"}
+      +e.SPAN.icon
+        i.material-icon !{"&#xE916;"}
       +e.SPAN.text Календарь
-      +e.I.arrow.material-icon !{"&#xE315;"}
+      +e.A.arrow.material-icon(href="#") !{"&#xE315;"}
   else
-    +b.right-heading&attributes(attributes)._border-dark._playlist
-      +e.I.icon.material-icon !{"&#xE03D;"}
-      +e.SPAN.count 121
+    +b.right-heading&attributes(attributes)._border-dark
+      +e.SPAN.icon
+        i.material-icon !{"&#xE03D;"}
+        +e.SPAN.count 121
       +e.SPAN.text Плейлисты
-      +e.I.arrow.material-icon !{"&#xE315;"}
+      +e.A.arrow.material-icon(href="#") !{"&#xE315;"}
 
 mixin right-actions()
   +b.right-actions&attributes(attributes)
-    +e.BUTTON.item
+    +e.A.item(href="#")
       +e.I.icon.material-icon !{"&#xE314;"}
-    +e.BUTTON.item
-      +e.I.icon.material-icon !{"&#xE2C4;"}
-    +e.BUTTON.item
-      +e.I.icon.material-icon !{"&#xE043;"}
-    +e.BUTTON.item
-      +e.I.icon.material-icon !{"&#xE88F;"}
-    +e.BUTTON.item
+    +e.A.item(href="#")
       +e.I.icon.material-icon !{"&#xE872;"}
+    +e.A.item(href="#")
+      +e.I.icon.material-icon !{"&#xE88F;"}
+    +e.A.item(href="#")
+      +e.I.icon.material-icon !{"&#xE043;"}
+    +e.A.item(href="#")
+      +e.I.icon.material-icon !{"&#xE2C4;"}
+      +e.SPAN.hint Скачать плейлист
 
 mixin right-tracks()
   +b.right-tracks&attributes(attributes)
     +e.SPAN.count Треков:
       b 12
     +e.SPAN.time 40 минут 45 секунд
-    +e.tracks
-      - for (var i=0;i<32;i++)
-        +e.track
-          img(src='assets/images/track.jpg').card__image
-          +e.I.icon.material-icon !{'&#xE037;'}
-          +e.I.icon.material-icon !{'&#xE5CD;'}
+    +e.content
+      +e.tracks
+        - for (var i=0;i<48;i++)
+          +e.track
+            +e.album
+              img(src='assets/images/track.jpg').card__image
+              +e.A.album-button
+                +e.I.icon.material-icon !{'&#xE037;'}
+              +e.A.album-button
+                +e.I.icon.material-icon !{'&#xE5CD;'}
 
 mixin playlist-about()
   +b.playlist-about&attributes(attributes)
@@ -134,7 +141,7 @@ mixin playlist-inside()
   +b.playlist-inside&attributes(attributes)
     +right-actions()
     +e.H3.title Плейлист на утро
-    +e.P.info Перетаскиваете треки и выставляйте порядок воспроизведения треков в плейлисте.
+    +e.P.info.text-small Перетаскиваете треки и выставляйте порядок воспроизведения треков в плейлисте.
     //- +e.P.hint Перетащите треки из каталога или нажмите у трека в каталоге добавить в плейлист
     +right-tracks().__tracks
 

@@ -27,3 +27,17 @@
 }
 
 .slider + .slider-dots { margin-top: 20px; }
+
+.catalogue-slider {
+
+  @media (max-width: 1230px) {
+
+    .card__texts { bottom: 30px; }
+
+    .card__texts_duration {
+      left: 10px;
+      right: auto;
+      bottom: 12px;
+    }
+  }
+}

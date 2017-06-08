@@ -1,8 +1,15 @@
 mixin view-toggler()
-  +b.view-toggler#viewToggler&attributes(attributes)
+  +b.view-toggler&attributes(attributes)
     +e.A(href='#').tab
       +e.I.icon.material-icon !{"&#xE8EE;"}
     +e.A(href='#').tab._active
       +e.I.icon.material-icon !{"&#xE8F0;"}
     +e.A(href='#').tab
       +e.I.icon.material-icon !{"&#xE8EF;"}
+
+mixin compilation-toggler()
+  +b.view-toggler&attributes(attributes)
+    +e.A(href='#').tab._active
+      +e.I.icon.material-icon !{"&#xE8EE;"}
+    +e.A(href='#').tab
+      +e.I.icon.material-icon !{"&#xE8F0;"}

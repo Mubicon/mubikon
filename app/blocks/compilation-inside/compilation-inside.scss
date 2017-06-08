@@ -1,0 +1,72 @@
+.compilation-inside {
+
+  &__image {
+    width: 260px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+    img {
+      @include fill-img;
+    }
+  }
+
+  &__textblock {
+    display: inline-block;
+    padding: 10px 0 20px 20px;
+    height: 180px;
+    vertical-align: top;
+  }
+
+  &__text {
+    font-size: 12px;
+    color: #292d33;
+    line-height: 1.33;
+
+    &_big {
+      font-size: 21px;
+    }
+
+    &_title {
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    &_genre {
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    &_medium {
+      font-size: 14px;
+    }
+
+    &_inline {
+      display: inline-block;
+    }
+
+    &_left {
+      margin-left: 15px;
+    }
+  }
+}
+
+.compilation-control {
+  position: relative;
+
+  &__button {
+    margin-right: 7px;
+    padding: 8px 15px;
+    text-align: center;
+    font-family: $font-second;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  &__toggler {
+    position: absolute;
+    right: 0;
+    top: 2px;
+  }
+}

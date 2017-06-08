@@ -5,7 +5,12 @@ include ../../components/right-header/right-header
 include ../../blocks/icon-menu/icon-menu
 include ../../blocks/player/player
 include ../../blocks/right-content/right-content
-include ../../components/sliders/sliders
+include ../../blocks/tracks/track-table
+include ../../blocks/view-toggler/view-toggler
+include ../../blocks/rate-card/rate-card
+include ../../blocks/compilation-inside/compilation-inside
+include ../../blocks/tag/tag
+include ../../blocks/compilation-inside/compilation-control
 
 block head
   - var pageTitle = 'Каталог — Мубикон'
@@ -31,8 +36,12 @@ block header
 
 block content
   +b.catalogue
-    h1.layout__heading.heading-main Подборки
-    +catalogue-slider()
+    +compilation-inside()
+    +compilation-right().__compilation-right
+    +tag-compilation.__tags
+    +compilation-control().__compilation-controls
+    +track-table().__table
+
 
 block right
   +right-header

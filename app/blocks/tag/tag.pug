@@ -1,0 +1,9 @@
+mixin tag(tag)
+  +b.SPAN.tag&attributes(attributes)= tag
+
+mixin tag-compilation()
+  +b.tag-compilation&attributes(attributes)
+    +e.SPAN.title Подойдет для:
+    +tag('Кафе').__tag
+    +tag('Ресторан').__tag
+    +tag('Пиццерия').__tag

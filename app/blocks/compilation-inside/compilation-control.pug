@@ -1,0 +1,9 @@
+include ../button/button
+include ../view-toggler/view-toggler
+
+mixin compilation-control()
+  +b.compilation-control&attributes(attributes)
+    +button('button')._color_blue.__button СОЗДАТЬ ПЛЕЙЛИСТ ИЗ ПОДБОРКИ
+    +button('button')._color_light-grey.__button ПЕРЕНЕСТИ ВСЕ ТРЕКИ В ТЕКУЩИЙ  ПЛЕЙЛИСТ
+    +button('button')._color_light-grey.__button ДОБАВИТЬ В ЛЕНТУ
+    +compilation-toggler().__toggler

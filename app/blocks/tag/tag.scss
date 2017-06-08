@@ -1,0 +1,28 @@
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 2;
+  background-color: #babbbe;
+  color: #fff;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 11px;
+}
+
+.tag-compilation {
+  display: block;
+
+  &__title {
+    font-family: $font-second;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 12px;
+  }
+
+  &__tag {
+
+    &:not(:first-of-type) {
+      margin-left: 7px;
+    }
+  }
+}

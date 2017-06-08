@@ -17,6 +17,6 @@ mixin feed-control(create)
       else
         +e.BUTTON.add.material-icon !{"&#xE145;"}
     +e.checkbox-wrap
-      +checkbox('new-feed', 'Для выходных дней', true) Для выходных дней
-      +checkbox('new-feed', 'Для будней', false) Для будней
-      +checkbox('new-feed', 'Для определенного дня', false) Для определенного дня
+      +radio-checkbox('new-feed', 'Для выходных дней', true) Для выходных дней
+      +radio-checkbox('new-feed', 'Для будней', false) Для будней
+      +radio-checkbox('new-feed', 'Для определенного дня', false) Для определенного дня

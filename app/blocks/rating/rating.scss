@@ -32,6 +32,13 @@
 .rating-stars {
   display: block;
 
+  &_big {
+
+    .rating-stars__star-icon {
+      font-size: 24px;
+    }
+  }
+
   &__star-icon {
     font-size: 15px;
 

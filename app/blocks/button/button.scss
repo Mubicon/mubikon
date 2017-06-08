@@ -43,6 +43,15 @@
       }
     }
 
+    &_light-grey {
+      background-color: #babbbe;
+      color: #fff;
+
+      &:hover {
+        background-color: darken(#babbbe, 10%);
+      }
+    }
+
     &_white {
       background-color: white;
       color: #515257;

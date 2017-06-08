@@ -1,0 +1,49 @@
+.rate-card {
+  border-radius: 16px;
+  overflow: hidden;
+  height: 70px;
+  display: inline-block;
+
+  &__rate {
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 150px;
+    background-color: #2d3039;
+    padding: 10px 0 15px;
+  }
+
+  &__rate-text {
+    font-size: 12px;
+    color: #fff;
+  }
+
+  &__stars {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  &__value {
+    vertical-align: top;
+    text-align: center;
+    background-color: $color-main;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 3.33;
+    display: inline-block;
+    height: 100%;
+    width: 50px;
+  }
+}
+
+.compilation-right {
+  width: 200px;
+
+  &__text {
+    margin-top: 20px;
+    font-size: 12px;
+    font-family: $font-second;
+    line-height: 1.33;
+  }
+}

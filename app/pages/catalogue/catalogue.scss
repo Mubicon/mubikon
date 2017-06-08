@@ -1,5 +1,6 @@
 .catalogue {
   display: block;
+  position: relative;
 
   .card {
 
@@ -14,5 +15,23 @@
 
   &__table {
     margin-top: 20px;
+  }
+
+  &__compilation-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__tags {
+    margin-top: 20px;
+  }
+
+  &__compilation-controls {
+    margin-top: 15px;
+  }
+
+  &__table {
+    margin-top: 12px;
   }
 }

@@ -1,0 +1,14 @@
+include ../rating/rating
+
+mixin rate-card()
+  +b.rate-card&attributes(attributes)
+    +e.rate
+      +e.SPAN.rate-text Оцените эту подборку
+      +rating-stars()._big.__stars
+    +e.SPAN.value 4,5
+    +e.P.text Плейлист отличается энергетикой и экспресивностью, предает атмосферу лучших мероприятий клубной индустрии.
+
+mixin compilation-right()
+  +b.compilation-right&attributes(attributes)
+    +rate-card()
+    +e.P.text Плейлист отличается энергетикой и экспресивностью, предает атмосферу лучших мероприятий клубной индустрии.

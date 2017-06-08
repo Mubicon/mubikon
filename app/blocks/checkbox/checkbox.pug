@@ -4,3 +4,10 @@ mixin checkbox(name, value, checked)
     +e.SPAN.box.material-icon !{"&#xE5CA;"}
     +e.P.text.text-small
       block
+
+mixin radio-checkbox(name, value, checked)
+  +b.LABEL.checkbox&attributes(attributes)
+    +e.INPUT.input(type="radio" name=name, value=value, checked=checked)
+    +e.SPAN.box.material-icon !{"&#xE5CA;"}
+    +e.P.text.text-small
+      block

@@ -21,6 +21,20 @@
   &__stars {
     margin-top: 10px;
     cursor: pointer;
+
+    &:hover {
+
+      .rating-stars__star-icon { color: $color-main; }
+    }
+
+    .rating-stars__star-icon {
+      color: #464c4d;
+      transition: all .25s ease-in-out;
+
+      &_active { color: $color-main; }
+
+      &:hover ~ .rating-stars__star-icon { color: #464c4d; }
+    }
   }
 
   &__value {
@@ -44,6 +58,6 @@
     margin-top: 20px;
     font-size: 12px;
     font-family: $font-second;
-    line-height: 1.33;
+    line-height: 1.35;
   }
 }

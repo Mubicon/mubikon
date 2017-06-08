@@ -5,24 +5,37 @@
   background-color: #babbbe;
   color: #fff;
   text-align: center;
-  padding: 0 10px;
-  border-radius: 11px;
+  padding: 0 11px;
+  border-radius: 22px;
+  transition: all .25s ease-in-out;
+
+  &:hover {
+    background-color: darken(#babbbe, 15%);
+  }
 }
 
 .tag-compilation {
-  display: block;
+  display: table;
+
+  &__col {
+    display: table-cell;
+    vertical-align: middle;
+
+    &:not(:last-child) { padding-right: 22px; }
+  }
 
   &__title {
     font-family: $font-second;
     font-size: 12px;
     font-weight: 700;
-    margin-right: 12px;
   }
 
   &__tag {
+    margin-top: 2px;
+    margin-bottom: 2px;
 
-    &:not(:first-of-type) {
-      margin-left: 7px;
+    &:not(:last-child) {
+      margin-right: 7px;
     }
   }
 }

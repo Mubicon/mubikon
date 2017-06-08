@@ -4,7 +4,7 @@ include track-table
 mixin track-list()
   +b.track-list&attributes(attributes)
     +e.heading
-      +e.add
+      +e.A.add(href="#")
         +e.I.add-icon.material-icon !{"&#xE03B;"}
         +e.SPAN.add-text Добавить
       +rating-stars().__rating

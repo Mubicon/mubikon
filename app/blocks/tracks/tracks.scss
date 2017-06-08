@@ -1,27 +1,28 @@
+.track-wrap {
+  width: 20%;
+  padding: 5px 8px;
+  display: inline-block;
+  vertical-align: top;
+
+  @media (max-width: 1230px) {
+    width: 25%;
+  }
+
+  @media (max-width: 1100px) {
+    width: 33.333%;
+  }
+}
+
+.tracks {
+  margin: -5px -8px;
+
+  @include clearfix;
+}
+
 .track {
-  width: 150px;
+  width: 100%;
   display: inline-block;
   position: relative;
-  margin-bottom: 10px;
-
-  &:not(:nth-of-type(5n)) {
-    margin-right: 15px;
-  }
-
-  @media (max-width: 1259px) {
-
-    &:not(:nth-of-type(5n)) {
-      margin-right: 0;
-    }
-
-    &:not(:nth-of-type(4n)) {
-      margin-right: 15px;
-    }
-  }
-
-  @media (max-width: 1094px) {
-    margin-right: 15px !important;
-  }
 
   &:hover {
 
@@ -54,6 +55,8 @@
   &__image-wrap {
     height: 150px;
     position: relative;
+    overflow: hidden;
+    border-radius: 2px;
   }
 
   &__image {
@@ -61,28 +64,41 @@
   }
 
   &__description {
-    padding: 10px;
+    padding: 7px 9px 7px;
     background-color: #fff;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: #ececec;
   }
 
   &__text {
     color: #4a4b50;
     font-family: $font-second;
     font-size: 11px;
+    line-height: 15px;
     font-weight: 400;
     display: block;
 
-    &:not(:nth-of-type(1)) {
-      margin-top: 10px;
+    &:not(:first-of-type) {
+      margin-top: 5px;
     }
 
     &_semibold {
       font-weight: 600;
     }
 
-    &_inline {
-      display: inline-block;
-      vertical-align: bottom;
+    &_duration {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: -3px;
+
+      .material-icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
     }
 
     &_color {
@@ -106,7 +122,7 @@
   &__details {
     @include clearfix;
 
-    padding: 10px;
+    padding: 7px 9px 7px;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -115,20 +131,21 @@
     background-color: #272c36;
     transition: opacity .25s ease-in-out;
     color: #fff;
+
+    .track__text { @include ellipsis(100%); }
   }
 
   &__control-icon {
     cursor: pointer;
+    transition: all .25s ease-in-out;
 
     &_play {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50%;
+      @include center-image;
+      width: 50px;
+      height: 50px;
       color: $color-main;
       font-size: 50px;
       z-index: 3;
-      transition: color .25s ease-in-out, opacity .25s ease-in-out;
       opacity: 0;
 
       &:hover {
@@ -140,13 +157,17 @@
       font-size: 19px;
       position: absolute;
       top: 0;
+
+      &:hover { color: $color-main; }
     }
 
     &_delete {
       font-size: 19px;
       position: absolute;
       top: 0;
-      opacity: 0;
+      display: none;
+
+      &:hover { color: $color-main; }
     }
   }
 
@@ -159,14 +180,15 @@
   }
 
   &__rating {
-    width: 80%;
-    margin-bottom: 10px;
+    display: block;
+    padding-right: 38px;
+    margin-bottom: 13px;
   }
 
   &__playlist-controls {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 6px;
+    right: 4px;
     width: 19px;
     height: 19px;
   }

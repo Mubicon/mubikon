@@ -52,6 +52,23 @@ mixin right-tracks()
                 +e.I.icon.material-icon !{'&#xE037;'}
               +e.A.album-button
                 +e.I.icon.material-icon !{'&#xE5CD;'}
+                
+                
+mixin right-tracks-small()
+  +b.right-tracks&attributes(attributes)
+    +e.SPAN.count Треков:
+      b 12
+    +e.SPAN.time 40 минут 45 секунд
+    +e.content
+      +e.tracks
+        - for (var i=0;i<8;i++)
+          +e.track
+            +e.album
+              img(src='assets/images/track.jpg').card__image
+              +e.A.album-button
+                +e.I.icon.material-icon !{'&#xE037;'}
+              +e.A.album-button
+                +e.I.icon.material-icon !{'&#xE5CD;'}
 
 mixin playlist-about()
   +b.playlist-about&attributes(attributes)
@@ -96,8 +113,8 @@ mixin playlist-fullinfo()
         +e.INPUT(type='radio', name='time-tag').control
         +e.SPAN.time-tag._round_right Ночь
     +playlist-about().__about
-    +button()._color_blue.__button Сохранить изменения
-    +button()._color_grey.__button Вернуться в плейлист
+    +button()._color_blue._size_huge.__button Сохранить изменения
+    +button()._color_grey._size_huge.__button Вернуться в плейлист
 
 mixin playlist-create()
   +playlist-info()
@@ -118,8 +135,8 @@ mixin playlist-create()
       +e.LABEL.radio-wrap
         +e.INPUT(type='radio', name='time-tag').control
         +e.SPAN.time-tag._round_right Ночь
-    +button()._color_blue.__button Создать плейлист
-    +button()._color_grey.__button Отмена
+    +button()._color_blue._size_huge.__button Создать плейлист
+    +button()._color_grey._size_huge.__button Отмена
 
 mixin playlist-scroll()
   +b.playlist-scroll&attributes(attributes)
@@ -143,12 +160,19 @@ mixin playlist-inside()
     +e.H3.title Плейлист на утро
     +e.P.info.text-small Перетаскиваете треки и выставляйте порядок воспроизведения треков в плейлисте.
     //- +e.P.hint Перетащите треки из каталога или нажмите у трека в каталоге добавить в плейлист
-    +right-tracks().__tracks
+    +right-tracks-small().__tracks
+
+mixin playlist-inside-empty()
+  +b.playlist-inside&attributes(attributes)
+    +right-actions()
+    +e.H3.title Плейлист на утро
+    +e.P.info.text-small Перетаскиваете треки и выставляйте порядок воспроизведения треков в плейлисте.
+    +e.P.hint Перетащите треки из каталога или нажмите у трека в каталоге добавить в плейлист
 
 mixin no-playlist()
   +b.no-playlist&attributes(attributes)
-    p Вы не создали еще ни одного плейлиста
-    +e.I.icon.material-icon !{'&#xE03B;'}
+    +e.P.heading Вы не создали еще ни одного плейлиста
+    +e.A.icon.material-icon(href="#") !{'&#xE03B;'}
     +e.P.bot-text Нажмите на иконку, чтобы создать
 
 mixin playlist-first()

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="viewport" content="width=1000">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Каталог — Мубикон</title>
     <meta name="description" content="">
@@ -82,33 +82,45 @@
             </header>
             <main class="layout__content" role="main">
                 <div class="feed">
-                    <div class="feed-control feed__feed-control">
-                        <div class="feed-name">
-                            <span class="feed-name__text">Первая лента</span>
-                            <i class="feed-name__icon material-icon">&#xE313;</i>
+                    <div class="feed__top-columns">
+                        <div class="feed__top-columns-col">
+                            <div class="feed-control">
+                                <div class="feed-control__top-controls">
+                                    <div class="selectbox feed-control__selectbox">
+                                        <i class="selectbox__icon material-icon">&#xE313;</i>
+                                        <select class="selectbox__select">
+                                            <option>Первая лента</option>
+                                            <option>Вторая лента</option>
+                                            <option>Третья лента</option>
+                                        </select>
+                                    </div>
+                                    <div class="feed-new feed-control__new">
+                                        <button class="feed-new__add material-icon">&#xE145;</button>
+                                    </div>
+                                </div>
+                                <div class="feed-control__checkbox-wrap">
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="radio" name="new-feed" value="Для выходных дней" checked="checked" />
+                                        <span class="checkbox__box material-icon">&#xE5CA;</span>
+                                        <p class="checkbox__text text-small">Для выходных дней</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="radio" name="new-feed" value="Для будней" />
+                                        <span class="checkbox__box material-icon">&#xE5CA;</span>
+                                        <p class="checkbox__text text-small">Для будней</p>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="checkbox__input" type="radio" name="new-feed" value="Для определенного дня" />
+                                        <span class="checkbox__box material-icon">&#xE5CA;</span>
+                                        <p class="checkbox__text text-small">Для определенного дня</p>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="feed-new feed-control__new">
-                            <button class="feed-new__add material-icon">&#xE145;</button>
-                        </div>
-                        <div class="feed-control__checkbox-wrap">
-                            <label class="checkbox">
-                                <input class="checkbox__input" type="radio" name="new-feed" value="Для выходных дней" checked="checked" />
-                                <span class="checkbox__box material-icon">&#xE5CA;</span>
-                                <p class="checkbox__text text-small">Для выходных дней</p>
-                            </label>
-                            <label class="checkbox">
-                                <input class="checkbox__input" type="radio" name="new-feed" value="Для будней" />
-                                <span class="checkbox__box material-icon">&#xE5CA;</span>
-                                <p class="checkbox__text text-small">Для будней</p>
-                            </label>
-                            <label class="checkbox">
-                                <input class="checkbox__input" type="radio" name="new-feed" value="Для определенного дня" />
-                                <span class="checkbox__box material-icon">&#xE5CA;</span>
-                                <p class="checkbox__text text-small">Для определенного дня</p>
-                            </label>
+                        <div class="feed__top-columns-col">
+                            <h1 class="layout__heading heading-main">Ленты</h1>
                         </div>
                     </div>
-                    <h1 class="layout__heading heading-main">Ленты</h1>
                     <div class="feed__playlists">
                         <div class="playlist-wrap feed__playlist">
                             <div class="playlist">
@@ -121,7 +133,7 @@
                                         <i class="playlist__icon-turn material-icon">&#xE8AC;</i>
                                         <span class="playlist__head-text playlist__head-text_semibold">Включить</span>
                                     </div>
-                                    <div class="playlist__shuffle">
+                                    <div class="playlist__shuffle playlist__shuffle playlist__shuffle_active">
                                         <span class="playlist__head-text playlist__head-text_semibold">Воспроизводить случайно</span>
                                     </div>
                                     <div class="playlist__view">
@@ -131,8 +143,8 @@
                                 </div>
                                 <div class="track-list">
                                     <div class="track-list__content">
-                                        <div class="track-list__image-wrap">
-                                            <img class="track-list__image" src="assets/images/album-small-1.jpg" alt="" role="presentation" />
+                                        <div class="track-list__image-wrap track-list__image-wrap_icon">
+                                            <i class="material-icon">&#xE030;</i>
                                         </div>
                                         <div class="track-list__player">
                                             <span class="track-list__tag">Ночь</span>
@@ -258,7 +270,9 @@
                                     </div>
                                 </div>
                                 <div class="playlist__footer">
-                                    <span class="playlist__position">01</span>позиция</div>
+                                    <span class="playlist__position">01</span>позиция
+                                    <a class="playlist__remove" href="#">Удалить</a>
+                                </div>
                             </div>
                         </div>
                         <div class="playlist-wrap feed__playlist">
@@ -409,7 +423,9 @@
                                     </div>
                                 </div>
                                 <div class="playlist__footer">
-                                    <span class="playlist__position">01</span>позиция</div>
+                                    <span class="playlist__position">01</span>позиция
+                                    <a class="playlist__remove" href="#">Удалить</a>
+                                </div>
                             </div>
                         </div>
                         <div class="playlist-wrap playlist-wrap_disabled feed__playlist">
@@ -560,7 +576,9 @@
                                     </div>
                                 </div>
                                 <div class="playlist__footer">
-                                    <span class="playlist__position">01</span>позиция</div>
+                                    <span class="playlist__position">01</span>позиция
+                                    <a class="playlist__remove" href="#">Удалить</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -579,7 +597,7 @@
                 </ul>
             </div>
             <div class="right-heading">
-                <span class="right-heading__icon">
+                <span class="right-heading__icon right-heading__icon_calendar">
                     <i class="material-icon">&#xE916;</i>
                 </span>
                 <span class="right-heading__text">Календарь</span>

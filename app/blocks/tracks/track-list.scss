@@ -24,6 +24,21 @@
     transition: opacity .25s ease-in-out;
     cursor: pointer;
 
+    &_icon {
+      .material-icon {
+        width: 24px;
+        height: 24px;
+        color: white;
+        text-align: center;
+        z-index: 2;
+        @include performance;
+
+        @include center-image;
+      }
+
+      &::after { background-color: $color-main !important; }
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -55,7 +70,7 @@
     right: 10px;
     top: 6px;
     background-color: #005887;
-    padding: 6px 17px;
+    padding: 6px 14px;
     color: #fff;
     font-size: 11px;
     font-weight: 600;
@@ -197,12 +212,15 @@
 
   &__view {
     position: absolute;
-    right: 3px;
+    right: 6px;
     top: 0;
+
+    .material-icon { margin-left: 10px; }
   }
 
   &__shuffle {
     padding: 0 10px;
+    border-right: 1px solid #e6e9ed;
 
     &_active {
       background-color: #ededed;
@@ -272,16 +290,19 @@
 
   &__timeline-wrap {
     position: relative;
-    height: 30px;
+    height: 28px;
   }
 
   &__timeline-img {
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 3px;
+    top: 2px;
     left: 0;
     cursor: pointer;
+    transition: all .25s ease-in-out;
+
+    @include performance;
 
     &:hover {
       opacity: .7;
@@ -325,13 +346,27 @@
     padding: 0 8px;
     border-radius: 3px;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 13px;
     transition: background-color .25s ease-in-out;
     cursor: pointer;
 
     &:hover {
       background-color: darken(#ededed, 10%);
     }
+  }
+
+  &__remove {
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 11px;
+    display: inline-block;
+    font-size: 11px;
+    color: white;
+    background-color: #ededed;
+    border-radius: 2px;
+
+    &:hover { background-color: darken(#ededed, 20%); }
   }
 }
 
@@ -364,3 +399,5 @@
     }
   }
 }
+
+.playlist__heading + .track-list { margin-top: 0 !important; }

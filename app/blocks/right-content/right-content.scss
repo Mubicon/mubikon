@@ -169,6 +169,11 @@
     margin: auto;
 
     .material-icon { margin-top: 6px; }
+
+    &_calendar {
+
+      .material-icon { margin-top: 0; }
+    }
   }
 
   &__count {

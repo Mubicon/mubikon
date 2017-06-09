@@ -3,7 +3,7 @@
   position: relative;
 
   &__playlists {
-    margin-top: 50px;
+    margin-top: 19px;
   }
 
   &__playlist {
@@ -13,9 +13,14 @@
     }
   }
 
-  &__feed-control {
-    position: absolute;
-    left: 0;
-    top: -6px;
+  &__top-columns {
+    display: table;
+    width: 100%;
+
+    &-col {
+      display: table-cell;
+
+      &:not(:first-child) { padding-left: 40px; }
+    }
   }
 }

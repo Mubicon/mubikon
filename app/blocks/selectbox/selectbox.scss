@@ -1,0 +1,37 @@
+.selectbox {
+  display: inline-block;
+  position: relative;
+
+  &__select {
+    height: 32px;
+    line-height: 34px;
+    cursor: pointer;
+    color: #292d33;
+    transition: color .25s ease-in-out;
+    vertical-align: middle;
+    font-size: 12px;
+    white-space: nowrap;
+    background-color: #fff;
+    border-radius: 16px;
+    padding-left: 19px;
+    padding-right: 50px;
+    font-family: $font-main;
+    appearance: none;
+
+    &:hover {
+      color: lighten(#292d33, 40%);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 13px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    pointer-events: none;
+  }
+}

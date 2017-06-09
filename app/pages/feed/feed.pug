@@ -33,11 +33,14 @@ block header
 
 block content
   +b.feed
-    +feed-control().__feed-control
-    h1.layout__heading.heading-main Ленты
+    +e.top-columns
+      +e.top-columns-col
+        +feed-control()
+      +e.top-columns-col
+        h1.layout__heading.heading-main Ленты
     +e.playlists
       +playlist-wrap().__playlist
-        +playlist('Ночь', true)
+        +playlist-one('Ночь', true)
       +playlist-wrap().__playlist
         +playlist('Вечер', false)._table-hidden
       +playlist-wrap(true).__playlist

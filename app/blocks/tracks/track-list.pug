@@ -73,3 +73,49 @@ mixin playlist(tag, expanded)
     +e.footer
       +e.SPAN.position 01
       | позиция
+      +e.A.remove(href="#") Удалить
+      
+mixin playlist-one(tag, expanded)
+  +b.playlist&attributes(attributes)
+    +e.heading
+      +e.turn
+        +e.I.icon-turn.material-icon !{"&#xE8AC;"}
+        +e.SPAN.head-text._semibold Выключить
+      +e.turn._on
+        +e.I.icon-turn.material-icon !{"&#xE8AC;"}
+        +e.SPAN.head-text._semibold Включить
+      +e.shuffle.playlist__shuffle_active
+        +e.SPAN.head-text._semibold Воспроизводить случайно
+      if expanded
+        +e.view
+          +e.SPAN.head-text Свернуть
+          +e.I.icon-feed.material-icon !{"&#xE316;"}
+      else
+        +e.view
+          +e.SPAN.head-text Развернуть
+          +e.I.icon-feed.material-icon !{"&#xE313;"}
+    +b.track-list
+      +e.content
+        +e.image-wrap._icon
+          i.material-icon !{"&#xE030;"}
+        +e.player
+          +e.SPAN.tag= tag
+          +e.equalizer
+            img(src="assets/images/player-equalizer.png")
+          +e.player-info
+            +e.controls
+              +e.I.control-icon._pause.material-icon !{"&#xE036;"}
+              +e.I.control-icon._play.material-icon !{"&#xE039;"}
+            +e.SPAN.title Танцевальный плейлист
+    +e.timeline
+      +e.timeline-wrap
+        +e.IMG(src='assets/images/album-small-1.jpg').timeline-img
+        +e.IMG(src='assets/images/album-small-1.jpg').timeline-img._left_10
+        +e.IMG(src='assets/images/album-small-1.jpg').timeline-img._left_20
+        +e.IMG(src='assets/images/album-small-1.jpg').timeline-img._left_30
+        +e.IMG(src='assets/images/album-small-1.jpg').timeline-img._left_40
+    +track-table().__table
+    +e.footer
+      +e.SPAN.position 01
+      | позиция
+      +e.A.remove(href="#") Удалить

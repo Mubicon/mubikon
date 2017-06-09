@@ -11,7 +11,7 @@ mixin playlist-info()
 mixin right-heading(type)
   if (type==='feed')
     +b.right-heading&attributes(attributes)
-      +e.SPAN.icon
+      +e.SPAN.icon._calendar
         i.material-icon !{"&#xE916;"}
       +e.SPAN.text Календарь
       +e.A.arrow.material-icon(href="#") !{"&#xE315;"}

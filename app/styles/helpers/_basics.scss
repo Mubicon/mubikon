@@ -28,6 +28,10 @@ input, textarea {
   &::placeholder {
     color: $color-placeholder;
   }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
 }
 
 /* ##########

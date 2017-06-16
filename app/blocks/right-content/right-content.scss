@@ -63,6 +63,15 @@
     margin-left: 20px;
     line-height: 2.15;
     width: 85%;
+
+    &::placeholder {
+      color: $color-input;
+      transition: all .25s ease-in-out;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
   }
 
   &__radio-wrap {

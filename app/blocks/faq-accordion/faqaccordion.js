@@ -1,7 +1,7 @@
-export function faqaccordion () => {
+export function faqaccordion () {
 
   $('.accordion_item').click(function () {
-    $(".accordion_item p").slideToggle("slow");
+    $(this).find("p").slideToggle("slow");
   });
 
 }

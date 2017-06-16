@@ -2,10 +2,16 @@
   height: 100%;
   width: calc(100% + 70px);
   margin-left: -35px;
+  margin-bottom: -20px;
   background: $color-white;
   padding: 30px 25px;
 
   .accordion {
+    margin-top: 60px;
+
+    &:first-child {
+      margin-top: 0;
+    }
 
     .title {
       font-size: 24px;
@@ -20,9 +26,14 @@
     &_item {
       font-size: 16px;
       cursor: pointer;
-      padding: 10px 0;
+      padding: 20px 0;
       position: relative;
       padding-left: 30px;
+      transition: all .25s ease-in-out;
+
+      &:hover {
+        color: #aeb3b4;
+      }
 
       &:hover::before  {
         background-color: #328ae3;
@@ -37,8 +48,15 @@
         border-radius: 50%;
         background: $color-main;
         left: 10px;
-        top: 15px;
+        top: 25px;
         transition: all .25s ease-in-out;
+      }
+      p {
+        border-top: 1px dotted $color-input;
+        color: $color-input;
+        display: none;
+        padding: 20px 0;
+        margin-top: 20px;
       }
     }
   }

@@ -52,8 +52,8 @@ mixin right-tracks()
                 +e.I.icon.material-icon !{'&#xE037;'}
               +e.A.album-button
                 +e.I.icon.material-icon !{'&#xE5CD;'}
-                
-                
+
+
 mixin right-tracks-small()
   +b.right-tracks&attributes(attributes)
     +e.SPAN.count Треков:
@@ -121,7 +121,7 @@ mixin playlist-create()
     +e.H3.heading Создание нового плейлиста
     +e.P.hint Создайте новый плейлист и выбрать время суток для него. Добавляйте после создания треки.
     +e.tag-container
-      +e.INPUT(value='Название вашего плейлиста').name
+      +e.INPUT(placeholder='Название вашего плейлиста').name
     +e.tag-container
       +e.LABEL.radio-wrap
         +e.INPUT(type='radio', name='time-tag', checked='true').control

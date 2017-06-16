@@ -1,8 +1,12 @@
-.track-lists { margin-top: 13px; }
+.track-lists {
+  margin-top: 13px;
+}
 
 .track-list {
 
-  &:not(:first-child) { margin-top: 11px; }
+  &:not(:first-child) {
+    margin-top: 11px;
+  }
 
   &__time {
     font-size: 12px;
@@ -25,18 +29,21 @@
     cursor: pointer;
 
     &_icon {
+
       .material-icon {
         width: 24px;
         height: 24px;
         color: white;
         text-align: center;
         z-index: 2;
-        @include performance;
 
+        @include performance;
         @include center-image;
       }
 
-      &::after { background-color: $color-main !important; }
+      &::after {
+        background-color: $color-main !important;
+      }
     }
 
     &::after {
@@ -215,7 +222,9 @@
     right: 6px;
     top: 0;
 
-    .material-icon { margin-left: 10px; }
+    .material-icon {
+      margin-left: 10px;
+    }
   }
 
   &__shuffle {
@@ -366,7 +375,9 @@
     background-color: #ededed;
     border-radius: 2px;
 
-    &:hover { background-color: darken(#ededed, 20%); }
+    &:hover {
+      background-color: darken(#ededed, 20%);
+    }
   }
 }
 
@@ -400,4 +411,6 @@
   }
 }
 
-.playlist__heading + .track-list { margin-top: 0 !important; }
+.playlist__heading + .track-list {
+  margin-top: 0 !important;
+}

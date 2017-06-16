@@ -1,0 +1,43 @@
+.faq {
+
+  &__question {
+    display: block;
+    max-width: 515px;
+    margin: 0 auto;
+    padding: 40px 0 60px;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  .heading-main {
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    padding: 0 21px;
+    width: 365px;
+    border-radius: 50px;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+
+    &::placeholder {
+      transition: all .25s ease-in-out;
+    }
+  }
+
+  .button {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 15px;
+
+    .material-icon {
+      margin-right: 10px;
+    }
+  }
+}

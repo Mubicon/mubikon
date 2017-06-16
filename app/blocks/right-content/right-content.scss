@@ -5,6 +5,11 @@
   &__heading {
     text-align: left;
     margin-bottom: 15px;
+    display: flex;
+
+    .material-icon {
+      margin-right: 10px;
+    }
   }
 }
 

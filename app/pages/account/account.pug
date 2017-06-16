@@ -18,14 +18,14 @@ block sidebar
     +icon-menu.__menu
       +icon-menu-icon("#", "Трэки", "&#xE05F;")
       +icon-menu-icon("#", "Подборки", "&#xE065;")
-      +icon-menu-icon("#", "Трансляция", "&#xE16D;")
+      +icon-menu-icon("#", "Лента", "&#xE16D;")
       +icon-menu-icon("#", "Каналы", "&#xE8BF;")
       +icon-menu-icon("#", "Помощь", "&#xE8FD;")
 
 block header
   +header
     +header-slogan Управляйте музыкой с удовольствием!
-  
+
 block content
   +b.account
     +e.H1.heading.heading-main Управление аккаунтом
@@ -34,7 +34,7 @@ block content
       +tabs-tab(data-tab-target='finance') Финансы
       +tabs-tab(data-tab-target='dostup') Настройки доступа
       +tabs-tab.active(data-tab-target='svedenia') Сведенья о компании
-      
+
     +tabs-tab-content.__tab-content(data-tab-group='account-tabs' data-tab='tarif')
     +tabs-tab-content.__tab-content(data-tab-group='account-tabs' data-tab='finance')
       +table
@@ -76,8 +76,8 @@ block content
             p.text-small Счет №123123 на оплату услуг за май
           +table-col._width_60._align_right
             +e.A.pdf.material-icon(href="#") !{"&#xE415;"}
-        
-    
+
+
     +tabs-tab-content.__tab-content(data-tab-group='account-tabs' data-tab='dostup')
       form.account__form(method="post" action="#")
         +inputbox('E-mail')._big
@@ -88,8 +88,8 @@ block content
           +input('*********')(type='password' name='password-repeat')
         +inputbox-header
           +button('button')(type="submit")._color_white._size_big._weight_normal._radius_small.account__button.float-right СОХРАНИТЬ
-          
-          
+
+
     +tabs-tab-content.__tab-content(data-tab-group='account-tabs' data-tab='svedenia').active
       form.account__form(method="post" action="#")
         +inputbox('Полное наименование организации')
@@ -121,10 +121,10 @@ block content
           +input('041231231')
         +inputbox-header
           +button('button')(type="submit")._color_blue._size_big._weight_normal.account__button.float-right СОХРАНИТЬ
-          
-    
-    
-  
-  
+
+
+
+
+
 block right
   +right-header

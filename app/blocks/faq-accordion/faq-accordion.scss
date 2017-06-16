@@ -1,0 +1,45 @@
+.faq-accordion {
+  height: 100%;
+  width: calc(100% + 70px);
+  margin-left: -35px;
+  background: $color-white;
+  padding: 30px 25px;
+
+  .accordion {
+
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      display: flex;
+
+      .material-icon {
+        margin-right: 20px;
+      }
+    }
+
+    &_item {
+      font-size: 16px;
+      cursor: pointer;
+      padding: 10px 0;
+      position: relative;
+      padding-left: 30px;
+
+      &:hover::before  {
+        background-color: #328ae3;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $color-main;
+        left: 10px;
+        top: 15px;
+        transition: all .25s ease-in-out;
+      }
+    }
+  }
+}

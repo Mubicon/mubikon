@@ -1,0 +1,47 @@
+extends ../../layouts/default
+include ../../components/sidebar/sidebar
+include ../../components/header/header
+include ../../components/right-header/right-header
+include ../../blocks/icon-menu/icon-menu
+include ../../blocks/player/player
+include ../../blocks/right-content/right-content
+include ../../blocks/faq-accordion/faq-accordion
+
+block head
+  - var pageTitle = 'Каталог — Мубикон'
+
+block sidebar
+  +sidebar
+    +icon-menu.__menu
+      +icon-menu-icon("#", "Каталог", "&#xE5D2;")
+      +icon-menu-icon("#", "Трэки", "&#xE05F;")
+      +icon-menu-icon("#", "Подборки", "&#xE065;")
+      +icon-menu-icon("#", "Лента", "&#xE16D;")
+      +icon-menu-icon("#", "Каналы", "&#xE8BF;")
+      +icon-menu-icon("#", "Помощь", "&#xE8FD;").active
+
+block header
+  +header
+    +player()._pause
+      +player-image("assets/images/album-small-2.jpg")
+      +player-content
+        +player-info("Let’s dance - Jon Travolta")
+          +player-list-control()
+        +player-timer()
+        +player-equalizer()
+
+block content
+  +b.faq
+    +e('div').question
+      h1.heading-main Создайте тикет, задайте свой вопрос
+      +e('div').box
+        +e.INPUT(placeholder='Введите Ваш вопрос').input
+        +button()._color_blue._size_huge.__button <span class="material-icon">!{"&#xE0E1;"}</span> Отправить
+
+    +faq-accordion()
+
+block right
+  +right-header
+  +right-content
+    h1.heading-main.right-content__heading <span class="material-icon">!{"&#xE8FD;"}</span> Помощь
+    p.text-small Внимательно ознакомьтесь с инструкциями по работе с сервисом. Ваш вопрос будет адресован в нужный отдел. С Вами свяжется специалист компании по Вашему административному электронному адресу, указанному прр подключении сервиса.

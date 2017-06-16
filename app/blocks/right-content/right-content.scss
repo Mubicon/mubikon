@@ -125,13 +125,17 @@
     font-weight: 300;
     color: #292d33;
 
-    &:not(:first-child) { margin-top: 18px; }
+    &:not(:first-child) {
+      margin-top: 18px;
+    }
   }
 
   &__info {
     max-width: 210px;
 
-    &:not(:first-child) { margin-top: 15px; }
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
   }
 
   &__hint {
@@ -168,11 +172,15 @@
     bottom: 0;
     margin: auto;
 
-    .material-icon { margin-top: 6px; }
+    .material-icon {
+      margin-top: 6px;
+    }
 
     &_calendar {
 
-      .material-icon { margin-top: 0; }
+      .material-icon {
+        margin-top: 0;
+      }
     }
   }
 
@@ -212,7 +220,6 @@
 }
 
 .right-actions {
-
   @include clearfix;
 
   &__hint {
@@ -238,13 +245,12 @@
 
     &::after {
       @include triangle(#2d3039, top, 14px);
-      content: "";
+      content: ' ';
       position: absolute;
       bottom: 100%;
       left: 0;
       right: 0;
       margin: auto;
-
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
       border-bottom: 6px solid #2d3039;
@@ -274,7 +280,7 @@
       background-color: $color-main;
 
       .right-actions__hint {
-        transform: translate3d(0, 0px, 0);
+        transform: translate3d(0, 0, 0);
         opacity: 1;
       }
     }
@@ -301,19 +307,17 @@
 
   ::-webkit-scrollbar {
     width: 4px;
-}
+  }
 
-::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     background-color: white;
     border-radius: 2px;
-}
+  }
 
-::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     border-radius: 2px;
     background-color: #389bfe;
-}
-
-
+  }
 
   &__content {
     overflow: auto;
@@ -340,7 +344,6 @@
     position: absolute;
 
     @include performance;
-
     @include center-image;
   }
 
@@ -384,11 +387,17 @@
 
     &:hover {
 
-      .right-tracks__album-button { opacity: 1; }
+      .right-tracks__album-button {
+        opacity: 1;
+      }
 
-      &::after { opacity: .8; }
+      &::after {
+        opacity: .8;
+      }
 
-      &::before { opacity: .4; }
+      &::before {
+        opacity: .4;
+      }
     }
   }
 
@@ -469,7 +478,9 @@
     margin-top: 12px;
     transition: all .25s ease-in-out;
 
-    &:hover { color: $color-main; }
+    &:hover {
+      color: $color-main;
+    }
   }
 
   &__bot-text {
@@ -534,7 +545,7 @@
       width: 100%;
       height: 100%;
       opacity: 0;
-      background-image: linear-gradient( -136deg, rgba(255,255,255,0.30196) 0%, rgba(255,255,255,0) 100%);
+      background-image: linear-gradient(-136deg, rgba(255, 255, 255, 0.30196) 0%, rgba(255, 255, 255, 0) 100%);
     }
   }
 
@@ -552,7 +563,9 @@
       .playlist-scroll__icon-wrap {
         background-color: $color-main;
 
-        &::after { opacity: 1; }
+        &::after {
+          opacity: 1;
+        }
       }
 
       .playlist-scroll__icon {

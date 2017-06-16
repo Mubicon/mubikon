@@ -11,5 +11,8 @@
   border: 1px solid #ececec;
   box-sizing: border-box;
 
-  &:focus { border-color: $color-main; }
+  &:focus {
+    border-color: $color-main;
+    color: transparent;
+  }
 }

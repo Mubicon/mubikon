@@ -1,6 +1,6 @@
 .filter-container {
   background-color: #fff;
-  padding: 5px 10px 0px;
+  padding: 5px 10px 0;
   position: relative;
   border-radius: 5px;
 
@@ -12,7 +12,9 @@
       display: table-cell;
       vertical-align: middle;
 
-      &:not(:first-child) { padding-left: 65px; }
+      &:not(:first-child) {
+        padding-left: 65px;
+      }
     }
   }
 
@@ -31,6 +33,7 @@
 
     &::before {
       @include pseudo;
+
       border-top: 1px solid #ececec;
       position: absolute;
       left: 0;
@@ -40,12 +43,15 @@
 
     &::after {
       @include pseudo;
+
       position: static;
       width: 100%;
       padding-bottom: 13px;
     }
 
-    &:target { max-height: 150px; }
+    &:target {
+      max-height: 150px;
+    }
   }
 
   &__accordion-close {
@@ -59,7 +65,9 @@
     color: #2d3039;
     transition: all .25s ease-in-out;
 
-    &:hover { color: $color-main; }
+    &:hover {
+      color: $color-main;
+    }
   }
 
   &__toggler {
@@ -77,7 +85,9 @@
 
   &__item {
 
-    &:not(:last-child) { margin-right: 24px; }
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
   }
 
   &__labels {

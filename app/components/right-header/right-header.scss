@@ -1,9 +1,11 @@
 .right-header {
   display: flex;
   height: 90px;
-  width: 100%;
+  width: 280px;
+  position: fixed;
   background-color: #2d3039;
   justify-content: flex-end;
+  margin-top: -90px;
 
   &__menu {
     .icon-menu__item, .icon-menu__link, & { height: 100%; }

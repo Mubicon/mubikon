@@ -22,13 +22,20 @@
   &__header {
     height: 90px;
     background-color: #2d3039;
+    position: fixed;
+    z-index: 5;
+    max-width: 880px;
   }
 
-  &__content { padding: 20px 35px; }
+  &__content {
+    padding: 20px 35px;
+    margin-top: 90px;
+  }
 
   &__right-side {
     background-color: #ededed;
     width: 280px;
+    margin-top: 90px;
   }
 
   &__heading {

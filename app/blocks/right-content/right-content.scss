@@ -1,6 +1,9 @@
 .right-content {
   display: block;
   padding: 20px 25px;
+  position: fixed;
+  width: 280px;
+  top: 90px;
 
   &__heading {
     text-align: left;
@@ -15,6 +18,9 @@
 
 .playlist-info {
   padding: 23px 25px;
+  position: fixed;
+  top: 147px;
+  width: 280px;
 
   &__control {
     display: none;
@@ -133,6 +139,9 @@
 .playlist-inside {
   padding: 11px 25px 10px;
   color: #292d33;
+  position: fixed;
+  width: 280px;
+  top: 147px;
 
   &__title {
     font-size: 21px;
@@ -170,7 +179,9 @@
 .right-heading {
   padding: 24px 60px 19px 66px;
   border-bottom: 1px solid #dfdfdf;
-  position: relative;
+  //position: relative;
+  position: fixed;
+  width: 280px;
 
   &_border-dark {
     border-color: #babbbe;

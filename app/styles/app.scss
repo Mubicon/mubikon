@@ -30,6 +30,7 @@ body {
     z-index: 1;
 
     @include pseudo;
+    position: fixed;
   }
 }
 

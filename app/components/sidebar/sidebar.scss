@@ -1,6 +1,8 @@
 .sidebar {
   display: block;
-  width: 100%;
+  //width: 100%;
+  min-width: 100px;
+  position: fixed;
 
   &__logo {
     display: block;

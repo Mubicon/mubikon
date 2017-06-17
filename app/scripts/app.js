@@ -3,6 +3,7 @@ import { preloader } from '../blocks/preloader/preloader';
 import { tabs } from '../blocks/tabs/tabs';
 import { faqaccordion } from '../blocks/faq-accordion/faqaccordion';
 import slider from '../blocks/slider/slider';
+import { mainStyler } from '../pages/feed/feed';
 //import trackssize from '../blocks/right-content/tracks-size';
 
 $(() => {
@@ -11,4 +12,5 @@ $(() => {
   preloader();
   tabs();
   faqaccordion();
+  mainStyler();
 });

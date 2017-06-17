@@ -21,6 +21,9 @@
 
 .calendar-container {
   display: block;
+  position: fixed;
+  top: 147px;
+  width: 280px;
 
   &__controls {
     text-align: center;

@@ -32,11 +32,11 @@
       transition: all .25s ease-in-out;
 
       &:hover {
-        color: #aeb3b4;
+        color: lighten($color-input, 40%);
       }
 
-      &:hover::before  {
-        background-color: #328ae3;
+      &:hover::before {
+        background-color: $color-darkmain;
       }
 
       &::before {
@@ -51,12 +51,14 @@
         top: 25px;
         transition: all .25s ease-in-out;
       }
+
       p {
         border-top: 1px dotted $color-input;
         color: $color-input;
         display: none;
         padding: 20px 0;
         margin-top: 20px;
+        line-height: 1.6;
       }
     }
   }

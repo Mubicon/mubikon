@@ -12,8 +12,17 @@
       display: table-cell;
       vertical-align: middle;
 
+      @media (max-width: 1200px) {
+        display: block;
+        padding-top: 5px;
+      }
+
       &:not(:first-child) {
         padding-left: 65px;
+
+        @media (max-width: 1200px) {
+          padding-left: 0;
+        }
       }
     }
   }
@@ -27,7 +36,7 @@
     padding-right: 40px;
     overflow: hidden;
     max-height: 0;
-    transition: all .25s ease-in-out;
+    transition: all 1s ease-in-out;
 
     @include performance;
 

@@ -2,13 +2,15 @@
 
   &__question {
     display: block;
-    max-width: 515px;
+    max-width: 525px;
     margin: 0 auto;
     padding: 40px 0 60px;
   }
 
   &__box {
-    display: flex;
+    display: block;
+
+    @include clearfix;
   }
 
   .heading-main {
@@ -23,6 +25,7 @@
     height: 32px;
     line-height: 32px;
     margin-right: 10px;
+    float: left;
 
     &::placeholder {
       transition: all .25s ease-in-out;
@@ -31,13 +34,16 @@
 
   .button {
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
+    display: table;
     font-size: 14px;
     padding: 0 15px;
+    line-height: 32px;
+    float: right;
 
     .material-icon {
-      margin-right: 10px;
+      display: table-cell;
+      vertical-align: middle;
+      padding-right: 10px;
     }
   }
 }

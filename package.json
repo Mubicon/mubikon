@@ -55,7 +55,6 @@
     "gulp-watch": "^4.3.11",
     "jade-get-data": "^1.0.1",
     "jquery": "^3.2.1",
-    "jquery-form-styler": "^2.0.0",
     "jquery-ui-bundle": "^1.12.1",
     "normalize.css": "^6.0.0",
     "postcss-discard-comments": "^2.0.4",

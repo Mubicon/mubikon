@@ -1,13 +1,16 @@
 include ../checkbox/checkbox
 include ../selectbox/selectbox
+include ../filter-container/filter-container
 
 mixin feed-control(create)
   +b.feed-control&attributes(attributes)
     +e.top-controls
-      +selectbox('feedname').__selectbox
-        option Первая лента
-        option Вторая лента
-        option Третья лента
+      +filter-tape-container()
+      //+selectbox('feedname').__selectbox
+      //        option Первая лента
+      //        option Вторая лента
+      //        option Третья лента
+
       +b.feed-new.__new
         if create
           +e.FORM.create-form(action="#" method="post")

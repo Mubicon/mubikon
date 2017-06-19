@@ -1,4 +1,4 @@
-.filter-container {
+.filter-container, .filter-tape-container {
   background-color: #fff;
   padding: 5px 10px 0;
   position: relative;
@@ -112,6 +112,19 @@
   }
 }
 
+.filter-tape-container {
+  width: 195px;
+  display: inline-block;
+
+  &__top-table {
+    padding-right: 0;
+  }
+
+  .filter-item {
+    width: 100%;
+  }
+}
+
 .filter-item {
   font-size: 12px;
   color: #292d33;
@@ -221,3 +234,4 @@
     }
   }
 }
+

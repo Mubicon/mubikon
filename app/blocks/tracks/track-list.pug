@@ -1,4 +1,5 @@
 include ../rating/rating
+include ../input/input
 include track-table
 
 mixin track-list()
@@ -72,9 +73,9 @@ mixin playlist(tag, expanded)
     +track-table().__table
     +e.footer
       +e.SPAN.position 01
-      | позиция
+      +input('позиция')
       +e.A.remove(href="#") Удалить
-      
+
 mixin playlist-one(tag, expanded)
   +b.playlist&attributes(attributes)
     +e.heading
@@ -117,5 +118,5 @@ mixin playlist-one(tag, expanded)
     +track-table().__table
     +e.footer
       +e.SPAN.position 01
-      | позиция
+      +input('позиция')
       +e.A.remove(href="#") Удалить

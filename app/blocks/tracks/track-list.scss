@@ -346,6 +346,25 @@
     font-size: 12px;
     line-height: 1.8;
     background-color: #fff;
+
+    .input {
+      display: inline-block;
+      width: inherit;
+      height: 24px;
+      border: none;
+      outline: none;
+      padding: 0;
+
+      &::placeholder {
+        transition: all .25s ease-in-out;
+        color: $color-input;
+      }
+
+      &:focus::placeholder {
+        color: transparent;
+      }
+
+    }
   }
 
   &__position {

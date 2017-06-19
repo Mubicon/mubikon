@@ -1,11 +1,12 @@
-import 'jquery-form-styler';
+import Styler from 'jquery-form-styler';
 
-export function mainStyler () {
+export default () => {
 
-  $(function() {
+  const myStyler = new Styler($(function() {
 
     $('select').styler();
 
-  });
+  }));
 
 }
+

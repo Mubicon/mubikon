@@ -2,6 +2,10 @@
   display: inline-block;
   position: relative;
 
+  &.active & {
+    &__icon { transform: rotate(180deg); }
+  }
+
   &__select {
     height: 32px;
     line-height: 34px;
@@ -17,6 +21,7 @@
     padding-right: 50px;
     font-family: $font-main;
     appearance: none;
+    display: block;
 
     &:hover {
       color: lighten(#292d33, 40%);
@@ -33,5 +38,10 @@
     height: 24px;
     text-align: center;
     pointer-events: none;
+
+    @include performance;
+
+    transform: rotate(0deg);
+    transition: all .25s ease-in-out;
   }
 }

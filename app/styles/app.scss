@@ -13,7 +13,10 @@
   margin: 0 auto;
 }
 
-html { min-width: 1000px; }
+html {
+  min-width: 1000px;
+  overflow-y: scroll;
+}
 
 body {
   color: #464c4d;

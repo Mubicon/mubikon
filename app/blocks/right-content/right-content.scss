@@ -60,9 +60,19 @@
     font-family: $font-main;
     font-size: 14px;
     font-weight: 400;
-    margin-left: 20px;
     line-height: 2.15;
-    width: 85%;
+    padding: 0 15px;
+    width: 200px;
+    box-sizing: content-box;
+    background-color: transparent;
+    text-align: center;
+
+    &::placeholder {
+      transition: color .25s ease-in-out;
+      color: #464c4d;
+    }
+
+    &:focus::placeholder { color: transparent; }
   }
 
   &__radio-wrap {

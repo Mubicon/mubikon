@@ -71,7 +71,7 @@ mixin playlist(tag, expanded)
         +e.IMG(src='assets/images/album-small-1.jpg').timeline-img._left_40
     +track-table().__table
     +e.footer
-      +e.SPAN.position 01
+      +e.INPUT.position(type='text' name='position' value='01' onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')")
       | позиция
       +e.A.remove(href="#") Удалить
       
@@ -116,6 +116,6 @@ mixin playlist-one(tag, expanded)
         +e.IMG(src='assets/images/album-small-1.jpg').timeline-img._left_40
     +track-table().__table
     +e.footer
-      +e.SPAN.position 01
+      +e.INPUT.position(type='text' name='position' value='01' onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')")
       | позиция
       +e.A.remove(href="#") Удалить

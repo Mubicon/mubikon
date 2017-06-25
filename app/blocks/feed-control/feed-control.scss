@@ -41,6 +41,10 @@
     font-family: $font-main;
     height: 32px;
     line-height: 32px;
+
+    &::placeholder { transition: color .25s ease-in-out; }
+
+    &:focus::placeholder { color: transparent; }
   }
 
   &__submit {

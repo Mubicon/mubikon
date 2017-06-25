@@ -343,12 +343,14 @@
     font-weight: 700;
     background-color: #ededed;
     line-height: 2;
-    padding: 0 8px;
+    padding: 0 5px;
     border-radius: 3px;
     display: inline-block;
     margin-right: 13px;
     transition: background-color .25s ease-in-out;
-    cursor: pointer;
+    text-align: center;
+    width: 32px;
+    font-family: $font-main;
 
     &:hover {
       background-color: darken(#ededed, 10%);

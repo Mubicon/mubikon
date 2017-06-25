@@ -1,6 +1,10 @@
 .sidebar {
   display: block;
-  width: 100%;
+  width: 100px;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  z-index: 10;
 
   &__logo {
     display: block;

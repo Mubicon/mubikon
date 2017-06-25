@@ -1,7 +1,9 @@
 .header {
   display: flex;
-  height: 100%;
-  position: relative;
+  position: fixed;
+  height: 90px;
+  z-index: 10;
+  background-color: #2d3039;
 
   &_table {
     display: table;

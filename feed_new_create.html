@@ -36,7 +36,7 @@
                     <li class="icon-menu__item active">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE16D;</i>
-                            <span class="icon-menu__text">Трансляция</span>
+                            <span class="icon-menu__text">Лента</span>
                         </a>
                     </li>
                     <li class="icon-menu__item">
@@ -86,20 +86,31 @@
                         <div class="feed__top-columns-col">
                             <div class="feed-control">
                                 <div class="feed-control__top-controls">
-                                    <div class="selectbox feed-control__selectbox">
+                                    <a class="selectbox feed-control__selectbox" href="#filter1">
                                         <i class="selectbox__icon material-icon">&#xE313;</i>
-                                        <select class="selectbox__select">
-                                            <option>Первая лента</option>
-                                            <option>Вторая лента</option>
-                                            <option>Третья лента</option>
-                                        </select>
-                                    </div>
+                                        <span class="selectbox__select">Первая лента</span>
+                                    </a>
                                     <div class="feed-new feed-control__new">
                                         <form class="feed-new__create-form" action="#" method="post">
                                             <input class="feed-new__input" type="text" placeholder="Введите название новой ленты" />
                                             <button class="feed-new__submit" type="submit">OK</button>
                                         </form>
                                     </div>
+                                </div>
+                                <div class="filter-container__accordion" id="filter1">
+                                    <a class="filter-container__accordion-close material-icon" href="#page">&#xE5CD;</a>
+                                    <a class="filter-label filter-label_nodelete filter-container__label">
+                                        <span class="filter-label__text">Первая лента</span>
+                                    </a>
+                                    <a class="filter-label filter-label_nodelete filter-container__label">
+                                        <span class="filter-label__text">Вторая лента</span>
+                                    </a>
+                                    <a class="filter-label filter-label_nodelete filter-container__label">
+                                        <span class="filter-label__text">Третья лента</span>
+                                    </a>
+                                    <a class="filter-label filter-label_nodelete filter-container__label">
+                                        <span class="filter-label__text">Четвертая лента</span>
+                                    </a>
                                 </div>
                                 <div class="feed-control__checkbox-wrap">
                                     <label class="checkbox">
@@ -273,7 +284,7 @@
                                     </div>
                                 </div>
                                 <div class="playlist__footer">
-                                    <span class="playlist__position">01</span>позиция
+                                    <input class="playlist__position" type="text" name="position" value="01" onkeyup="if (/D/g.test(this.value)) this.value = this.value.replace(/D/g,'')" />позиция
                                     <a class="playlist__remove" href="#">Удалить</a>
                                 </div>
                             </div>
@@ -426,7 +437,7 @@
                                     </div>
                                 </div>
                                 <div class="playlist__footer">
-                                    <span class="playlist__position">01</span>позиция
+                                    <input class="playlist__position" type="text" name="position" value="01" onkeyup="if (/D/g.test(this.value)) this.value = this.value.replace(/D/g,'')" />позиция
                                     <a class="playlist__remove" href="#">Удалить</a>
                                 </div>
                             </div>
@@ -579,7 +590,7 @@
                                     </div>
                                 </div>
                                 <div class="playlist__footer">
-                                    <span class="playlist__position">01</span>позиция
+                                    <input class="playlist__position" type="text" name="position" value="01" onkeyup="if (/D/g.test(this.value)) this.value = this.value.replace(/D/g,'')" />позиция
                                     <a class="playlist__remove" href="#">Удалить</a>
                                 </div>
                             </div>
@@ -589,82 +600,84 @@
             </main>
         </div>
         <aside class="layout__right-side">
-            <div class="right-header">
-                <ul class="icon-menu icon-menu_light right-header__menu">
-                    <li class="icon-menu__item">
-                        <a class="icon-menu__link" href="#">
-                            <i class="icon-menu__icon material-icon">&#xE853;</i>
-                            <span class="icon-menu__text">Аккаунт</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="right-heading">
-                <span class="right-heading__icon right-heading__icon_calendar">
-                    <i class="material-icon">&#xE916;</i>
-                </span>
-                <span class="right-heading__text">Календарь</span>
-                <a class="right-heading__arrow material-icon" href="#">&#xE315;</a>
-            </div>
-            <div class="calendar-container">
-                <div class="calendar-controls calendar-container__controls">
-                    <button class="calendar-controls__arrow material-icon">&#xE314;</button>
-                    <span class="calendar-controls__text">Октябрь, 2016 год</span>
-                    <button class="calendar-controls__arrow material-icon">&#xE315;</button>
+            <div class="layout__right-block">
+                <div class="right-header">
+                    <ul class="icon-menu icon-menu_light right-header__menu">
+                        <li class="icon-menu__item">
+                            <a class="icon-menu__link" href="#">
+                                <i class="icon-menu__icon material-icon">&#xE853;</i>
+                                <span class="icon-menu__text">Аккаунт</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="calendar">
-                    <div class="calendar__content calendar__content_head">
-                        <span class="calendar__item">пон</span>
-                        <span class="calendar__item">вт</span>
-                        <span class="calendar__item">ср</span>
-                        <span class="calendar__item">чт</span>
-                        <span class="calendar__item">пт</span>
-                        <span class="calendar__item">суб</span>
-                        <span class="calendar__item">вс</span>
+                <div class="right-heading">
+                    <span class="right-heading__icon right-heading__icon_calendar">
+                        <i class="material-icon">&#xE916;</i>
+                    </span>
+                    <span class="right-heading__text">Календарь</span>
+                    <a class="right-heading__arrow material-icon" href="#">&#xE315;</a>
+                </div>
+                <div class="calendar-container">
+                    <div class="calendar-controls calendar-container__controls">
+                        <button class="calendar-controls__arrow material-icon">&#xE314;</button>
+                        <span class="calendar-controls__text">Октябрь, 2016 год</span>
+                        <button class="calendar-controls__arrow material-icon">&#xE315;</button>
                     </div>
-                    <div class="calendar__content">
-                        <span class="calendar__item calendar__item_color_grey">26</span>
-                        <span class="calendar__item calendar__item_color_grey">27</span>
-                        <span class="calendar__item calendar__item_color_grey">28</span>
-                        <span class="calendar__item calendar__item_color_grey">29</span>
-                        <span class="calendar__item calendar__item_color_grey">30</span>
-                        <span class="calendar__item calendar__item_bg_blue">1</span>
-                        <span class="calendar__item calendar__item_bg_blue">2</span>
-                        <span class="calendar__item">3</span>
-                        <span class="calendar__item">4</span>
-                        <span class="calendar__item">5</span>
-                        <span class="calendar__item">6</span>
-                        <span class="calendar__item">7</span>
-                        <span class="calendar__item calendar__item_bg_blue">8</span>
-                        <span class="calendar__item calendar__item_bg_blue">9</span>
-                        <span class="calendar__item calendar__item_bg_blue calendar__item_color_white">10</span>
-                        <span class="calendar__item">11</span>
-                        <span class="calendar__item">12</span>
-                        <span class="calendar__item">13</span>
-                        <span class="calendar__item">14</span>
-                        <span class="calendar__item calendar__item_bg_blue">15</span>
-                        <span class="calendar__item calendar__item_bg_blue">16</span>
-                        <span class="calendar__item">17</span>
-                        <span class="calendar__item">18</span>
-                        <span class="calendar__item">19</span>
-                        <span class="calendar__item">20</span>
-                        <span class="calendar__item">21</span>
-                        <span class="calendar__item calendar__item_bg_blue">22</span>
-                        <span class="calendar__item calendar__item_bg_blue">23</span>
-                        <span class="calendar__item">24</span>
-                        <span class="calendar__item">25</span>
-                        <span class="calendar__item">26</span>
-                        <span class="calendar__item">27</span>
-                        <span class="calendar__item">28</span>
-                        <span class="calendar__item calendar__item_bg_blue">29</span>
-                        <span class="calendar__item calendar__item_bg_blue">30</span>
-                        <span class="calendar__item calendar__item_color_grey">1</span>
-                        <span class="calendar__item calendar__item_color_grey">2</span>
-                        <span class="calendar__item calendar__item_color_grey">3</span>
-                        <span class="calendar__item calendar__item_color_grey">4</span>
-                        <span class="calendar__item calendar__item_color_grey">5</span>
-                        <span class="calendar__item calendar__item_bg_blue calendar__item_color_grey">6</span>
-                        <span class="calendar__item calendar__item_bg_blue calendar__item_color_grey">7</span>
+                    <div class="calendar">
+                        <div class="calendar__content calendar__content_head">
+                            <span class="calendar__item">пон</span>
+                            <span class="calendar__item">вт</span>
+                            <span class="calendar__item">ср</span>
+                            <span class="calendar__item">чт</span>
+                            <span class="calendar__item">пт</span>
+                            <span class="calendar__item">суб</span>
+                            <span class="calendar__item">вс</span>
+                        </div>
+                        <div class="calendar__content">
+                            <span class="calendar__item calendar__item_color_grey">26</span>
+                            <span class="calendar__item calendar__item_color_grey">27</span>
+                            <span class="calendar__item calendar__item_color_grey">28</span>
+                            <span class="calendar__item calendar__item_color_grey">29</span>
+                            <span class="calendar__item calendar__item_color_grey">30</span>
+                            <span class="calendar__item calendar__item_bg_blue">1</span>
+                            <span class="calendar__item calendar__item_bg_blue">2</span>
+                            <span class="calendar__item">3</span>
+                            <span class="calendar__item">4</span>
+                            <span class="calendar__item">5</span>
+                            <span class="calendar__item">6</span>
+                            <span class="calendar__item">7</span>
+                            <span class="calendar__item calendar__item_bg_blue">8</span>
+                            <span class="calendar__item calendar__item_bg_blue">9</span>
+                            <span class="calendar__item calendar__item_bg_blue calendar__item_color_white">10</span>
+                            <span class="calendar__item">11</span>
+                            <span class="calendar__item">12</span>
+                            <span class="calendar__item">13</span>
+                            <span class="calendar__item">14</span>
+                            <span class="calendar__item calendar__item_bg_blue">15</span>
+                            <span class="calendar__item calendar__item_bg_blue">16</span>
+                            <span class="calendar__item">17</span>
+                            <span class="calendar__item">18</span>
+                            <span class="calendar__item">19</span>
+                            <span class="calendar__item">20</span>
+                            <span class="calendar__item">21</span>
+                            <span class="calendar__item calendar__item_bg_blue">22</span>
+                            <span class="calendar__item calendar__item_bg_blue">23</span>
+                            <span class="calendar__item">24</span>
+                            <span class="calendar__item">25</span>
+                            <span class="calendar__item">26</span>
+                            <span class="calendar__item">27</span>
+                            <span class="calendar__item">28</span>
+                            <span class="calendar__item calendar__item_bg_blue">29</span>
+                            <span class="calendar__item calendar__item_bg_blue">30</span>
+                            <span class="calendar__item calendar__item_color_grey">1</span>
+                            <span class="calendar__item calendar__item_color_grey">2</span>
+                            <span class="calendar__item calendar__item_color_grey">3</span>
+                            <span class="calendar__item calendar__item_color_grey">4</span>
+                            <span class="calendar__item calendar__item_color_grey">5</span>
+                            <span class="calendar__item calendar__item_bg_blue calendar__item_color_grey">6</span>
+                            <span class="calendar__item calendar__item_bg_blue calendar__item_color_grey">7</span>
+                        </div>
                     </div>
                 </div>
             </div>

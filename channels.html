@@ -36,7 +36,7 @@
                     <li class="icon-menu__item">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE16D;</i>
-                            <span class="icon-menu__text">Трансляция</span>
+                            <span class="icon-menu__text">Лента</span>
                         </a>
                     </li>
                     <li class="icon-menu__item active">
@@ -71,7 +71,8 @@
                                     <b class="player__style">Легкая музыка</b>Жанр: Soul</span>
                             </div>
                             <div class="player__waves">
-                                <img src="assets/images/player-waves.png" />
+                                <canvas id="b"></canvas>
+                                <canvas id="d"></canvas>
                             </div>
                         </div>
                     </div>
@@ -519,19 +520,21 @@
             </main>
         </div>
         <aside class="layout__right-side">
-            <div class="right-header">
-                <ul class="icon-menu icon-menu_light right-header__menu">
-                    <li class="icon-menu__item">
-                        <a class="icon-menu__link" href="#">
-                            <i class="icon-menu__icon material-icon">&#xE853;</i>
-                            <span class="icon-menu__text">Аккаунт</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="right-content">
-                <h1 class="heading-main right-content__heading">Каналы</h1>
-                <p class="text-small">Каналы - это прямая трансляция. Мы специально разбили по тематикам, чтобы Вы могли легко разобраться.</p>
+            <div class="layout__right-block">
+                <div class="right-header">
+                    <ul class="icon-menu icon-menu_light right-header__menu">
+                        <li class="icon-menu__item">
+                            <a class="icon-menu__link" href="#">
+                                <i class="icon-menu__icon material-icon">&#xE853;</i>
+                                <span class="icon-menu__text">Аккаунт</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-content">
+                    <h1 class="heading-main right-content__heading">Каналы</h1>
+                    <p class="text-small">Каналы - это прямая трансляция. Мы специально разбили по тематикам, чтобы Вы могли легко разобраться.</p>
+                </div>
             </div>
         </aside>
     </div>

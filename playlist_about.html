@@ -36,7 +36,7 @@
                     <li class="icon-menu__item">
                         <a class="icon-menu__link" href="#">
                             <i class="icon-menu__icon material-icon">&#xE16D;</i>
-                            <span class="icon-menu__text">Трансляция</span>
+                            <span class="icon-menu__text">Лента</span>
                         </a>
                     </li>
                     <li class="icon-menu__item">
@@ -852,79 +852,81 @@
             </main>
         </div>
         <aside class="layout__right-side">
-            <div class="right-header">
-                <ul class="icon-menu icon-menu_light right-header__menu">
-                    <li class="icon-menu__item">
-                        <a class="icon-menu__link" href="#">
-                            <i class="icon-menu__icon material-icon">&#xE853;</i>
-                            <span class="icon-menu__text">Аккаунт</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="right-heading right-heading_border-dark">
-                <span class="right-heading__icon">
-                    <i class="material-icon">&#xE03D;</i>
-                    <span class="right-heading__count">121</span>
-                </span>
-                <span class="right-heading__text">Плейлисты</span>
-                <a class="right-heading__arrow material-icon" href="#">&#xE315;</a>
-            </div>
-            <div class="playlist-info">
-                <h3 class="playlist-info__heading">Информация о плейлисте</h3>
-                <div class="playlist-info__tag-container">
-                    <input class="playlist-info__name" value="Плейлист на утро" type="text" />
+            <div class="layout__right-block">
+                <div class="right-header">
+                    <ul class="icon-menu icon-menu_light right-header__menu">
+                        <li class="icon-menu__item">
+                            <a class="icon-menu__link" href="#">
+                                <i class="icon-menu__icon material-icon">&#xE853;</i>
+                                <span class="icon-menu__text">Аккаунт</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="playlist-info__tag-container">
-                    <label class="playlist-info__radio-wrap">
-                        <input class="playlist-info__control" type="radio" name="time-tag" checked="true" />
-                        <span class="playlist-info__time-tag playlist-info__time-tag_round_left">Утро</span>
-                    </label>
-                    <label class="playlist-info__radio-wrap">
-                        <input class="playlist-info__control" type="radio" name="time-tag" />
-                        <span class="playlist-info__time-tag">День</span>
-                    </label>
-                    <label class="playlist-info__radio-wrap">
-                        <input class="playlist-info__control" type="radio" name="time-tag" />
-                        <span class="playlist-info__time-tag">Вечер</span>
-                    </label>
-                    <label class="playlist-info__radio-wrap">
-                        <input class="playlist-info__control" type="radio" name="time-tag" />
-                        <span class="playlist-info__time-tag playlist-info__time-tag_round_right">Ночь</span>
-                    </label>
+                <div class="right-heading right-heading_border-dark">
+                    <span class="right-heading__icon">
+                        <i class="material-icon">&#xE03D;</i>
+                        <span class="right-heading__count">121</span>
+                    </span>
+                    <span class="right-heading__text">Плейлисты</span>
+                    <a class="right-heading__arrow material-icon" href="#">&#xE315;</a>
                 </div>
-                <div class="playlist-about playlist-info__about">
-                    <div class="playlist-about__item">
-                        <span>Создан:</span>
-                        <span class="playlist-about__value">12 июля 2016 года</span>
+                <div class="playlist-info">
+                    <h3 class="playlist-info__heading">Информация о плейлисте</h3>
+                    <div class="playlist-info__tag-container">
+                        <input class="playlist-info__name" value="Плейлист на утро" type="text" />
                     </div>
-                    <div class="playlist-about__item">
-                        <span>Последнее изменение:</span>
-                        <span class="playlist-about__value">29.10.2016 года</span>
+                    <div class="playlist-info__tag-container">
+                        <label class="playlist-info__radio-wrap">
+                            <input class="playlist-info__control" type="radio" name="time-tag" checked="true" />
+                            <span class="playlist-info__time-tag playlist-info__time-tag_round_left">Утро</span>
+                        </label>
+                        <label class="playlist-info__radio-wrap">
+                            <input class="playlist-info__control" type="radio" name="time-tag" />
+                            <span class="playlist-info__time-tag">День</span>
+                        </label>
+                        <label class="playlist-info__radio-wrap">
+                            <input class="playlist-info__control" type="radio" name="time-tag" />
+                            <span class="playlist-info__time-tag">Вечер</span>
+                        </label>
+                        <label class="playlist-info__radio-wrap">
+                            <input class="playlist-info__control" type="radio" name="time-tag" />
+                            <span class="playlist-info__time-tag playlist-info__time-tag_round_right">Ночь</span>
+                        </label>
                     </div>
-                    <div class="playlist-about__item">
-                        <span>Количество треков:</span>
-                        <span class="playlist-about__value playlist-about__value_bolder">7</span>
+                    <div class="playlist-about playlist-info__about">
+                        <div class="playlist-about__item">
+                            <span>Создан:</span>
+                            <span class="playlist-about__value">12 июля 2016 года</span>
+                        </div>
+                        <div class="playlist-about__item">
+                            <span>Последнее изменение:</span>
+                            <span class="playlist-about__value">29.10.2016 года</span>
+                        </div>
+                        <div class="playlist-about__item">
+                            <span>Количество треков:</span>
+                            <span class="playlist-about__value playlist-about__value_bolder">7</span>
+                        </div>
+                        <div class="playlist-about__item">
+                            <span>Продолжительность:</span>
+                            <span class="playlist-about__value">32 минуты</span>
+                        </div>
+                        <div class="playlist-about__item">
+                            <span>Проигровался:</span>
+                            <span class="playlist-about__value">23 часа 18 минуты назад</span>
+                        </div>
+                        <div class="playlist-about__item">
+                            <span>Скачан:</span>
+                            <span class="playlist-about__value">1 раз</span>
+                        </div>
+                        <div class="playlist-about__item">
+                            <span>Автор:</span>
+                            <span>ООО "Рога и копыта"</span>
+                        </div>
                     </div>
-                    <div class="playlist-about__item">
-                        <span>Продолжительность:</span>
-                        <span class="playlist-about__value">32 минуты</span>
-                    </div>
-                    <div class="playlist-about__item">
-                        <span>Проигровался:</span>
-                        <span class="playlist-about__value">23 часа 18 минуты назад</span>
-                    </div>
-                    <div class="playlist-about__item">
-                        <span>Скачан:</span>
-                        <span class="playlist-about__value">1 раз</span>
-                    </div>
-                    <div class="playlist-about__item">
-                        <span>Автор:</span>
-                        <span>ООО "Рога и копыта"</span>
-                    </div>
+                    <a class="button button_color_blue button_size_huge playlist-info__button">Сохранить изменения</a>
+                    <a class="button button_color_grey button_size_huge playlist-info__button">Вернуться в плейлист</a>
                 </div>
-                <a class="button button_color_blue button_size_huge playlist-info__button">Сохранить изменения</a>
-                <a class="button button_color_grey button_size_huge playlist-info__button">Вернуться в плейлист</a>
             </div>
         </aside>
     </div>

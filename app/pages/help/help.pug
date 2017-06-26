@@ -1,0 +1,52 @@
+extends ../../layouts/help
+include ../../components/sidebar/sidebar
+include ../../components/header/header
+include ../../components/right-header/right-header
+include ../../blocks/icon-menu/icon-menu
+include ../../blocks/player/player
+include ../../blocks/input/input
+include ../../blocks/button/button
+include ../../blocks/right-content/right-content
+include ../../components/sliders/sliders
+include ../../blocks/big-page-header/big-page-header
+
+block head
+  - var pageTitle = 'Помощь — Мубикон'
+
+block sidebar
+  +sidebar
+    +icon-menu.__menu
+      +icon-menu-icon("#", "Трэки", "&#xE05F;")
+      +icon-menu-icon("#", "Подборки", "&#xE065;").active
+      +icon-menu-icon("#", "Лента", "&#xE16D;")
+      +icon-menu-icon("#", "Каналы", "&#xE8BF;")
+      +icon-menu-icon("#", "Помощь", "&#xE8FD;")
+
+block header
+  +header
+    +player()._pause
+      +player-image("assets/images/album-small-2.jpg")
+      +player-content
+        +player-info("Let’s dance - Jon Travolta")
+          +player-list-control()
+        +player-timer()
+        +player-equalizer()
+
+block content
+  +b.SECTION.help
+    +big-page-header.layout__content
+      h1.heading-main Создайте тикет, задайте свой вопрос
+      +b.FORM.help__form(method="post" target="#")
+        +input.__input
+        +button('button')(type='submit')
+          +e.I.icon.material-icon !{'&#xE0E1;'}
+          | Отправить
+    main.layout__content
+      p.text-normal HELP
+        
+
+block right
+  +right-header
+  +right-help-heading
+  +playlist-info()
+    +e.P.hint.nomargintop Внимательно ознакомьтесь с ответами на вопросы, которые могут возникнуть при работе с сервисом. Сообщение будет адресовано в нужный отдел. Специалист компании свяжестя по Вашему административному электронному адресу, который был указан при подключении.

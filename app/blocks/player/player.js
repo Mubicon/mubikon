@@ -1,5 +1,7 @@
 export default function () {
 
+if ($("#d").length > 0) {
+
 $(document).ready(function(){
 var c = document.getElementById('b'),
     ctx = c.getContext('2d'),
@@ -39,7 +41,7 @@ var Point = function(config){
   this.anchorY = config.y;
   this.x = config.x;
   this.y = config.y;
-  this.setTarget();  
+  this.setTarget();
 };
 
 Point.prototype.setTarget = function(){
@@ -50,30 +52,30 @@ Point.prototype.setTarget = function(){
   this.tick = 0;
   this.duration = rand(opt.duration.min, opt.duration.max);
 }
-  
+
 Point.prototype.update = function(){
   var dx = this.targetX - this.x;
   var dy = this.targetY - this.y;
   var dist = Math.sqrt(dx * dx + dy * dy);
-  
+
   if(Math.abs(dist) <= 0){
     this.setTarget();
-  } else {       
+  } else {
     var t = this.tick;
     var b = this.initialY;
     var c = this.targetY - this.initialY;
     var d = this.duration;
     this.y = ease(t, b, c, d);
-    
+
     b = this.initialX;
     c = this.targetX - this.initialX;
     d = this.duration;
     this.x = ease(t, b, c, d);
-  
+
     this.tick++;
   }
 };
-    
+
 Point.prototype.render = function(){
   ctx.beginPath();
   ctx.arc(this.x, this.y, 3, 0, Math.PI * 2, false);
@@ -98,7 +100,7 @@ var renderPoints = function(){
 var renderShape = function(){
   ctx.beginPath();
   var pointCount = points.length;
-  ctx.moveTo(points[0].x, points[0].y);	  
+  ctx.moveTo(points[0].x, points[0].y);
   var i;
   for (i = 0; i < pointCount - 1; i++) {
     var c = (points[i].x + points[i + 1].x) / 2;
@@ -107,12 +109,12 @@ var renderShape = function(){
   }
   ctx.lineTo(-opt.range.x - opt.thickness, ch + opt.thickness);
   ctx.lineTo(cw + opt.range.x + opt.thickness, ch + opt.thickness);
-  ctx.closePath();   
+  ctx.closePath();
   var my_gradient = ctx.createLinearGradient(0,0,$("#b").width(),0);
   my_gradient.addColorStop(0,"#c579ff");
   my_gradient.addColorStop(1,"#00ffc0");
   ctx.fillStyle = my_gradient;
-  ctx.fill();  
+  ctx.fill();
   ctx.stroke();
 };
 
@@ -185,7 +187,7 @@ var Point = function(config){
   this.anchorY = config.y;
   this.x = config.x;
   this.y = config.y;
-  this.setTarget();  
+  this.setTarget();
 };
 
 Point.prototype.setTarget = function(){
@@ -196,30 +198,30 @@ Point.prototype.setTarget = function(){
   this.tick = 0;
   this.duration = rand(opt.duration.min, opt.duration.max);
 }
-  
+
 Point.prototype.update = function(){
   var dx = this.targetX - this.x;
   var dy = this.targetY - this.y;
   var dist = Math.sqrt(dx * dx + dy * dy);
-  
+
   if(Math.abs(dist) <= 0){
     this.setTarget();
-  } else {       
+  } else {
     var t = this.tick;
     var b = this.initialY;
     var c = this.targetY - this.initialY;
     var d = this.duration;
     this.y = ease(t, b, c, d);
-    
+
     b = this.initialX;
     c = this.targetX - this.initialX;
     d = this.duration;
     this.x = ease(t, b, c, d);
-  
+
     this.tick++;
   }
 };
-    
+
 Point.prototype.render = function(){
   ctx.beginPath();
   ctx.arc(this.x, this.y, 3, 0, Math.PI * 2, false);
@@ -244,7 +246,7 @@ var renderPoints = function(){
 var renderShape = function(){
   ctx.beginPath();
   var pointCount = points.length;
-  ctx.moveTo(points[0].x, points[0].y);	  
+  ctx.moveTo(points[0].x, points[0].y);
   var i;
   for (i = 0; i < pointCount - 1; i++) {
     var c = (points[i].x + points[i + 1].x) / 2;
@@ -253,12 +255,12 @@ var renderShape = function(){
   }
   ctx.lineTo(-opt.range.x - opt.thickness, ch + opt.thickness);
   ctx.lineTo(cw + opt.range.x + opt.thickness, ch + opt.thickness);
-  ctx.closePath();  
+  ctx.closePath();
   var my_gradient = ctx.createLinearGradient(0,0,$("#d").width(),0);
   my_gradient.addColorStop(0,"#c579ff");
   my_gradient.addColorStop(1,"#00ffc0");
   ctx.fillStyle = my_gradient;
-  ctx.fill();  
+  ctx.fill();
   ctx.stroke();
 };
 
@@ -288,5 +290,7 @@ window.requestAnimFrame=function(){return window.requestAnimationFrame||window.w
 
 loop();
 });
+
+}
 
 }

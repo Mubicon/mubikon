@@ -23,6 +23,12 @@ mixin right-heading(type)
       +e.SPAN.text Плейлисты
       +e.A.arrow.material-icon(href="#") !{"&#xE315;"}
 
+mixin right-help-heading()
+  +b.right-heading&attributes(attributes)
+    +e.SPAN.icon._calendar
+      i.material-icon !{"&#xE8FD;"}
+    +e.SPAN.text Помощь
+
 mixin right-actions()
   +b.right-actions&attributes(attributes)
     +e.A.item(href="#")

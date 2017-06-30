@@ -5,6 +5,7 @@ import slider from '../blocks/slider/slider';
 import playerwaves from '../blocks/player/player';
 import filteraccordeon from '../blocks/filter-container/filter-accordeon';
 import layout from '../blocks/layout/layout';
+import accordion from '../blocks/accordion/accordion';
 //import trackssize from '../blocks/right-content/tracks-size';
 
 $(() => {
@@ -15,4 +16,5 @@ $(() => {
   filteraccordeon();
   playerwaves();
   layout();
+  accordion();
 });

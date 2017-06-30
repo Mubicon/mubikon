@@ -9,6 +9,7 @@ include ../../blocks/button/button
 include ../../blocks/right-content/right-content
 include ../../components/sliders/sliders
 include ../../blocks/big-page-header/big-page-header
+include ../../blocks/accordion/accordion
 
 block head
   - var pageTitle = 'Помощь — Мубикон'
@@ -17,10 +18,10 @@ block sidebar
   +sidebar
     +icon-menu.__menu
       +icon-menu-icon("#", "Трэки", "&#xE05F;")
-      +icon-menu-icon("#", "Подборки", "&#xE065;").active
+      +icon-menu-icon("#", "Подборки", "&#xE065;")
       +icon-menu-icon("#", "Лента", "&#xE16D;")
       +icon-menu-icon("#", "Каналы", "&#xE8BF;")
-      +icon-menu-icon("#", "Помощь", "&#xE8FD;")
+      +icon-menu-icon("#", "Помощь", "&#xE8FD;").active
 
 block header
   +header
@@ -34,16 +35,23 @@ block header
 
 block content
   +b.SECTION.help
-    +big-page-header.layout__content
+    +big-page-header.layout__content.__header
       h1.heading-main Создайте тикет, задайте свой вопрос
       +b.FORM.help__form(method="post" target="#")
         +input.__input
-        +button('button')(type='submit')
+        +button('button')(type='submit')._color_blue.__send
           +e.I.icon.material-icon !{'&#xE0E1;'}
-          | Отправить
+          span Отправить
     main.layout__content
-      p.text-normal HELP
-        
+
+      - for (var i = 0; i < 3; i++)
+        +accordion
+          +accordion-header('Начало работы', '&#xE5D2;')
+          +accordion-items
+            - for (var j = 0; j < 5; j++)
+              +accordion-item
+                +accordion-item-title Какой принцип работы сервиса?
+                +accordion-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque debitis dignissimos dolorem doloribus dolorum eius est et, inventore ipsum laudantium natus nemo nulla numquam obcaecati odio, odit perspiciatis quas qui quis quod repellendus sunt velit vero, voluptatem voluptatum. Accusamus culpa delectus dolore dolores enim error eum expedita fuga id ipsa molestiae nemo nulla pariatur perferendis placeat quasi saepe sunt tempore ullam veniam vero, vitae voluptas voluptatum. Ad aliquid amet architecto asperiores aspernatur at cupiditate dicta dolore dolorem doloribus ea eaque eligendi explicabo itaque iure laborum laudantium nisi nulla officiis omnis perspiciatis quas qui, rem totam ullam vel voluptates.
 
 block right
   +right-header

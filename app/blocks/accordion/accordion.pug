@@ -1,0 +1,24 @@
+mixin accordion()
+  +b.accordion&attributes(attributes)
+    block
+
+mixin accordion-header(heading, icon)
+  +e.header&attributes(attributes)
+    +e.I.icon.material-icon !{icon}
+    +e.H2.heading= heading
+
+mixin accordion-items()
+  +e.UL.items&attributes(attributes)
+    block
+
+mixin accordion-item()
+  +e.LI.item&attributes(attributes)
+    block
+
+mixin accordion-item-title()
+  +e.title&attributes(attributes)
+    block
+
+mixin accordion-content()
+  +e.content&attributes(attributes)
+    block

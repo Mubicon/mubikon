@@ -1,0 +1,77 @@
+.accordion {
+  display: block;
+
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  &__header {
+    padding: 15px 0;
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #d2d3d3;
+  }
+
+  &__heading {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__icon {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
+  }
+
+  &__item {
+    cursor: pointer;
+    border-bottom: 1px solid #d2d3d3;
+
+    &:hover {
+
+      .accordion {
+
+        &__title {
+          color: lighten($color-input, 40%);
+
+          &::before { background-color: $color-darkmain; }
+        }
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all .25s ease-in-out;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $color-main;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all .25s ease-in-out;
+    }
+  }
+
+  &__content {
+    display: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px dashed #d2d3d3;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

@@ -1,3 +1,43 @@
 .help {
   display: block;
+  height: 100%;
+  background-color: #fff;
+
+  &__header {
+    padding: 65px 80px;
+    background-color: #f7f7f7;
+  }
+
+  &__input {
+    width: 365px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 8px;
+  }
+
+  &__form {
+    margin-top: 20px;
+    display: block;
+
+    @include clearfix;
+  }
+
+  &__send {
+    text-transform: uppercase;
+    display: table;
+    font-size: 14px;
+    padding: 0 15px;
+    min-height: 32px;
+
+    span {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .material-icon {
+      display: table-cell;
+      vertical-align: middle;
+      padding-right: 10px;
+    }
+  }
 }

@@ -5,6 +5,8 @@
   position: fixed;
   z-index: 10;
 
+  @include performance;
+
   &__logo {
     display: block;
     height: 90px;

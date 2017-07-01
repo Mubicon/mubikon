@@ -11,8 +11,6 @@
 .playlist-info {
   padding: 23px 25px;
 
-  @media (max-height: 680px) { padding: 15px 25px; }
-
   &__control {
     display: none;
 
@@ -56,8 +54,6 @@
     border-radius: 15px;
     background-color: #fff;
     margin-top: 20px;
-
-    @media (max-height: 680px) { margin-top: 10px; }
   }
 
   &__name {
@@ -115,8 +111,6 @@
   &__about {
     margin-top: 26px;
     margin-bottom: 2px;
-
-    @media (max-height: 680px) { margin-top: 10px; }
   }
 
   &__button {
@@ -129,8 +123,6 @@
 
   &__playlist-scroll {
     margin-top: 20px;
-
-    @media (max-height: 680px) { margin-top: 10px; }
   }
 }
 
@@ -145,8 +137,6 @@
 
     &:not(:first-child) {
       margin-top: 18px;
-
-      @media (max-height: 680px) { margin-top: 8px; }
     }
   }
 
@@ -155,8 +145,6 @@
 
     &:not(:first-child) {
       margin-top: 15px;
-
-      @media (max-height: 680px) { margin-top: 5px; }
     }
   }
 
@@ -172,10 +160,6 @@
 
   &__tracks {
     margin-top: 75px;
-
-    @media (max-height: 680px) {
-      margin-top: 15px;
-    }
   }
 }
 

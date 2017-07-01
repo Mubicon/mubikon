@@ -77,11 +77,47 @@
     @include center-image;
   }
 
+  &__wave {
+    background: url('../images/wave.svg') repeat-x;
+    background-size: auto;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 1820px;
+    height: 70px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: .4;
+
+    &:nth-of-type(2) {
+      bottom: -10px;
+      animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    }
+  }
+
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -910px;
+    }
+  }
+
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0,-9px,0);
+    }
+    50% {
+      transform: translate3d(-150px,10px,0);
+    }
+  }
+
   &__waves {
     @extend %equalizer-style;
 
     canvas {
-      display: block; 
+      display: block;
       height: 100%;
       width: 100%;
       position: absolute;

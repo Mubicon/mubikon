@@ -5,6 +5,8 @@
   z-index: 10;
   background-color: #2d3039;
 
+  @include performance;
+
   &_table {
     display: table;
     width: 100%;

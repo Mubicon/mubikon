@@ -38,20 +38,34 @@ block content
     +big-page-header.layout__content.__header
       h1.heading-main Создайте тикет, задайте свой вопрос
       +b.FORM.help__form(method="post" target="#")
-        +input.__input
-        +button('button')(type='submit')._color_blue.__send
-          +e.I.icon.material-icon !{'&#xE0E1;'}
-          span Отправить
+        +input.__input(placeholder="Введите Ваш вопрос")
+        +e.button-col
+          +button('button')(type='submit')._color_blue._size_big.__send
+            +e.I.icon.material-icon !{'&#xE0E1;'}
+            span Отправить
     main.layout__content
-
       - for (var i = 0; i < 3; i++)
         +accordion
           +accordion-header('Начало работы', '&#xE5D2;')
           +accordion-items
-            - for (var j = 0; j < 5; j++)
-              +accordion-item
-                +accordion-item-title Какой принцип работы сервиса?
-                +accordion-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque debitis dignissimos dolorem doloribus dolorum eius est et, inventore ipsum laudantium natus nemo nulla numquam obcaecati odio, odit perspiciatis quas qui quis quod repellendus sunt velit vero, voluptatem voluptatum. Accusamus culpa delectus dolore dolores enim error eum expedita fuga id ipsa molestiae nemo nulla pariatur perferendis placeat quasi saepe sunt tempore ullam veniam vero, vitae voluptas voluptatum. Ad aliquid amet architecto asperiores aspernatur at cupiditate dicta dolore dolorem doloribus ea eaque eligendi explicabo itaque iure laborum laudantium nisi nulla officiis omnis perspiciatis quas qui, rem totam ullam vel voluptates.
+            +accordion-item
+              +accordion-item-title Какой принцип работы сервиса?
+              +accordion-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque debitis dignissimos dolorem doloribus dolorum eius est et, inventore ipsum laudantium natus nemo nulla numquam obcaecati odio, odit perspiciatis quas qui quis quod repellendus sunt velit vero, voluptatem voluptatum. Accusamus culpa delectus dolore dolores enim error eum expedita fuga id ipsa molestiae nemo nulla pariatur perferendis placeat quasi saepe sunt tempore ullam veniam vero, vitae voluptas voluptatum. Ad aliquid amet architecto asperiores aspernatur at cupiditate dicta dolore dolorem doloribus ea eaque eligendi explicabo itaque iure laborum laudantium nisi nulla officiis omnis perspiciatis quas qui, rem totam ullam vel voluptates.
+            +accordion-item
+              +accordion-item-title Как запустить фоновую музыку за 10 минут?
+              +accordion-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque debitis dignissimos dolorem doloribus dolorum eius est et, inventore ipsum laudantium natus nemo nulla numquam obcaecati odio, odit perspiciatis quas qui quis quod repellendus sunt velit vero, voluptatem voluptatum. Accusamus culpa delectus dolore dolores enim error eum expedita fuga id ipsa molestiae nemo nulla pariatur perferendis placeat quasi saepe sunt tempore ullam veniam vero, vitae voluptas voluptatum. Ad aliquid amet architecto asperiores aspernatur at cupiditate dicta dolore dolorem doloribus ea eaque eligendi explicabo itaque iure laborum laudantium nisi nulla officiis omnis perspiciatis quas qui, rem totam ullam vel voluptates.
+            +accordion-item
+              +accordion-item-title Как создать плейлист?
+              +accordion-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque debitis dignissimos dolorem doloribus dolorum eius est et, inventore ipsum laudantium natus nemo nulla numquam obcaecati odio, odit perspiciatis quas qui quis quod repellendus sunt velit vero, voluptatem voluptatum. Accusamus culpa delectus dolore dolores enim error eum expedita fuga id ipsa molestiae nemo nulla pariatur perferendis placeat quasi saepe sunt tempore ullam veniam vero, vitae voluptas voluptatum. Ad aliquid amet architecto asperiores aspernatur at cupiditate dicta dolore dolorem doloribus ea eaque eligendi explicabo itaque iure laborum laudantium nisi nulla officiis omnis perspiciatis quas qui, rem totam ullam vel voluptates.
+            +accordion-item
+              +accordion-item-title Как использовать готовую подборку в качестве основы для составления плейлиста?
+              +accordion-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque debitis dignissimos dolorem doloribus dolorum eius est et, inventore ipsum laudantium natus nemo nulla numquam obcaecati odio, odit perspiciatis quas qui quis quod repellendus sunt velit vero, voluptatem voluptatum. Accusamus culpa delectus dolore dolores enim error eum expedita fuga id ipsa molestiae nemo nulla pariatur perferendis placeat quasi saepe sunt tempore ullam veniam vero, vitae voluptas voluptatum. Ad aliquid amet architecto asperiores aspernatur at cupiditate dicta dolore dolorem doloribus ea eaque eligendi explicabo itaque iure laborum laudantium nisi nulla officiis omnis perspiciatis quas qui, rem totam ullam vel voluptates.
+            +accordion-item
+              +accordion-item-title Что такое лента?
+              +accordion-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque debitis dignissimos dolorem doloribus dolorum eius est et, inventore ipsum laudantium natus nemo nulla numquam obcaecati odio, odit perspiciatis quas qui quis quod repellendus sunt velit vero, voluptatem voluptatum. Accusamus culpa delectus dolore dolores enim error eum expedita fuga id ipsa molestiae nemo nulla pariatur perferendis placeat quasi saepe sunt tempore ullam veniam vero, vitae voluptas voluptatum. Ad aliquid amet architecto asperiores aspernatur at cupiditate dicta dolore dolorem doloribus ea eaque eligendi explicabo itaque iure laborum laudantium nisi nulla officiis omnis perspiciatis quas qui, rem totam ullam vel voluptates.
+            +accordion-item
+              +accordion-item-title Как в ленте настроить расписание на месяц за 20 минут?
+              +accordion-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque debitis dignissimos dolorem doloribus dolorum eius est et, inventore ipsum laudantium natus nemo nulla numquam obcaecati odio, odit perspiciatis quas qui quis quod repellendus sunt velit vero, voluptatem voluptatum. Accusamus culpa delectus dolore dolores enim error eum expedita fuga id ipsa molestiae nemo nulla pariatur perferendis placeat quasi saepe sunt tempore ullam veniam vero, vitae voluptas voluptatum. Ad aliquid amet architecto asperiores aspernatur at cupiditate dicta dolore dolorem doloribus ea eaque eligendi explicabo itaque iure laborum laudantium nisi nulla officiis omnis perspiciatis quas qui, rem totam ullam vel voluptates.
 
 block right
   +right-header

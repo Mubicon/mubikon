@@ -36,10 +36,6 @@
     display: block;
     padding: 18px 10px 16px;
     text-align: center;
-
-    @media (max-height: 680px) {
-      padding: 8px 10px;
-    }
   }
 
   &__icon {

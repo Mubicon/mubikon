@@ -17,6 +17,8 @@
     height: 90px;
     background-color: #2d3039;
     z-index: 1;
+
+    @include performance;
   }
 
   &__left-side {
@@ -48,6 +50,8 @@
     height: 100%;
     position: fixed;
     z-index: 10;
+
+    @include performance;
   }
 
   &__heading {

@@ -4,9 +4,9 @@ mixin filter-container()
       +e.top-table-col
         +e.B.__name ФИЛЬТРЫ:
       +e.top-table-col
-        +filter-item('Музыкальные жанры')(href="#filter1").__item
-        +filter-item('Тип предприятия')(href="#filter2").__item
-        +filter-item('Сортировать')(href="#filter3").__item
+        +filter-item('Музыкальные жанры')(data-accordion-target="#filter1").__item
+        +filter-item('Тип предприятия')(data-accordion-target="#filter2").__item
+        +filter-item('Сортировать')(data-accordion-target="#filter3").__item
     +view-toggler().__toggler
     +e.__labels
       +filter-label('Джаз').__label
@@ -14,7 +14,7 @@ mixin filter-container()
       +filter-label('По дате добавления', true).__label
     +e.__accordions
       +e.__accordion#filter1
-        +e.A.accordion-close.material-icon(href="#page") !{"&#xE5CD;"}
+        +e.A.accordion-close.material-icon(data-accordion-action="close") !{"&#xE5CD;"}
         +filter-label-nodelete('Джаз').__label
         +filter-label-nodelete('Lounge').__label
         +filter-label-nodelete('Поп').__label
@@ -25,7 +25,7 @@ mixin filter-container()
         +filter-label-nodelete('Lounge').__label
         +filter-label-nodelete('Поп').__label
       +e.__accordion#filter2
-        +e.A.accordion-close.material-icon(href="#page") !{"&#xE5CD;"}
+        +e.A.accordion-close.material-icon(data-accordion-action="close") !{"&#xE5CD;"}
         +filter-label-nodelete('Кафе').__label
         +filter-label-nodelete('Ресторан').__label
         +filter-label-nodelete('Бар').__label
@@ -36,7 +36,7 @@ mixin filter-container()
         +filter-label-nodelete('Ресторан').__label
         +filter-label-nodelete('Бар').__label
       +e.__accordion#filter3
-        +e.A.accordion-close.material-icon(href="#page") !{"&#xE5CD;"}
+        +e.A.accordion-close.material-icon(data-accordion-action="close") !{"&#xE5CD;"}
         +filter-label-nodelete('По дате добавления').__label
         +filter-label-nodelete('По жанру').__label
         +filter-label-nodelete('По длительности').__label

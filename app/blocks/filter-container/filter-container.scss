@@ -45,7 +45,7 @@
       padding-bottom: 13px;
     }
 
-    &:target { max-height: 80px; }
+    &.active { max-height: 80px; }
   }
 
   &__accordion-close {
@@ -103,6 +103,8 @@
   vertical-align: top;
   white-space: nowrap;
 
+  &.active .filter-item__icon { transform: rotate(180deg); }
+
   &:hover {
     color: lighten(#292d33, 40%);
   }
@@ -114,7 +116,10 @@
   }
 
   &__icon {
+    transition: all .45s ease-in-out;
     vertical-align: middle;
+
+    @include performance;
   }
 }
 

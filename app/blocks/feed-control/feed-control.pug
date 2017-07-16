@@ -5,7 +5,7 @@ include ../filter-container/filter-container
 mixin feed-control(create)
   +b.feed-control&attributes(attributes)
     +e.top-controls
-      +selectbox-link.__selectbox(href="#filter1") Первая лента
+      +selectbox-link.__selectbox(data-accordion-target="#filter1") Первая лента
       +b.feed-new.__new
         if create
           +e.FORM.create-form(action="#" method="post")
@@ -14,7 +14,7 @@ mixin feed-control(create)
         else
           +e.BUTTON.add.material-icon !{"&#xE145;"}
     .filter-container__accordion#filter1
-      a.filter-container__accordion-close.material-icon(href="#page") !{"&#xE5CD;"}
+      a.filter-container__accordion-close.material-icon(data-accordion-action="close") !{"&#xE5CD;"}
       +filter-label-nodelete('Первая лента').filter-container__label
       +filter-label-nodelete('Вторая лента').filter-container__label
       +filter-label-nodelete('Третья лента').filter-container__label
